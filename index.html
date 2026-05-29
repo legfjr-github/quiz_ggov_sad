@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Inovação e Tecnologia na Gestão Pública</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --success: #10B981;
+            --danger: #EF4444;
+            --background: #F3F4F6;
+            --card-bg: #FFFFFF;
+            --text-main: #1F2937;
+            --text-muted: #6B7280;
+            --border: #E5E7EB;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f6f8fd 0%, #f1f5f9 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background-color: var(--card-bg);
+            max-width: 700px;
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 6px;
+            background-color: var(--border);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: var(--primary);
+            width: 0%;
+            transition: width 0.4s ease;
+        }
+
+        .quiz-header {
+            padding: 30px 30px 10px;
+        }
+
+        .question-counter {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .question-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: var(--text-main);
+        }
+
+        .question-text {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 24px;
+            white-space: pre-wrap;
+        }
+
+        .quiz-body {
+            padding: 0 30px 30px;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-btn {
+            background-color: #fff;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 1rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--primary);
+            background-color: #f8faff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .option-btn:disabled {
+            cursor: default;
+        }
+
+        .option-letter {
+            font-weight: 700;
+            margin-right: 12px;
+            color: var(--text-muted);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--background);
+            border-radius: 50%;
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+
+        .option-btn.selected {
+            border-color: var(--primary);
+            background-color: #f8faff;
+        }
+
+        .option-btn.selected .option-letter {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .option-btn.correct {
+            border-color: var(--success);
+            background-color: #ecfdf5;
+        }
+
+        .option-btn.correct .option-letter {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .option-btn.incorrect {
+            border-color: var(--danger);
+            background-color: #fef2f2;
+        }
+
+        .option-btn.incorrect .option-letter {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .feedback-area {
+            margin-top: 24px;
+            padding: 16px;
+            border-radius: 12px;
+            display: none;
+            font-weight: 500;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .feedback-area.success {
+            display: block;
+            background-color: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .feedback-area.error {
+            display: block;
+            background-color: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .action-area {
+            margin-top: 24px;
+            display: none;
+        }
+
+        .next-btn, .restart-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
+        }
+
+        .next-btn:hover, .restart-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .result-container {
+            text-align: center;
+            padding: 40px 20px;
+            display: none;
+        }
+
+        .trophy-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .score-text {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .score-percentage {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .score-message {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        /* Confetti Canvas */
+        #confetti {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+            .quiz-header {
+                padding: 24px 20px 10px;
+            }
+            .quiz-body {
+                padding: 0 20px 24px;
+            }
+            .question-title {
+                font-size: 1.15rem;
+            }
+            .option-btn {
+                padding: 14px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container" id="quiz-container">
+        <canvas id="confetti"></canvas>
+        <div class="progress-bar-container" id="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div id="quiz-content">
+            <div class="quiz-header">
+                <div class="question-counter" id="question-counter">Questão 1 de 20</div>
+                <h2 class="question-title" id="question-title">Carregando...</h2>
+                <p class="question-text" id="question-text"></p>
+            </div>
+
+            <div class="quiz-body">
+                <div class="options-list" id="options-list">
+                    <!-- Opções geradas via JS -->
+                </div>
+
+                <div class="feedback-area" id="feedback-area"></div>
+
+                <div class="action-area" id="action-area">
+                    <button class="next-btn" id="next-btn">Próxima Questão</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-container" id="result-container">
+            <div class="trophy-icon">🏆</div>
+            <div class="score-text" id="score-text">18/20</div>
+            <div class="score-percentage" id="score-percentage">90%</div>
+            <div class="score-message" id="score-message">Excelente trabalho! Você demonstrou um ótimo conhecimento.</div>
+            <button class="restart-btn" onclick="startQuiz()">Tentar Novamente</button>
+        </div>
+    </div>
+
+    <!-- Script Confetti leve -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        const questions = [
+  {
+    "id": 1,
+    "title": "1. Desmistificando a Criatividade",
+    "text": "De acordo com os autores Torrance e Safter, a aptidão para produzir respostas variadas, pertencentes a diferentes domínios, e ideias que rompem padrões funcionais é denominada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fluência."
+      },
+      {
+        "id": "B",
+        "text": "Flexibilidade."
+      },
+      {
+        "id": "C",
+        "text": "Originalidade."
+      },
+      {
+        "id": "D",
+        "text": "Elaboração."
+      },
+      {
+        "id": "E",
+        "text": "Camada Social."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "title": "2. Tipos de Inovação (Natureza)",
+    "text": "A 4ª Edição (2018) do Manual de Oslo trouxe a \"Grande Simplificação Taxonômica\", transformando 4 categorias fragmentadas em apenas 2 macrocategorias. Quais são essas duas macrocategorias atuais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inovação Incremental e Inovação Radical."
+      },
+      {
+        "id": "B",
+        "text": "Inovação de Serviços e Inovação Organizacional."
+      },
+      {
+        "id": "C",
+        "text": "Inovação de Produto e Inovação de Processo de Negócios."
+      },
+      {
+        "id": "D",
+        "text": "Inovação Tecnológica e Inovação de Marketing."
+      },
+      {
+        "id": "E",
+        "text": "Inovação Disruptiva e Inovação Sustentável."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "title": "3. Tipos de Inovação (Impacto)",
+    "text": "Ao analisar o grau de impacto, uma inovação que foca em mercados embrionários e não definidos, atuando junto a segmentos menos lucrativos ou \"não consumidores\" e que estabelece uma nova base de competição, é classificada como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inovação de Processo."
+      },
+      {
+        "id": "B",
+        "text": "Inovação Incremental."
+      },
+      {
+        "id": "C",
+        "text": "Inovação de Melhoria."
+      },
+      {
+        "id": "D",
+        "text": "Inovação Radical (Disruptiva)."
+      },
+      {
+        "id": "E",
+        "text": "Inovação Sustentável."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 4,
+    "title": "4. Matriz de Inovação e Melhoria",
+    "text": "Ao analisar a Matriz de Inovação e Melhoria apresentada em aula, um projeto que possui \"alta novidade da ideia\", mas \"baixo resultado esperado\", é enquadrado como um fracasso comercial/institucional e recebe o nome de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inovação."
+      },
+      {
+        "id": "B",
+        "text": "Melhoria."
+      },
+      {
+        "id": "C",
+        "text": "Invenção."
+      },
+      {
+        "id": "D",
+        "text": "Adequação."
+      },
+      {
+        "id": "E",
+        "text": "Prototipagem."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "title": "5. Ciclos de Adoção de Inovação",
+    "text": "No ciclo de adoção de novos produtos pelos consumidores, existe um grande desafio denominado \"O Abismo\", onde os bons projetos geralmente morrem antes de virar rotina. Esse abismo separa quais grupos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Entusiastas e Visionários."
+      },
+      {
+        "id": "B",
+        "text": "Visionários e Pragmáticos."
+      },
+      {
+        "id": "C",
+        "text": "Pragmáticos e Conservadores."
+      },
+      {
+        "id": "D",
+        "text": "Conservadores e Céticos."
+      },
+      {
+        "id": "E",
+        "text": "Entusiastas e Céticos."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "title": "6. Ambidestria Organizacional",
+    "text": "A Ambidestria Organizacional propõe que a organização atue em duas frentes: Exploitation (Gestão do presente) e Exploration (Criação do futuro). Assinale a alternativa que representa corretamente o foco do Exploitation e do Exploration, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução de custos; SLAs rígidos."
+      },
+      {
+        "id": "B",
+        "text": "Ecossistemas; Automação de processos."
+      },
+      {
+        "id": "C",
+        "text": "Inovação radical e agilidade; Eficiência e mitigação de risco."
+      },
+      {
+        "id": "D",
+        "text": "Eficiência, conformidade e mitigação de risco; Inovação radical, agilidade e adaptação."
+      },
+      {
+        "id": "E",
+        "text": "Tolerância ao erro e colaboração; Cultura hierárquica e controle."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 7,
+    "title": "7. O Fator Humano como Barreira",
+    "text": "A aula destaca que 60% a 80% dos projetos de transformação falham por resistência humana, não técnica. Quando o diagnóstico é de \"Liderança Insuficiente\" (a média gerência bloqueia a inovação), qual é o antídoto recomendado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Requalificação contínua em competências do futuro (STEM)."
+      },
+      {
+        "id": "B",
+        "text": "Comunicação focada em Propósito e Valor Público (ODS)."
+      },
+      {
+        "id": "C",
+        "text": "Novas métricas de reconhecimento para adoção de novos métodos."
+      },
+      {
+        "id": "D",
+        "text": "Criação de sandboxes regulatórios nos departamentos afetados."
+      },
+      {
+        "id": "E",
+        "text": "Envolvimento ativo e patrocínio real da alta gestão."
+      }
+    ],
+    "answer": "E"
+  },
+  {
+    "id": 8,
+    "title": "8. O Ecossistema e a Quíntupla Hélice",
+    "text": "O Estado não inova sozinho, exigindo a orquestração do Sistema Pernambucano de Inovação (SPIn) por meio da \"Hélice Quíntupla\". Assinale a alternativa que contempla todos os elementos dessa hélice:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Governo, Academia, Empresa, Startups e Capital de Risco."
+      },
+      {
+        "id": "B",
+        "text": "Governo, Judiciário, Legislativo, Mercado e Sociedade."
+      },
+      {
+        "id": "C",
+        "text": "Governo, Academia, Empresa, Sociedade e Habitats de Inovação (Meio Ambiente)."
+      },
+      {
+        "id": "D",
+        "text": "Governo, Universidade, Instituições Financeiras, Indústria e Terceiro Setor."
+      },
+      {
+        "id": "E",
+        "text": "Governo Federal, Estadual, Municipal, Privado e Sociedade."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 9,
+    "title": "9. Arqueologia da Obsolescência",
+    "text": "Dentro da \"Arqueologia da Inovação\", um sistema legado governamental entra em \"Crise Latente\" (Estágio 3). O que caracteriza exatamente essa fase?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O sistema atende perfeitamente às demandas e a manutenção parece desperdício."
+      },
+      {
+        "id": "B",
+        "text": "Surgem incompatibilidades e talentos especialistas começam a se aposentar silenciosamente."
+      },
+      {
+        "id": "C",
+        "text": "O sistema vira um gargalo, ameaça o compliance e trava inovações adjacentes; a migração já é complexa."
+      },
+      {
+        "id": "D",
+        "text": "Ocorre obsolescência forçada, gerando paralisia sistêmica e perda irreversível de dados em massa."
+      },
+      {
+        "id": "E",
+        "text": "É instaurada a requalificação imediata e substituição integral para sistemas em nuvem de forma ágil."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "title": "10. Digitalização vs. Estratégia Digital",
+    "text": "O paradigma moderno ensina que \"automatizar o erro não é inovar\". Qual alternativa representa uma característica central da \"Estratégia Digital\" (em oposição à mera \"Digitalização\")?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O foco é puramente na eficiência e na automação do processo existente."
+      },
+      {
+        "id": "B",
+        "text": "A ação primária consiste em migrar o que era feito no papel para a tela."
+      },
+      {
+        "id": "C",
+        "text": "Mantém-se a lógica departamental intacta, sem alterar os feudos de informação."
+      },
+      {
+        "id": "D",
+        "text": "Rompe silos institucionais e foca na jornada do usuário, em vez da burocracia do departamento."
+      },
+      {
+        "id": "E",
+        "text": "Utiliza exclusivamente IA preditiva em vez de servidores estaduais para realizar a gestão."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 11,
+    "title": "11. Governo como Plataforma (GaaP)",
+    "text": "O Governo como Plataforma estrutura-se em camadas. Aquela que utiliza APIs abertas para garantir um compartilhamento seguro entre órgãos, eliminando redundâncias para que o cidadão não entregue o mesmo documento duas vezes, é a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Camada de Infraestrutura."
+      },
+      {
+        "id": "B",
+        "text": "Camada de Dados."
+      },
+      {
+        "id": "C",
+        "text": "Camada de Serviços."
+      },
+      {
+        "id": "D",
+        "text": "Camada de Inovação."
+      },
+      {
+        "id": "E",
+        "text": "Camada de Legislação."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "title": "12. Dilemas Estratégicos na Inovação Pública",
+    "text": "Em relação ao dilema de Transparência e Auditoria, qual tecnologia gera o principal conflito por dificultar a explicação legal de um erro e se comportar como uma \"Caixa-Preta\"?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Criptografia avançada em nuvem."
+      },
+      {
+        "id": "B",
+        "text": "Dispositivos IoT."
+      },
+      {
+        "id": "C",
+        "text": "Inteligência Artificial (IA)."
+      },
+      {
+        "id": "D",
+        "text": "Digitalização de processos."
+      },
+      {
+        "id": "E",
+        "text": "Ceder dados dos cidadãos."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "title": "13. Arsenal Jurídico da Inovação (LC 400)",
+    "text": "Quando o órgão enfrenta um problema complexo que não possui solução pronta no mercado, qual instrumento permite a contratação direta para desenvolvimento de solução exclusiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sandbox Regulatório."
+      },
+      {
+        "id": "B",
+        "text": "Licitação Tradicional."
+      },
+      {
+        "id": "C",
+        "text": "Parceria Público-Privada."
+      },
+      {
+        "id": "D",
+        "text": "Encomenda Tecnológica."
+      },
+      {
+        "id": "E",
+        "text": "Diálogo Competitivo."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 14,
+    "title": "14. Testando Soluções de Forma Segura",
+    "text": "Para errar pequeno, barato e rápido, validando junto a clientes reais sob requisitos flexibilizados, qual instrumento é utilizado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diálogo Competitivo."
+      },
+      {
+        "id": "B",
+        "text": "Encomenda Tecnológica."
+      },
+      {
+        "id": "C",
+        "text": "Prototipagem Rápida."
+      },
+      {
+        "id": "D",
+        "text": "Funil de Ideias."
+      },
+      {
+        "id": "E",
+        "text": "Sandbox Regulatório."
+      }
+    ],
+    "answer": "E"
+  },
+  {
+    "id": 15,
+    "title": "15. Incentivos da LC Estadual nº 400/2018",
+    "text": "Assinale a opção que NÃO se encontra entre os incentivos previstos:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bolsas de Estímulo à Inovação."
+      },
+      {
+        "id": "B",
+        "text": "Licença não remunerada para empreender."
+      },
+      {
+        "id": "C",
+        "text": "Royalties e participação nos ganhos econômicos."
+      },
+      {
+        "id": "D",
+        "text": "Aumento salarial automático após aprovação da ideia."
+      },
+      {
+        "id": "E",
+        "text": "Financiamento institucional ou via agências de fomento."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 16,
+    "title": "16. O Funil da Inovação Pública",
+    "text": "Qual é a Etapa 02 do Funil da Inovação, imediatamente após a Geração de Ideias?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prototipagem Rápida."
+      },
+      {
+        "id": "B",
+        "text": "Triagem e Avaliação."
+      },
+      {
+        "id": "C",
+        "text": "Piloto Controlado."
+      },
+      {
+        "id": "D",
+        "text": "Mapeamento da Jornada do Usuário."
+      },
+      {
+        "id": "E",
+        "text": "Escalonamento."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "title": "17. Case: Lícita Ágil",
+    "text": "No projeto PET-GOV (SAD/PE), a criação de um MVP com planilhas e formulários antes da contratação de um software milionário reflete qual regra de ouro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A digitalização substitui a estratégia digital."
+      },
+      {
+        "id": "B",
+        "text": "A licitação tradicional deve ser o ponto de partida."
+      },
+      {
+        "id": "C",
+        "text": "Testar antes de licitar."
+      },
+      {
+        "id": "D",
+        "text": "Terceirizar a programação do MVP."
+      },
+      {
+        "id": "E",
+        "text": "Comprometer orçamentos de longo prazo."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "title": "18. Operacionalização da Ambidestria",
+    "text": "A criação de métricas e processos específicos para projetos exploratórios representa qual alavanca?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Separação Estrutural."
+      },
+      {
+        "id": "B",
+        "text": "Gestão de Portfólio."
+      },
+      {
+        "id": "C",
+        "text": "Liderança Ambidestra."
+      },
+      {
+        "id": "D",
+        "text": "Governança Diferenciada."
+      },
+      {
+        "id": "E",
+        "text": "Orquestração da Hélice."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 19,
+    "title": "19. Visão de Inovação para Consultoria Organizacional",
+    "text": "Segundo Carlomagno (2009), o que constitui inovação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uso exclusivo de tecnologias disruptivas."
+      },
+      {
+        "id": "B",
+        "text": "Expressão da criatividade sem implantação."
+      },
+      {
+        "id": "C",
+        "text": "Qualquer melhoria incremental."
+      },
+      {
+        "id": "D",
+        "text": "Desenvolvimento apenas de bens tangíveis."
+      },
+      {
+        "id": "E",
+        "text": "Transformação de novas ideias em resultados que gerem e capturem valor."
+      }
+    ],
+    "answer": "E"
+  },
+  {
+    "id": 20,
+    "title": "20. Desmistificando a Criatividade (Elaboração)",
+    "text": "Segundo Torrance e Safter, o que significa a competência criativa da Elaboração?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacidade de criar muitas ideias."
+      },
+      {
+        "id": "B",
+        "text": "Competência para desenvolver, ampliar, enriquecer e implementar ideias."
+      },
+      {
+        "id": "C",
+        "text": "Produção de respostas em diferentes domínios."
+      },
+      {
+        "id": "D",
+        "text": "Ideias que rompem com o senso comum."
+      },
+      {
+        "id": "E",
+        "text": "Interação social geradora de ideias coletivas."
+      }
+    ],
+    "answer": "B"
+  }
+];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let answered = false;
+
+        const questionCounterEl = document.getElementById('question-counter');
+        const questionTitleEl = document.getElementById('question-title');
+        const questionTextEl = document.getElementById('question-text');
+        const optionsListEl = document.getElementById('options-list');
+        const feedbackAreaEl = document.getElementById('feedback-area');
+        const actionAreaEl = document.getElementById('action-area');
+        const nextBtnEl = document.getElementById('next-btn');
+        const progressBarEl = document.getElementById('progress-bar');
+        const quizContentEl = document.getElementById('quiz-content');
+        const resultContainerEl = document.getElementById('result-container');
+        const progressContainerEl = document.getElementById('progress-container');
+
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            quizContentEl.style.display = 'block';
+            resultContainerEl.style.display = 'none';
+            progressContainerEl.style.display = 'block';
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            answered = false;
+            feedbackAreaEl.className = 'feedback-area';
+            actionAreaEl.style.display = 'none';
+            optionsListEl.innerHTML = '';
+            
+            const q = questions[currentQuestionIndex];
+            
+            // Format Progress
+            const progress = (currentQuestionIndex / questions.length) * 100;
+            progressBarEl.style.width = `${progress}%`;
+            questionCounterEl.textContent = `Questão ${currentQuestionIndex + 1} de ${questions.length}`;
+            
+            questionTitleEl.textContent = q.title;
+            questionTextEl.textContent = q.text;
+
+            q.options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerHTML = `<span class="option-letter">${opt.id}</span> <span>${opt.text}</span>`;
+                btn.onclick = () => selectOption(opt, btn);
+                optionsListEl.appendChild(btn);
+            });
+        }
+
+        function selectOption(selectedOpt, btnElement) {
+            if (answered) return;
+            answered = true;
+
+            const q = questions[currentQuestionIndex];
+            const isCorrect = selectedOpt.id === q.answer;
+
+            // Desativar todos os botões
+            const allBtns = optionsListEl.querySelectorAll('.option-btn');
+            allBtns.forEach(btn => {
+                btn.disabled = true;
+                // Destacar a resposta correta mesmo se o usuário errou
+                const letterSpan = btn.querySelector('.option-letter').textContent;
+                if (letterSpan === q.answer) {
+                    btn.classList.add('correct');
+                }
+            });
+
+            if (isCorrect) {
+                btnElement.classList.add('correct');
+                score++;
+                feedbackAreaEl.textContent = "🎉 Correto! Muito bem.";
+                feedbackAreaEl.className = 'feedback-area success';
+            } else {
+                btnElement.classList.add('incorrect');
+                feedbackAreaEl.innerHTML = `❌ Incorreto. A resposta correta era <strong>${q.answer}</strong>.`;
+                feedbackAreaEl.className = 'feedback-area error';
+            }
+
+            actionAreaEl.style.display = 'block';
+
+            if (currentQuestionIndex === questions.length - 1) {
+                nextBtnEl.textContent = 'Ver Resultado Final';
+            } else {
+                nextBtnEl.textContent = 'Próxima Questão';
+            }
+        }
+
+        nextBtnEl.addEventListener('click', () => {
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                showResult();
+            }
+        });
+
+        function showResult() {
+            quizContentEl.style.display = 'none';
+            progressContainerEl.style.display = 'none';
+            resultContainerEl.style.display = 'block';
+
+            const percentage = Math.round((score / questions.length) * 100);
+            document.getElementById('score-text').textContent = `${score} / ${questions.length}`;
+            document.getElementById('score-percentage').textContent = `${percentage}% de acertos`;
+
+            const messageEl = document.getElementById('score-message');
+            if (percentage >= 90) {
+                messageEl.textContent = 'Excelente! Você domina muito bem o assunto de Inovação e Tecnologia.';
+                triggerConfetti();
+            } else if (percentage >= 70) {
+                messageEl.textContent = 'Muito bom! Seu desempenho foi sólido.';
+                triggerConfetti();
+            } else if (percentage >= 50) {
+                messageEl.textContent = 'Bom trabalho! Mas ainda há espaço para revisar alguns conceitos.';
+            } else {
+                messageEl.textContent = 'Parece que você precisa revisar o material. Continue estudando!';
+            }
+        }
+
+        function triggerConfetti() {
+            var duration = 3 * 1000;
+            var end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 5,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 },
+                    colors: ['#4F46E5', '#10B981', '#F59E0B']
+                });
+                confetti({
+                    particleCount: 5,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 },
+                    colors: ['#4F46E5', '#10B981', '#F59E0B']
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            }());
+        }
+
+        // Iniciar quiz
+        startQuiz();
+    </script>
+</body>
+</html>
