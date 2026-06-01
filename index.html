@@ -16,6 +16,8 @@
             --text-main: #1F2937;
             --text-muted: #6B7280;
             --border: #E5E7EB;
+            --tab-active: #4F46E5;
+            --tab-inactive: #9CA3AF;
         }
 
         * {
@@ -30,19 +32,111 @@
             color: var(--text-main);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
             padding: 20px;
+        }
+
+        /* Navegação e Abas */
+        .header-container {
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .tabs-container {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            overflow-x: auto;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            background: transparent;
+            color: var(--tab-inactive);
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .tab-btn:hover {
+            background: var(--background);
+            color: var(--text-main);
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
+        }
+
+        .lessons-container {
+            display: flex;
+            gap: 12px;
+            background: #fff;
+            padding: 16px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .lesson-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--border);
+            background: #fff;
+            color: var(--text-main);
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lesson-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .lesson-btn.active {
+            border-color: var(--primary);
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Container Principal do Quiz */
+        .main-content {
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .empty-state {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
         .quiz-container {
             background-color: var(--card-bg);
-            max-width: 700px;
-            width: 100%;
             border-radius: 24px;
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             overflow: hidden;
             position: relative;
+            display: none;
         }
 
         .progress-bar-container {
@@ -252,7 +346,6 @@
             line-height: 1.5;
         }
 
-        /* Confetti Canvas */
         #confetti {
             position: absolute;
             top: 0;
@@ -284,38 +377,55 @@
 </head>
 <body>
 
-    <div class="quiz-container" id="quiz-container">
-        <canvas id="confetti"></canvas>
-        <div class="progress-bar-container" id="progress-container">
-            <div class="progress-bar" id="progress-bar"></div>
+    <div class="header-container">
+        <div class="tabs-container">
+            <button class="tab-btn" id="tab-mod1" onclick="selectModule(1)">Módulo 1</button>
+            <button class="tab-btn active" id="tab-mod2" onclick="selectModule(2)">Módulo 2</button>
         </div>
 
-        <div id="quiz-content">
-            <div class="quiz-header">
-                <div class="question-counter" id="question-counter">Questão 1 de 20</div>
-                <h2 class="question-title" id="question-title">Carregando...</h2>
-                <p class="question-text" id="question-text"></p>
-            </div>
+        <div class="lessons-container" id="lessons-container">
+            <button class="lesson-btn active" id="btn-aula12" onclick="startQuizSet('1-2')">Aulas 1-2</button>
+            <button class="lesson-btn" id="btn-aula34" onclick="startQuizSet('3-4')">Aulas 3-4</button>
+            <button class="lesson-btn" id="btn-simulado" onclick="startQuizSet('simulado')">Simulado (1-4)</button>
+        </div>
+    </div>
 
-            <div class="quiz-body">
-                <div class="options-list" id="options-list">
-                    <!-- Opções geradas via JS -->
-                </div>
-
-                <div class="feedback-area" id="feedback-area"></div>
-
-                <div class="action-area" id="action-area">
-                    <button class="next-btn" id="next-btn">Próxima Questão</button>
-                </div>
-            </div>
+    <div class="main-content">
+        <div class="empty-state" id="empty-state" style="display: none;">
+            <h2>Módulo em branco</h2>
+            <p style="color: var(--text-muted); margin-top: 10px;">Ainda não há questões disponíveis para este módulo.</p>
         </div>
 
-        <div class="result-container" id="result-container">
-            <div class="trophy-icon">🏆</div>
-            <div class="score-text" id="score-text">18/20</div>
-            <div class="score-percentage" id="score-percentage">90%</div>
-            <div class="score-message" id="score-message">Excelente trabalho! Você demonstrou um ótimo conhecimento.</div>
-            <button class="restart-btn" onclick="startQuiz()">Tentar Novamente</button>
+        <div class="quiz-container" id="quiz-container">
+            <canvas id="confetti"></canvas>
+            <div class="progress-bar-container" id="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <div id="quiz-content">
+                <div class="quiz-header">
+                    <div class="question-counter" id="question-counter">Questão 1 de 20</div>
+                    <h2 class="question-title" id="question-title">Carregando...</h2>
+                    <p class="question-text" id="question-text"></p>
+                </div>
+
+                <div class="quiz-body">
+                    <div class="options-list" id="options-list">
+                    </div>
+                    <div class="feedback-area" id="feedback-area"></div>
+                    <div class="action-area" id="action-area">
+                        <button class="next-btn" id="next-btn">Próxima Questão</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-container" id="result-container">
+                <div class="trophy-icon">🏆</div>
+                <div class="score-text" id="score-text">18/20</div>
+                <div class="score-percentage" id="score-percentage">90%</div>
+                <div class="score-message" id="score-message">Excelente trabalho!</div>
+                <button class="restart-btn" onclick="startQuizSet(currentSet)">Tentar Novamente</button>
+            </div>
         </div>
     </div>
 
@@ -323,693 +433,799 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script>
-        const questions = [
-  // TEMA 1: DESMISTIFICANDO A CRIATIVIDADE
+        const qsAulas1_2 = [
   {
     "id": 1,
     "title": "1. Desmistificando a Criatividade",
-    "text": "Segundo Torrance e Safter, a capacidade de criar muitas ideias dentro do processo de criatividade é definida como:",
+    "text": "De acordo com os autores Torrance e Safter, a aptidão para produzir respostas variadas, pertencentes a diferentes domínios, e ideias que rompem padrões funcionais é denominada:",
     "options": [
-      { "id": "A", "text": "Flexibilidade." },
-      { "id": "B", "text": "Fluência." },
-      { "id": "C", "text": "Originalidade." },
-      { "id": "D", "text": "Elaboração." },
-      { "id": "E", "text": "Camada Social." }
+      {
+        "id": "A",
+        "text": "Fluência."
+      },
+      {
+        "id": "B",
+        "text": "Flexibilidade."
+      },
+      {
+        "id": "C",
+        "text": "Originalidade."
+      },
+      {
+        "id": "D",
+        "text": "Elaboração."
+      },
+      {
+        "id": "E",
+        "text": "Camada Social."
+      }
     ],
     "answer": "B"
   },
   {
     "id": 2,
-    "title": "2. Desmistificando a Criatividade",
-    "text": "De acordo com os autores Torrance e Safter, a aptidão para produzir respostas variadas, pertencentes a diferentes domínios, e ideias que rompem padrões funcionais é denominada:",
+    "title": "2. Tipos de Inovação (Natureza)",
+    "text": "A 4ª Edição (2018) do Manual de Oslo trouxe a \"Grande Simplificação Taxonômica\", transformando 4 categorias fragmentadas em apenas 2 macrocategorias. Quais são essas duas macrocategorias atuais?",
     "options": [
-      { "id": "A", "text": "Fluência." },
-      { "id": "B", "text": "Flexibilidade." },
-      { "id": "C", "text": "Originalidade." },
-      { "id": "D", "text": "Elaboração." },
-      { "id": "E", "text": "Camada Social." }
+      {
+        "id": "A",
+        "text": "Inovação Incremental e Inovação Radical."
+      },
+      {
+        "id": "B",
+        "text": "Inovação de Serviços e Inovação Organizacional."
+      },
+      {
+        "id": "C",
+        "text": "Inovação de Produto e Inovação de Processo de Negócios."
+      },
+      {
+        "id": "D",
+        "text": "Inovação Tecnológica e Inovação de Marketing."
+      },
+      {
+        "id": "E",
+        "text": "Inovação Disruptiva e Inovação Sustentável."
+      }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 3,
-    "title": "3. Desmistificando a Criatividade",
-    "text": "Ainda sob a ótica de Torrance e Safter, as ideias que se afastam do senso comum, do óbvio, confrontando a maneira habitual de se pensar, representam a:",
+    "title": "3. Tipos de Inovação (Impacto)",
+    "text": "Ao analisar o grau de impacto, uma inovação que foca em mercados embrionários e não definidos, atuando junto a segmentos menos lucrativos ou \"não consumidores\" e que estabelece uma nova base de competição, é classificada como:",
     "options": [
-      { "id": "A", "text": "Fluência." },
-      { "id": "B", "text": "Flexibilidade." },
-      { "id": "C", "text": "Elaboração." },
-      { "id": "D", "text": "Originalidade." },
-      { "id": "E", "text": "Invenção." }
+      {
+        "id": "A",
+        "text": "Inovação de Processo."
+      },
+      {
+        "id": "B",
+        "text": "Inovação Incremental."
+      },
+      {
+        "id": "C",
+        "text": "Inovação de Melhoria."
+      },
+      {
+        "id": "D",
+        "text": "Inovação Radical (Disruptiva)."
+      },
+      {
+        "id": "E",
+        "text": "Inovação Sustentável."
+      }
     ],
     "answer": "D"
   },
   {
     "id": 4,
-    "title": "4. Desmistificando a Criatividade",
-    "text": "Segundo Torrance e Safter, o que significa a competência criativa da Elaboração?",
+    "title": "4. Matriz de Inovação e Melhoria",
+    "text": "Ao analisar a Matriz de Inovação e Melhoria apresentada em aula, um projeto que possui \"alta novidade da ideia\", mas \"baixo resultado esperado\", é enquadrado como um fracasso comercial/institucional e recebe o nome de:",
     "options": [
-      { "id": "A", "text": "Capacidade de criar muitas ideias." },
-      { "id": "B", "text": "Competência para desenvolver, ampliar, enriquecer e implementar ideias." },
-      { "id": "C", "text": "Produção de respostas em diferentes domínios." },
-      { "id": "D", "text": "Ideias que rompem com o senso comum." },
-      { "id": "E", "text": "Interação social geradora de ideias coletivas." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 5,
-    "title": "5. Desmistificando a Criatividade",
-    "text": "Além dos atributos individuais, a criatividade também depende da importância da interação e troca social. Que autor(es) destaca(m) a chamada 'Camada Social' no processo criativo?",
-    "options": [
-      { "id": "A", "text": "Torrance e Safter." },
-      { "id": "B", "text": "Amabile & Tighe." },
-      { "id": "C", "text": "Carlomagno." },
-      { "id": "D", "text": "Autores do Manual de Oslo." },
-      { "id": "E", "text": "Clayton Christensen." }
-    ],
-    "answer": "B"
-  },
-
-  // TEMA 2: TIPOS DE INOVAÇÃO (NATUREZA E IMPACTO)
-  {
-    "id": 6,
-    "title": "6. Tipos de Inovação",
-    "text": "Antes da Grande Simplificação Taxonômica da 4ª Edição do Manual de Oslo, a 3ª Edição (2005) classificava a inovação em quatro categorias distintas focadas na intenção ou estrutura organizacional. Quais eram elas?",
-    "options": [
-      { "id": "A", "text": "Produto, Processo, Organizacional e Marketing." },
-      { "id": "B", "text": "Incremental, Radical, Disruptiva e Sustentável." },
-      { "id": "C", "text": "Tangível, Intangível, Estrutural e de Serviço." },
-      { "id": "D", "text": "Invenção, Adequação, Melhoria e Inovação." },
-      { "id": "E", "text": "Tecnológica, Social, Organizacional e de Processos." }
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 7,
-    "title": "7. Tipos de Inovação",
-    "text": "A 4ª Edição (2018) do Manual de Oslo trouxe a \"Grande Simplificação Taxonômica\", transformando as 4 categorias fragmentadas em apenas 2 macrocategorias para reduzir a ambiguidade. Quais são essas duas macrocategorias atuais?",
-    "options": [
-      { "id": "A", "text": "Inovação Incremental e Inovação Radical." },
-      { "id": "B", "text": "Inovação de Serviços e Inovação Organizacional." },
-      { "id": "C", "text": "Inovação de Produto e Inovação de Processo de Negócios." },
-      { "id": "D", "text": "Inovação Tecnológica e Inovação de Marketing." },
-      { "id": "E", "text": "Inovação Disruptiva e Inovação Sustentável." }
+      {
+        "id": "A",
+        "text": "Inovação."
+      },
+      {
+        "id": "B",
+        "text": "Melhoria."
+      },
+      {
+        "id": "C",
+        "text": "Invenção."
+      },
+      {
+        "id": "D",
+        "text": "Adequação."
+      },
+      {
+        "id": "E",
+        "text": "Prototipagem."
+      }
     ],
     "answer": "C"
   },
   {
-    "id": 8,
-    "title": "8. Tipos de Inovação",
-    "text": "Em relação ao grau de impacto, uma inovação que amplia a performance nos critérios e atributos existentes, foca em mercados grandes e bem definidos, e responde à demanda dos clientes mais exigentes é classificada como:",
+    "id": 5,
+    "title": "5. Ciclos de Adoção de Inovação",
+    "text": "No ciclo de adoção de novos produtos pelos consumidores, existe um grande desafio denominado \"O Abismo\", onde os bons projetos geralmente morrem antes de virar rotina. Esse abismo separa quais grupos?",
     "options": [
-      { "id": "A", "text": "Inovação Radical." },
-      { "id": "B", "text": "Inovação Disruptiva." },
-      { "id": "C", "text": "Inovação Incremental." },
-      { "id": "D", "text": "Invenção." },
-      { "id": "E", "text": "Inovação Organizacional." }
+      {
+        "id": "A",
+        "text": "Entusiastas e Visionários."
+      },
+      {
+        "id": "B",
+        "text": "Visionários e Pragmáticos."
+      },
+      {
+        "id": "C",
+        "text": "Pragmáticos e Conservadores."
+      },
+      {
+        "id": "D",
+        "text": "Conservadores e Céticos."
+      },
+      {
+        "id": "E",
+        "text": "Entusiastas e Céticos."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "title": "6. Ambidestria Organizacional",
+    "text": "A Ambidestria Organizacional propõe que a organização atue em duas frentes: Exploitation (Gestão do presente) e Exploration (Criação do futuro). Assinale a alternativa que representa corretamente o foco do Exploitation e do Exploration, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução de custos; SLAs rígidos."
+      },
+      {
+        "id": "B",
+        "text": "Ecossistemas; Automação de processos."
+      },
+      {
+        "id": "C",
+        "text": "Inovação radical e agilidade; Eficiência e mitigação de risco."
+      },
+      {
+        "id": "D",
+        "text": "Eficiência, conformidade e mitigação de risco; Inovação radical, agilidade e adaptação."
+      },
+      {
+        "id": "E",
+        "text": "Tolerância ao erro e colaboração; Cultura hierárquica e controle."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 7,
+    "title": "7. O Fator Humano como Barreira",
+    "text": "A aula destaca que 60% a 80% dos projetos de transformação falham por resistência humana, não técnica. Quando o diagnóstico é de \"Liderança Insuficiente\" (a média gerência bloqueia a inovação), qual é o antídoto recomendado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Requalificação contínua em competências do futuro (STEM)."
+      },
+      {
+        "id": "B",
+        "text": "Comunicação focada em Propósito e Valor Público (ODS)."
+      },
+      {
+        "id": "C",
+        "text": "Novas métricas de reconhecimento para adoção de novos métodos."
+      },
+      {
+        "id": "D",
+        "text": "Criação de sandboxes regulatórios nos departamentos afetados."
+      },
+      {
+        "id": "E",
+        "text": "Envolvimento ativo e patrocínio real da alta gestão."
+      }
+    ],
+    "answer": "E"
+  },
+  {
+    "id": 8,
+    "title": "8. O Ecossistema e a Quíntupla Hélice",
+    "text": "O Estado não inova sozinho, exigindo a orquestração do Sistema Pernambucano de Inovação (SPIn) por meio da \"Hélice Quíntupla\". Assinale a alternativa que contempla todos os elementos dessa hélice:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Governo, Academia, Empresa, Startups e Capital de Risco."
+      },
+      {
+        "id": "B",
+        "text": "Governo, Judiciário, Legislativo, Mercado e Sociedade."
+      },
+      {
+        "id": "C",
+        "text": "Governo, Academia, Empresa, Sociedade e Habitats de Inovação (Meio Ambiente)."
+      },
+      {
+        "id": "D",
+        "text": "Governo, Universidade, Instituições Financeiras, Indústria e Terceiro Setor."
+      },
+      {
+        "id": "E",
+        "text": "Governo Federal, Estadual, Municipal, Privado e Sociedade."
+      }
     ],
     "answer": "C"
   },
   {
     "id": 9,
-    "title": "9. Tipos de Inovação",
-    "text": "Ao analisar o grau de impacto, uma inovação que foca em mercados embrionários e não definidos, atuando junto a segmentos menos lucrativos ou \"não consumidores\" e que estabelece uma nova base de competição para líderes existentes, é classificada como:",
+    "title": "9. Arqueologia da Obsolescência",
+    "text": "Dentro da \"Arqueologia da Inovação\", um sistema legado governamental entra em \"Crise Latente\" (Estágio 3). O que caracteriza exatamente essa fase?",
     "options": [
-      { "id": "A", "text": "Inovação de Processo." },
-      { "id": "B", "text": "Inovação Incremental." },
-      { "id": "C", "text": "Inovação de Melhoria." },
-      { "id": "D", "text": "Inovação Radical (Disruptiva)." },
-      { "id": "E", "text": "Inovação Sustentável." }
+      {
+        "id": "A",
+        "text": "O sistema atende perfeitamente às demandas e a manutenção parece desperdício."
+      },
+      {
+        "id": "B",
+        "text": "Surgem incompatibilidades e talentos especialistas começam a se aposentar silenciosamente."
+      },
+      {
+        "id": "C",
+        "text": "O sistema vira um gargalo, ameaça o compliance e trava inovações adjacentes; a migração já é complexa."
+      },
+      {
+        "id": "D",
+        "text": "Ocorre obsolescência forçada, gerando paralisia sistêmica e perda irreversível de dados em massa."
+      },
+      {
+        "id": "E",
+        "text": "É instaurada a requalificação imediata e substituição integral para sistemas em nuvem de forma ágil."
+      }
     ],
-    "answer": "D"
+    "answer": "C"
   },
-
-  // TEMA 3: MATRIZ DE INOVAÇÃO E MELHORIA
   {
     "id": 10,
-    "title": "10. Matriz de Inovação e Melhoria",
-    "text": "Na Matriz de Inovação e Melhoria, os projetos voltados para a 'equiparação', que seguem a liderança de mercado ('seguidores') e possuem menor incerteza, sendo caracterizados por baixa novidade da ideia e baixo resultado esperado, são chamados de:",
+    "title": "10. Digitalização vs. Estratégia Digital",
+    "text": "O paradigma moderno ensina que \"automatizar o erro não é inovar\". Qual alternativa representa uma característica central da \"Estratégia Digital\" (em oposição à mera \"Digitalização\")?",
     "options": [
-      { "id": "A", "text": "Inovação." },
-      { "id": "B", "text": "Melhoria." },
-      { "id": "C", "text": "Invenção." },
-      { "id": "D", "text": "Adequação." },
-      { "id": "E", "text": "Prototipagem." }
+      {
+        "id": "A",
+        "text": "O foco é puramente na eficiência e na automação do processo existente."
+      },
+      {
+        "id": "B",
+        "text": "A ação primária consiste em migrar o que era feito no papel para a tela."
+      },
+      {
+        "id": "C",
+        "text": "Mantém-se a lógica departamental intacta, sem alterar os feudos de informação."
+      },
+      {
+        "id": "D",
+        "text": "Rompe silos institucionais e foca na jornada do usuário, em vez da burocracia do departamento."
+      },
+      {
+        "id": "E",
+        "text": "Utiliza exclusivamente IA preditiva em vez de servidores estaduais para realizar a gestão."
+      }
     ],
     "answer": "D"
   },
   {
     "id": 11,
-    "title": "11. Matriz de Inovação e Melhoria",
-    "text": "De acordo com a Matriz de Inovação e Melhoria, os projetos que têm foco no 'hoje', possuem caráter incremental, baixa incerteza e buscam médio ou alto resultado esperado sem apresentar alta novidade, enquadram-se como:",
+    "title": "11. Governo como Plataforma (GaaP)",
+    "text": "O Governo como Plataforma estrutura-se em camadas. Aquela que utiliza APIs abertas para garantir um compartilhamento seguro entre órgãos, eliminando redundâncias para que o cidadão não entregue o mesmo documento duas vezes, é a:",
     "options": [
-      { "id": "A", "text": "Invenção." },
-      { "id": "B", "text": "Adequação." },
-      { "id": "C", "text": "Melhoria." },
-      { "id": "D", "text": "Inovação." },
-      { "id": "E", "text": "Sustentação." }
+      {
+        "id": "A",
+        "text": "Camada de Infraestrutura."
+      },
+      {
+        "id": "B",
+        "text": "Camada de Dados."
+      },
+      {
+        "id": "C",
+        "text": "Camada de Serviços."
+      },
+      {
+        "id": "D",
+        "text": "Camada de Inovação."
+      },
+      {
+        "id": "E",
+        "text": "Camada de Legislação."
+      }
     ],
-    "answer": "C"
+    "answer": "B"
   },
   {
     "id": 12,
-    "title": "12. Matriz de Inovação e Melhoria",
-    "text": "Ao analisar a Matriz de Inovação e Melhoria apresentada em aula, um projeto que possui 'alta novidade da ideia', mas 'baixo resultado esperado', é enquadrado como um fracasso comercial/institucional e recebe o nome de:",
+    "title": "12. Dilemas Estratégicos na Inovação Pública",
+    "text": "Em relação ao dilema de Transparência e Auditoria, qual tecnologia gera o principal conflito por dificultar a explicação legal de um erro e se comportar como uma \"Caixa-Preta\"?",
     "options": [
-      { "id": "A", "text": "Inovação." },
-      { "id": "B", "text": "Melhoria." },
-      { "id": "C", "text": "Invenção." },
-      { "id": "D", "text": "Adequação." },
-      { "id": "E", "text": "Prototipagem." }
+      {
+        "id": "A",
+        "text": "Criptografia avançada em nuvem."
+      },
+      {
+        "id": "B",
+        "text": "Dispositivos IoT."
+      },
+      {
+        "id": "C",
+        "text": "Inteligência Artificial (IA)."
+      },
+      {
+        "id": "D",
+        "text": "Digitalização de processos."
+      },
+      {
+        "id": "E",
+        "text": "Ceder dados dos cidadãos."
+      }
     ],
     "answer": "C"
   },
   {
     "id": 13,
-    "title": "13. Matriz de Inovação e Melhoria",
-    "text": "Na Matriz de Inovação e Melhoria, os projetos que possuem foco no 'amanhã', maior incerteza e visam maiores ganhos futuros, apresentando média a alta novidade e gerando de médio a alto resultado esperado, são classificados estritamente como:",
+    "title": "13. Arsenal Jurídico da Inovação (LC 400)",
+    "text": "Quando o órgão enfrenta um problema complexo que não possui solução pronta no mercado, qual instrumento permite a contratação direta para desenvolvimento de solução exclusiva?",
     "options": [
-      { "id": "A", "text": "Adequação." },
-      { "id": "B", "text": "Melhoria Contínua." },
-      { "id": "C", "text": "Invenção." },
-      { "id": "D", "text": "Inovação." },
-      { "id": "E", "text": "Digitalização." }
+      {
+        "id": "A",
+        "text": "Sandbox Regulatório."
+      },
+      {
+        "id": "B",
+        "text": "Licitação Tradicional."
+      },
+      {
+        "id": "C",
+        "text": "Parceria Público-Privada."
+      },
+      {
+        "id": "D",
+        "text": "Encomenda Tecnológica."
+      },
+      {
+        "id": "E",
+        "text": "Diálogo Competitivo."
+      }
     ],
     "answer": "D"
   },
-
-  // TEMA 4: CICLO DE ADOÇÃO DE INOVAÇÕES
   {
     "id": 14,
-    "title": "14. Ciclos de Adoção de Inovação",
-    "text": "No Ciclo de Adoção de Inovações, qual grupo representa a pequena parcela inicial (cerca de 16%) que adota rapidamente novos produtos e apoia projetos como Gestão por Resultados e automações logo no início?",
+    "title": "14. Testando Soluções de Forma Segura",
+    "text": "Para errar pequeno, barato e rápido, validando junto a clientes reais sob requisitos flexibilizados, qual instrumento é utilizado?",
     "options": [
-      { "id": "A", "text": "Pragmáticos e Conservadores." },
-      { "id": "B", "text": "Entusiastas e Visionários." },
-      { "id": "C", "text": "Céticos e Retardatários." },
-      { "id": "D", "text": "A Maioria Inicial." },
-      { "id": "E", "text": "A Maioria Tardia." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 15,
-    "title": "15. Ciclos de Adoção de Inovação",
-    "text": "No ciclo de adoção de novos produtos pelos consumidores, existe um grande desafio denominado \"O Abismo\", onde os bons projetos geralmente morrem antes de virar rotina. Esse abismo separa quais grupos?",
-    "options": [
-      { "id": "A", "text": "Entusiastas e Visionários." },
-      { "id": "B", "text": "Visionários e Pragmáticos." },
-      { "id": "C", "text": "Pragmáticos e Conservadores." },
-      { "id": "D", "text": "Conservadores e Céticos." },
-      { "id": "E", "text": "Entusiastas e Céticos." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 16,
-    "title": "16. Ciclos de Adoção de Inovação",
-    "text": "Após o 'Abismo' no Ciclo de Adoção, encontra-se o mercado principal (cerca de 68%). Esse grupo não compra apenas 'ideias legais', mas soluções funcionais que facilitem o trabalho diário sem dor de cabeça. Estamos falando dos:",
-    "options": [
-      { "id": "A", "text": "Visionários e Entusiastas." },
-      { "id": "B", "text": "Céticos e Retardatários." },
-      { "id": "C", "text": "Criadores e Inventores." },
-      { "id": "D", "text": "Entusiastas e Pragmáticos." },
-      { "id": "E", "text": "Pragmáticos e Conservadores." }
+      {
+        "id": "A",
+        "text": "Diálogo Competitivo."
+      },
+      {
+        "id": "B",
+        "text": "Encomenda Tecnológica."
+      },
+      {
+        "id": "C",
+        "text": "Prototipagem Rápida."
+      },
+      {
+        "id": "D",
+        "text": "Funil de Ideias."
+      },
+      {
+        "id": "E",
+        "text": "Sandbox Regulatório."
+      }
     ],
     "answer": "E"
   },
   {
-    "id": 17,
-    "title": "17. Ciclos de Adoção de Inovação",
-    "text": "No final do Ciclo de Adoção de Novos Produtos pelos Consumidores, encontram-se os retardatários, que correspondem a cerca de 16% do público e são extremamente resistentes a mudanças. Eles são conhecidos como:",
+    "id": 15,
+    "title": "15. Incentivos da LC Estadual nº 400/2018",
+    "text": "Assinale a opção que NÃO se encontra entre os incentivos previstos:",
     "options": [
-      { "id": "A", "text": "Céticos." },
-      { "id": "B", "text": "Conservadores." },
-      { "id": "C", "text": "Pragmáticos." },
-      { "id": "D", "text": "Visionários." },
-      { "id": "E", "text": "Entusiastas." }
+      {
+        "id": "A",
+        "text": "Bolsas de Estímulo à Inovação."
+      },
+      {
+        "id": "B",
+        "text": "Licença não remunerada para empreender."
+      },
+      {
+        "id": "C",
+        "text": "Royalties e participação nos ganhos econômicos."
+      },
+      {
+        "id": "D",
+        "text": "Aumento salarial automático após aprovação da ideia."
+      },
+      {
+        "id": "E",
+        "text": "Financiamento institucional ou via agências de fomento."
+      }
     ],
-    "answer": "A"
+    "answer": "D"
   },
-
-  // TEMA 5: AMBIDESTRIA ORGANIZACIONAL E FATOR HUMANO
+  {
+    "id": 16,
+    "title": "16. O Funil da Inovação Pública",
+    "text": "Qual é a Etapa 02 do Funil da Inovação, imediatamente após a Geração de Ideias?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prototipagem Rápida."
+      },
+      {
+        "id": "B",
+        "text": "Triagem e Avaliação."
+      },
+      {
+        "id": "C",
+        "text": "Piloto Controlado."
+      },
+      {
+        "id": "D",
+        "text": "Mapeamento da Jornada do Usuário."
+      },
+      {
+        "id": "E",
+        "text": "Escalonamento."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "title": "17. Case: Lícita Ágil",
+    "text": "No projeto PET-GOV (SAD/PE), a criação de um MVP com planilhas e formulários antes da contratação de um software milionário reflete qual regra de ouro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A digitalização substitui a estratégia digital."
+      },
+      {
+        "id": "B",
+        "text": "A licitação tradicional deve ser o ponto de partida."
+      },
+      {
+        "id": "C",
+        "text": "Testar antes de licitar."
+      },
+      {
+        "id": "D",
+        "text": "Terceirizar a programação do MVP."
+      },
+      {
+        "id": "E",
+        "text": "Comprometer orçamentos de longo prazo."
+      }
+    ],
+    "answer": "C"
+  },
   {
     "id": 18,
-    "title": "18. Ambidestria Organizacional",
-    "text": "A Ambidestria Organizacional propõe que a organização atue em duas frentes: Exploitation (Gestão do presente) e Exploration (Criação do futuro). Assinale a alternativa que representa corretamente o foco e a cultura do Exploitation e do Exploration, respectivamente:",
+    "title": "18. Operacionalização da Ambidestria",
+    "text": "A criação de métricas e processos específicos para projetos exploratórios representa qual alavanca?",
     "options": [
-      { "id": "A", "text": "Redução de custos; SLAs rígidos." },
-      { "id": "B", "text": "Ecossistemas e design ágil; Automação de processos BPM." },
-      { "id": "C", "text": "Inovação radical e agilidade; Eficiência e mitigação de risco." },
-      { "id": "D", "text": "Eficiência, conformidade e mitigação de risco; Inovação radical, agilidade e adaptação." },
-      { "id": "E", "text": "Tolerância ao erro e colaboração; Cultura hierárquica e controle." }
+      {
+        "id": "A",
+        "text": "Separação Estrutural."
+      },
+      {
+        "id": "B",
+        "text": "Gestão de Portfólio."
+      },
+      {
+        "id": "C",
+        "text": "Liderança Ambidestra."
+      },
+      {
+        "id": "D",
+        "text": "Governança Diferenciada."
+      },
+      {
+        "id": "E",
+        "text": "Orquestração da Hélice."
+      }
     ],
     "answer": "D"
   },
   {
     "id": 19,
-    "title": "19. Alavancas da Ambidestria",
-    "text": "A operacionalização da Ambidestria Organizacional possui 4 alavancas. Aquela que propõe a criação de satélites dedicados exclusivamente à inovação, blindados da pressão do core operacional da máquina pública, é a:",
+    "title": "19. Visão de Inovação para Consultoria Organizacional",
+    "text": "Segundo Carlomagno (2009), o que constitui inovação?",
     "options": [
-      { "id": "A", "text": "Gestão de Portfólio." },
-      { "id": "B", "text": "Liderança Ambidestra." },
-      { "id": "C", "text": "Separação Estrutural." },
-      { "id": "D", "text": "Governança Diferenciada." },
-      { "id": "E", "text": "Estratégia Digital." }
+      {
+        "id": "A",
+        "text": "Uso exclusivo de tecnologias disruptivas."
+      },
+      {
+        "id": "B",
+        "text": "Expressão da criatividade sem implantação."
+      },
+      {
+        "id": "C",
+        "text": "Qualquer melhoria incremental."
+      },
+      {
+        "id": "D",
+        "text": "Desenvolvimento apenas de bens tangíveis."
+      },
+      {
+        "id": "E",
+        "text": "Transformação de novas ideias em resultados que gerem e capturem valor."
+      }
     ],
-    "answer": "C"
+    "answer": "E"
   },
   {
     "id": 20,
-    "title": "20. Alavancas da Ambidestria",
-    "text": "A criação de processos de aprovação e métricas de sucesso distintas e específicas para projetos exploratórios representa qual alavanca da Ambidestria?",
+    "title": "20. Desmistificando a Criatividade (Elaboração)",
+    "text": "Segundo Torrance e Safter, o que significa a competência criativa da Elaboração?",
     "options": [
-      { "id": "A", "text": "Separação Estrutural." },
-      { "id": "B", "text": "Gestão de Portfólio." },
-      { "id": "C", "text": "Liderança Ambidestra." },
-      { "id": "D", "text": "Governança Diferenciada." },
-      { "id": "E", "text": "Orquestração da Hélice." }
+      {
+        "id": "A",
+        "text": "Capacidade de criar muitas ideias."
+      },
+      {
+        "id": "B",
+        "text": "Competência para desenvolver, ampliar, enriquecer e implementar ideias."
+      },
+      {
+        "id": "C",
+        "text": "Produção de respostas em diferentes domínios."
+      },
+      {
+        "id": "D",
+        "text": "Ideias que rompem com o senso comum."
+      },
+      {
+        "id": "E",
+        "text": "Interação social geradora de ideias coletivas."
+      }
     ],
-    "answer": "D"
-  },
+    "answer": "B"
+  }
+];
+        const qsAulas3_4 = [
+  // TEMA 1: CICLO ORÇAMENTÁRIO (PPA E LDO)
   {
-    "id": 21,
-    "title": "21. Alavancas da Ambidestria",
-    "text": "A capacidade dos gestores de alternar conscientemente entre o controle estrito (para a operação cotidiana) e a experimentação livre (para a inovação) refere-se a qual alavanca da Ambidestria Organizacional?",
+    "id": 1,
+    "title": "1. Ciclo Orçamentário",
+    "text": "O Plano Plurianual (PPA) é um instrumento constitucional de planejamento de médio prazo. Sua vigência de 4 anos é desenhada estrategicamente para garantir continuidade entre governos. Assinale a alternativa que indica o período correto de sua vigência:",
     "options": [
-      { "id": "A", "text": "Governança Diferenciada." },
-      { "id": "B", "text": "Liderança Ambidestra." },
-      { "id": "C", "text": "Gestão de Portfólio." },
-      { "id": "D", "text": "Separação Estrutural." },
-      { "id": "E", "text": "Estratégia de Transição." }
+      { "id": "A", "text": "Inicia no 1º ano do mandato e encerra no 4º ano do mesmo mandato." },
+      { "id": "B", "text": "Inicia no 2º ano de um mandato presidencial e encerra no 1º ano do mandato seguinte." },
+      { "id": "C", "text": "Inicia no 1º ano de um mandato e encerra no 2º ano do mandato seguinte." },
+      { "id": "D", "text": "Inicia no 3º ano do mandato e encerra no 3º ano do mandato seguinte." },
+      { "id": "E", "text": "Tem vigência indeterminada, sendo revisado anualmente pela LOA." }
     ],
     "answer": "B"
   },
   {
-    "id": 22,
-    "title": "22. Alavancas da Ambidestria",
-    "text": "A alavanca da Ambidestria Organizacional focada no balanceamento estratégico entre a manutenção de sistemas legados de TIC e o investimento em inovação disruptiva é a:",
+    "id": 2,
+    "title": "2. Ciclo Orçamentário",
+    "text": "A Lei de Diretrizes Orçamentárias (LDO) desempenha um papel fundamental no ciclo de planejamento governamental. Sem ela, o PPA permaneceria como um documento de intenções desconectado da execução. Qual é a principal função da LDO?",
     "options": [
-      { "id": "A", "text": "Gestão de Portfólio." },
-      { "id": "B", "text": "Separação Estrutural." },
-      { "id": "C", "text": "Governança Diferenciada." },
-      { "id": "D", "text": "Liderança Ambidestra." },
-      { "id": "E", "text": "Inovação Aberta." }
+      { "id": "A", "text": "Autorizar as receitas e fixar as despesas detalhadas para a execução anual." },
+      { "id": "B", "text": "Definir os objetivos estratégicos de médio prazo e os programas estruturantes para 4 anos." },
+      { "id": "C", "text": "Fazer a ponte entre o PPA e a LOA, traduzindo as prioridades do PPA para o exercício seguinte e definindo metas fiscais." },
+      { "id": "D", "text": "Avaliar o impacto de longo prazo (Outcome) das políticas públicas geradas pelo Estado." },
+      { "id": "E", "text": "Substituir a LOA em casos de déficit orçamentário não previsto." }
+    ],
+    "answer": "C"
+  },
+
+  // TEMA 2: PLANEJAMENTO ESTRATÉGICO SITUACIONAL (MATUS)
+  {
+    "id": 3,
+    "title": "3. Planejamento Estratégico Situacional",
+    "text": "Na teoria de Carlos Matus, um plano viável exige equilíbrio entre três dimensões. A dimensão que representa o conteúdo propositivo do plano, ou seja, 'o que o governo quer fazer', é denominada:",
+    "options": [
+      { "id": "A", "text": "Capacidade de Governo." },
+      { "id": "B", "text": "Governabilidade." },
+      { "id": "C", "text": "Viabilidade Política." },
+      { "id": "D", "text": "Projeto de Governo." },
+      { "id": "E", "text": "Gestão por Resultados." }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 4,
+    "title": "4. Planejamento Estratégico Situacional",
+    "text": "Ainda segundo Matus, a dimensão que define 'o como', referindo-se aos métodos, habilidades, experiências e ao acervo técnico-institucional do aparato estatal para executar o plano, é a:",
+    "options": [
+      { "id": "A", "text": "Capacidade de Governo." },
+      { "id": "B", "text": "Governabilidade." },
+      { "id": "C", "text": "Projeto de Governo." },
+      { "id": "D", "text": "Estrutura Orçamentária." },
+      { "id": "E", "text": "Linha de Base." }
     ],
     "answer": "A"
   },
   {
-    "id": 23,
-    "title": "23. O Fator Humano como Barreira",
-    "text": "Como barreira humana à transformação, quando a equipe não entende o 'porquê' da mudança, diagnostica-se a 'Ausência de Visão'. Qual é o antídoto recomendado na gestão pública para esse problema?",
+    "id": 5,
+    "title": "5. Planejamento Estratégico Situacional",
+    "text": "Para Matus, é essencial não confundir o acervo técnico com o contexto político. A dimensão que define a liberdade de ação do gestor e seu grau de controle sobre as variáveis do sistema é conhecida como:",
     "options": [
-      { "id": "A", "text": "Envolvimento ativo e patrocínio da alta gestão." },
-      { "id": "B", "text": "Requalificação em habilidades STEM." },
-      { "id": "C", "text": "Novas métricas de reconhecimento financeiro." },
-      { "id": "D", "text": "Comunicação focada em Propósito e Valor Público (ODS)." },
-      { "id": "E", "text": "Implantação forçada via portaria estadual." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 24,
-    "title": "24. O Fator Humano como Barreira",
-    "text": "A aula destaca que a transformação falha muitas vezes por resistência humana. Quando o diagnóstico é de \"Liderança Insuficiente\" (a média gerência bloqueia a inovação), qual é o antídoto recomendado?",
-    "options": [
-      { "id": "A", "text": "Requalificação contínua em competências do futuro (STEM)." },
-      { "id": "B", "text": "Comunicação focada em Propósito e Valor Público (ODS)." },
-      { "id": "C", "text": "Novas métricas de reconhecimento para adoção de novos métodos." },
-      { "id": "D", "text": "Criação de sandboxes regulatórios nos departamentos afetados." },
-      { "id": "E", "text": "Envolvimento ativo e patrocínio real da alta gestão." }
-    ],
-    "answer": "E"
-  },
-  {
-    "id": 25,
-    "title": "25. O Fator Humano como Barreira",
-    "text": "Quando a organização adota novos sistemas, mas mantém as habilidades antigas da equipe, ocorre a barreira de 'Capacitação Inadequada'. O antídoto para contornar essa falha é:",
-    "options": [
-      { "id": "A", "text": "Criação de novos comitês de inovação isolados." },
-      { "id": "B", "text": "Comunicação exclusivamente focada no usuário cidadão." },
-      { "id": "C", "text": "Requalificação contínua em competências do futuro (STEM)." },
-      { "id": "D", "text": "Participação integral em lucros e royalties de software." },
-      { "id": "E", "text": "Demissão da equipe antiga e contratação de consultorias." }
+      { "id": "A", "text": "Capacidade de Governo." },
+      { "id": "B", "text": "Projeto de Governo." },
+      { "id": "C", "text": "Governabilidade." },
+      { "id": "D", "text": "Efeito Halo." },
+      { "id": "E", "text": "Pacto pela Vida." }
     ],
     "answer": "C"
-  },
-  {
-    "id": 26,
-    "title": "26. O Fator Humano como Barreira",
-    "text": "Se o risco não é recompensado na instituição e os profissionais preferem a zona de conforto, cria-se a barreira dos 'Incentivos Desalinhados'. A solução apontada para esse fator humano na inovação pública é:",
-    "options": [
-      { "id": "A", "text": "Novas métricas de reconhecimento para adoção de novos métodos." },
-      { "id": "B", "text": "Capacitação técnica focada puramente em linguagens de programação." },
-      { "id": "C", "text": "Terceirização integral do setor de inovação." },
-      { "id": "D", "text": "Criação de comitês puramente deliberativos." },
-      { "id": "E", "text": "Blindagem da equipe de atendimento." }
-    ],
-    "answer": "A"
   },
 
-  // TEMA 6: ECOSSISTEMA, ARQUEOLOGIA E DIGITALIZAÇÃO
+  // TEMA 3: INDICADORES DE DESEMPENHO
   {
-    "id": 27,
-    "title": "27. O Ecossistema e a Quíntupla Hélice",
-    "text": "O Estado não inova sozinho, exigindo a orquestração do Sistema Pernambucano de Inovação (SPIn) por meio da \"Hélice Quíntupla\". Assinale a alternativa que contempla todos os elementos dessa hélice:",
+    "id": 6,
+    "title": "6. Indicadores de Desempenho",
+    "text": "Em um sistema de medição no setor público, o indicador que foca na eficiência da execução de uma atividade (como, por exemplo, o % de processos concluídos no prazo) classifica-se como um indicador de:",
     "options": [
-      { "id": "A", "text": "Governo, Academia, Empresa, Startups e Capital de Risco." },
-      { "id": "B", "text": "Governo, Judiciário, Legislativo, Mercado e Sociedade." },
-      { "id": "C", "text": "Governo, Academia, Empresa, Sociedade e Habitats de Inovação." },
-      { "id": "D", "text": "Governo, Universidade, Instituições Financeiras, Indústria e Terceiro Setor." },
-      { "id": "E", "text": "Governo Federal, Estadual, Municipal, Privado e Sociedade." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 28,
-    "title": "28. Ecossistema e Inovação",
-    "text": "A premissa do SPIn de que 'não precisamos criar todas as soluções internamente, mas sim atrair o conhecimento que já existe fora do Estado' (como Startups e Academia) descreve a base do que chamamos de:",
-    "options": [
-      { "id": "A", "text": "Ambidestria Organizacional." },
-      { "id": "B", "text": "Inovação Incremental." },
-      { "id": "C", "text": "Inovação Fechada." },
-      { "id": "D", "text": "Inovação Aberta." },
-      { "id": "E", "text": "Prototipagem Interna." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 29,
-    "title": "29. Arqueologia da Obsolescência",
-    "text": "Na 'Arqueologia da Inovação' (sistemas legados), o Estágio 1 ocorre quando o sistema atende bem às demandas atuais, a manutenção é apenas rotineira e qualquer investimento em substituição parece um desperdício. Esse estágio é conhecido como:",
-    "options": [
-      { "id": "A", "text": "Colapso." },
-      { "id": "B", "text": "Sinais de Desgaste." },
-      { "id": "C", "text": "Crise Latente." },
-      { "id": "D", "text": "Funcionalidade Plena." },
-      { "id": "E", "text": "Absorção Tecnológica." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 30,
-    "title": "30. Arqueologia da Obsolescência",
-    "text": "Quando um sistema legado de TIC começa a apresentar emergência de incompatibilidades, profissionais especialistas começam a se aposentar e os custos de manutenção sobem silenciosamente, ele entra no Estágio 2, chamado de:",
-    "options": [
-      { "id": "A", "text": "Crise Latente." },
-      { "id": "B", "text": "Funcionalidade Plena." },
-      { "id": "C", "text": "Sinais de Desgaste." },
-      { "id": "D", "text": "Colapso." },
-      { "id": "E", "text": "Obsolescência Forçada." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 31,
-    "title": "31. Arqueologia da Obsolescência",
-    "text": "Dentro da \"Arqueologia da Inovação\", um sistema legado governamental entra em \"Crise Latente\" (Estágio 3). O que caracteriza exatamente essa fase?",
-    "options": [
-      { "id": "A", "text": "O sistema atende perfeitamente às demandas e a manutenção parece desperdício." },
-      { "id": "B", "text": "Surgem incompatibilidades e talentos especialistas se aposentam silenciosamente." },
-      { "id": "C", "text": "O sistema vira um gargalo crítico, ameaça o compliance e trava inovações adjacentes; a migração já é complexa demais." },
-      { "id": "D", "text": "Ocorre obsolescência forçada, gerando paralisia sistêmica e perda de dados." },
-      { "id": "E", "text": "É instaurada a substituição imediata para sistemas em nuvem de forma ágil." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 32,
-    "title": "32. Arqueologia da Obsolescência",
-    "text": "O estágio final da obsolescência de um sistema legado (Estágio 4) ocorre quando a migração passa a ser emergencial sob pressão, com os custos multiplicados e um sério risco de perda de dados e paralisação. Ele é denominado:",
-    "options": [
-      { "id": "A", "text": "Crise Latente." },
-      { "id": "B", "text": "Funcionalidade Plena." },
-      { "id": "C", "text": "Sinais de Desgaste." },
-      { "id": "D", "text": "Colapso." },
-      { "id": "E", "text": "Ambidestria Regressiva." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 33,
-    "title": "33. Digitalização vs. Estratégia Digital",
-    "text": "Muitas vezes confundida com a verdadeira transformação, a abordagem que foca puramente na eficiência do que já existe, limitando-se a migrar o processo do papel para a tela e mantendo a lógica de silos departamentais intacta, é chamada de:",
-    "options": [
-      { "id": "A", "text": "Estratégia Digital." },
-      { "id": "B", "text": "Ambidestria Organizacional." },
-      { "id": "C", "text": "Inovação Disruptiva." },
-      { "id": "D", "text": "Digitalização." },
-      { "id": "E", "text": "Governo como Plataforma." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 34,
-    "title": "34. Digitalização vs. Estratégia Digital",
-    "text": "O paradigma moderno ensina que \"automatizar o erro não é inovar\". Qual alternativa representa uma característica central da \"Estratégia Digital\" (em oposição à mera \"Digitalização\")?",
-    "options": [
-      { "id": "A", "text": "O foco é puramente na eficiência e na automação técnica do processo existente." },
-      { "id": "B", "text": "A ação primária consiste em comprar equipamentos novos para migrar processos." },
-      { "id": "C", "text": "Mantém-se a lógica departamental intacta para não perder o controle orçamentário." },
-      { "id": "D", "text": "Rompe silos institucionais e repensa o modelo de entrega com foco na jornada do usuário." },
-      { "id": "E", "text": "Utiliza exclusivamente IA preditiva fechada em vez de servidores estaduais." }
-    ],
-    "answer": "D"
-  },
-
-  // TEMA 7: GaaP E DILEMAS ESTRATÉGICOS
-  {
-    "id": 35,
-    "title": "35. Governo como Plataforma",
-    "text": "No modelo de Governo como Plataforma (GaaP), a camada localizada no topo, que funciona como um ambiente aberto e dinâmico para experimentação e cocriação com cidadãos, academia e startups, é chamada de:",
-    "options": [
-      { "id": "A", "text": "Camada de Infraestrutura." },
-      { "id": "B", "text": "Camada de Dados." },
-      { "id": "C", "text": "Camada de Serviços." },
-      { "id": "D", "text": "Camada de Operações Legadas." },
-      { "id": "E", "text": "Camada de Inovação." }
-    ],
-    "answer": "E"
-  },
-  {
-    "id": 36,
-    "title": "36. Governo como Plataforma",
-    "text": "O Governo como Plataforma (GaaP) estrutura-se para eliminar feudos. A camada que utiliza APIs abertas para garantir o compartilhamento seguro de informações entre órgãos, garantindo que o cidadão não entregue o mesmo documento duas vezes, é a:",
-    "options": [
-      { "id": "A", "text": "Camada de Infraestrutura de Hardware." },
-      { "id": "B", "text": "Camada de Dados." },
-      { "id": "C", "text": "Camada de Serviços." },
-      { "id": "D", "text": "Camada de Inovação Social." },
-      { "id": "E", "text": "Camada de Legislação e Compliance." }
+      { "id": "A", "text": "Input (insumo)." },
+      { "id": "B", "text": "Throughput (processo)." },
+      { "id": "C", "text": "Output (produto)." },
+      { "id": "D", "text": "Outcome (resultado)." },
+      { "id": "E", "text": "Impact (impacto)." }
     ],
     "answer": "B"
   },
   {
-    "id": 37,
-    "title": "37. Governo como Plataforma",
-    "text": "Ainda sob o conceito do Governo como Plataforma (GaaP), o espaço onde se encontram os componentes modulares e reutilizáveis do Estado (como login único e central de notificações), orquestrados para criar novas soluções sem precisar 'reinventar a roda', é a:",
+    "id": 7,
+    "title": "7. Indicadores de Desempenho",
+    "text": "A gestão por resultados distingue claramente o que se entrega do que se transforma na sociedade. A entrega direta e contável da administração pública (como o 'Nº de consultas médicas realizadas' ou 'Nº de leitos criados') é medida por um indicador de:",
     "options": [
-      { "id": "A", "text": "Camada de Dados Abertos." },
-      { "id": "B", "text": "Camada de Hardware de Rede." },
-      { "id": "C", "text": "Camada de Serviços." },
-      { "id": "D", "text": "Camada de Inovação Disruptiva." },
-      { "id": "E", "text": "Camada de Segurança Cidadã." }
+      { "id": "A", "text": "Input (insumo)." },
+      { "id": "B", "text": "Throughput (processo)." },
+      { "id": "C", "text": "Output (produto)." },
+      { "id": "D", "text": "Outcome (resultado)." },
+      { "id": "E", "text": "Impact (impacto)." }
     ],
     "answer": "C"
   },
   {
-    "id": 38,
-    "title": "38. Dilemas Estratégicos",
-    "text": "Nos dilemas estratégicos enfrentados pelo gestor público, existe uma forte tensão entre a busca por 'Eficiência Preditiva' baseada em Big Data e a necessidade de proteção das informações. Esse dilema opõe diretamente Big Data à:",
+    "id": 8,
+    "title": "8. Indicadores de Desempenho",
+    "text": "Ampliar a capacidade instalada (construir hospitais) não garante automaticamente a melhora na saúde da população. O indicador que mede a mudança real da condição social produzida pela intervenção (como a 'Taxa de mortalidade infantil') é o de:",
     "options": [
-      { "id": "A", "text": "Transparência de Código." },
-      { "id": "B", "text": "Responsabilidade e Auditoria de Sistemas." },
-      { "id": "C", "text": "Privacidade Cidadã (regulada pela LGPD)." },
-      { "id": "D", "text": "Soberania Tecnológica Nacional." },
-      { "id": "E", "text": "Inclusão Digital das populações vulneráveis." }
+      { "id": "A", "text": "Input (insumo)." },
+      { "id": "B", "text": "Throughput (processo)." },
+      { "id": "C", "text": "Output (produto)." },
+      { "id": "D", "text": "Outcome (resultado)." },
+      { "id": "E", "text": "Baseline." }
     ],
-    "answer": "C"
-  },
-  {
-    "id": 39,
-    "title": "39. Dilemas Estratégicos",
-    "text": "Em relação ao dilema da Transparência e Auditoria, qual tecnologia ou sistema gera o principal conflito ético/legal por dificultar a explicação de decisões algorítmicas, comportando-se como uma \"Caixa-Preta\"?",
-    "options": [
-      { "id": "A", "text": "Criptografia avançada de bancos de dados legados." },
-      { "id": "B", "text": "Dispositivos de Internet das Coisas (IoT)." },
-      { "id": "C", "text": "Sistemas baseados em Inteligência Artificial (IA)." },
-      { "id": "D", "text": "Digitalização em massa de processos de RH." },
-      { "id": "E", "text": "Cessão irrestrita de dados via APIs fechadas." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 40,
-    "title": "40. Dilemas Estratégicos",
-    "text": "Garantir que a dependência excessiva de alta tecnologia e a transformação digital não acabem criando barreiras severas de acesso aos serviços estatais para as populações mais vulneráveis (como idosos e pessoas sem internet) reflete o dilema da:",
-    "options": [
-      { "id": "A", "text": "Soberania e Inclusão." },
-      { "id": "B", "text": "Transparência e Auditoria." },
-      { "id": "C", "text": "Inteligência Artificial vs Automação Humana." },
-      { "id": "D", "text": "Proteção de Dados Pessoais (LGPD)." },
-      { "id": "E", "text": "Ambidestria Estrutural e de Sistemas." }
-    ],
-    "answer": "A"
+    "answer": "D"
   },
 
-  // TEMA 8: ARSENAL JURÍDICO E FUNIL DE INOVAÇÃO
+  // TEMA 4: METODOLOGIA SMART E LINHA DE BASE
   {
-    "id": 41,
-    "title": "41. Arsenal Jurídico da Inovação",
-    "text": "De acordo com a Lei Complementar Estadual nº 400/2018, quando a Secretaria enfrenta um problema altamente complexo e sabe que não existe solução pronta ou madura no mercado (assumindo o risco tecnológico), qual é o instrumento adequado para contratação?",
+    "id": 9,
+    "title": "9. Metodologia SMART",
+    "text": "Na formulação de metas pela metodologia SMART, o critério 'T - Temporal' pode ser frequentemente mal interpretado. Assinale a alternativa que define corretamente esse critério:",
     "options": [
-      { "id": "A", "text": "Sandbox Regulatório." },
-      { "id": "B", "text": "Licitação Tradicional na modalidade Pregão Eletrônico." },
-      { "id": "C", "text": "Parceria Público-Privada Comum." },
-      { "id": "D", "text": "Encomenda Tecnológica." },
-      { "id": "E", "text": "Diálogo Competitivo de prateleira." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 42,
-    "title": "42. Arsenal Jurídico da Inovação",
-    "text": "Para aplicar o princípio de 'errar pequeno, barato e rápido', permitindo a criação de Laboratórios Vivos onde startups e o governo testam inovações com clientes reais sob regras e requisitos provisoriamente flexibilizados, utiliza-se o(a):",
-    "options": [
-      { "id": "A", "text": "Diálogo Competitivo em Duas Etapas." },
-      { "id": "B", "text": "Contrato de Encomenda Tecnológica." },
-      { "id": "C", "text": "Incubação de Processos Legados." },
-      { "id": "D", "text": "Funil Rígido de Ideias e Patentes." },
-      { "id": "E", "text": "Sandbox Regulatório." }
-    ],
-    "answer": "E"
-  },
-  {
-    "id": 43,
-    "title": "43. Arsenal Jurídico da Inovação",
-    "text": "Conforme o Arsenal Jurídico da Inovação, quando o projeto é estruturalmente complexo e exige que o Estado e o setor privado conversem e analisem abertamente as melhores opções antes de redigir o edital final, o instrumento legal a ser acionado é o(a):",
-    "options": [
-      { "id": "A", "text": "Sandbox Regulatório Experimental." },
-      { "id": "B", "text": "Encomenda de Inovação Aberta." },
-      { "id": "C", "text": "Diálogo Competitivo." },
-      { "id": "D", "text": "Concorrência Pública Tradicional por Melhor Preço." },
-      { "id": "E", "text": "Incubação de Laboratório LISP." }
+      { "id": "A", "text": "Refere-se ao cronograma de reuniões mensais de acompanhamento e monitoramento operacional." },
+      { "id": "B", "text": "Representa a necessidade de usar expressões genéricas como 'até o final do mandato'." },
+      { "id": "C", "text": "Refere-se exclusivamente a uma data específica ou prazo definido para o alcance definitivo da meta." },
+      { "id": "D", "text": "Indica o tempo gasto na execução do processo produtivo governamental (Throughput)." },
+      { "id": "E", "text": "Atinge a obrigatoriedade de medir os impactos a cada 4 anos (ciclo do PPA)." }
     ],
     "answer": "C"
   },
   {
-    "id": 44,
-    "title": "44. Incentivos ao Servidor Inovador (LC 400/2018)",
-    "text": "A legislação de inovação de Pernambuco funciona como um 'canivete suíço' de incentivos para atrair o servidor público (o 'escudo do gestor'). Assinale a opção que NÃO faz parte dos mecanismos legais previstos como incentivo à inovação:",
+    "id": 10,
+    "title": "10. Linha de Base (Baseline)",
+    "text": "Na elaboração da ficha técnica de um indicador, preenche-se o campo 'Meta' e o campo 'Linha de Base' (Baseline). Qual a diferença conceitual e prática fundamental entre eles?",
     "options": [
-      { "id": "A", "text": "Bolsas de Estímulo à Inovação financiadas por agências." },
-      { "id": "B", "text": "Licença para Empreender (licença não remunerada para abrir startups)." },
-      { "id": "C", "text": "Participação nos Ganhos (Royalties) caso a tecnologia seja licenciada (5% a 33%)." },
-      { "id": "D", "text": "Aumento salarial permanente e automático após a aprovação de uma ideia no comitê interno." },
-      { "id": "E", "text": "Financiamento direto institucional para servidores envolvidos em PD&I." }
+      { "id": "A", "text": "A linha de base define a unidade de medida matemática, enquanto a meta define as fontes de dados." },
+      { "id": "B", "text": "A linha de base registra o limite máximo de recursos financeiros disponíveis; a meta define o resultado social." },
+      { "id": "C", "text": "A linha de base representa o valor após a intervenção pública (ex post), e a meta é o cenário inicial." },
+      { "id": "D", "text": "A linha de base registra o ponto zero de onde se está antes da intervenção; a meta define o ponto de onde se quer chegar." },
+      { "id": "E", "text": "São termos sinônimos utilizados na gestão por resultados estadual." }
     ],
     "answer": "D"
   },
+
+  // TEMA 5: GESTÃO POR RESULTADOS E DISTORÇÕES (GOAL DISPLACEMENT)
   {
-    "id": 45,
-    "title": "45. O Funil de Inovação Pública",
-    "text": "O método estruturado para transformar a criatividade caótica em uma operação previsível no governo é o Funil de Inovação. Qual o foco da sua 1ª etapa (Geração de Ideias)?",
+    "id": 11,
+    "title": "11. Gestão por Resultados no Setor Público",
+    "text": "No Brasil, duas experiências estaduais tornaram-se referências consolidadas na literatura de administração pública por implementarem sistemas completos de monitoramento direto pelo gabinete do governador e reuniões de análise estratégica (RAEs). Que estados são esses?",
     "options": [
-      { "id": "A", "text": "Testar pequeno e barato construindo um MVP." },
-      { "id": "B", "text": "Filtrar por viabilidade orçamentária e legal estrita." },
-      { "id": "C", "text": "Transformar a solução validada em operação padrão para toda a secretaria." },
-      { "id": "D", "text": "Identificar gargalos e mapear os problemas reais." },
-      { "id": "E", "text": "Testar a solução restrita a apenas um departamento no ambiente de Sandbox." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 46,
-    "title": "46. O Funil de Inovação Pública",
-    "text": "Qual é a Etapa 2 do Funil de Inovação, imediatamente após a Geração de Ideias, onde grande parte das ideias iniciais encontra sua \"mortalidade\" justificada pelo design do sistema?",
-    "options": [
-      { "id": "A", "text": "Prototipagem Rápida." },
-      { "id": "B", "text": "Triagem e Avaliação." },
-      { "id": "C", "text": "Piloto Controlado em Sandbox." },
-      { "id": "D", "text": "Mapeamento da Jornada do Desafiador." },
-      { "id": "E", "text": "Escalonamento Operacional." }
+      { "id": "A", "text": "São Paulo e Rio de Janeiro." },
+      { "id": "B", "text": "Minas Gerais e Pernambuco." },
+      { "id": "C", "text": "Ceará e Rio Grande do Sul." },
+      { "id": "D", "text": "Distrito Federal e Bahia." },
+      { "id": "E", "text": "Pernambuco e Paraíba." }
     ],
     "answer": "B"
   },
   {
-    "id": 47,
-    "title": "47. O Funil de Inovação Pública",
-    "text": "No Funil da Inovação, logo após a triagem e avaliação das ideias por critérios orçamentários, a equipe deve agir para reduzir riscos financeiros. Nessa 3ª etapa, o foco é 'fazer o Mínimo Produto Viável (MVP)'. Ela é chamada de:",
+    "id": 12,
+    "title": "12. Distorções na Avaliação de Resultados",
+    "text": "Quando um município foca estritamente em treinar seus alunos apenas para fazer a 'Prova Brasil', o indicador (IDEB) sobe, mas o objetivo educacional de aprendizado real não é atingido. Esse fenômeno, baseado na Lei de Goodhart, onde a medida se torna o objetivo em si, é chamado de:",
     "options": [
-      { "id": "A", "text": "Geração Constante de Ideias." },
-      { "id": "B", "text": "Definição do Marco Legal." },
-      { "id": "C", "text": "Prototipagem Rápida." },
-      { "id": "D", "text": "Piloto Sandbox Integral." },
-      { "id": "E", "text": "Escalonamento Produtivo." }
+      { "id": "A", "text": "Efeito Halo." },
+      { "id": "B", "text": "Viés de Confirmação." },
+      { "id": "C", "text": "Goal Displacement (Desvio de Objetivo)." },
+      { "id": "D", "text": "Dissonância Cognitiva Orçamentária." },
+      { "id": "E", "text": "Outcome Targeting." }
     ],
     "answer": "C"
   },
   {
-    "id": 48,
-    "title": "48. O Funil de Inovação Pública",
-    "text": "Após prototipar e antes de espalhar a solução por todo o Estado, a inovação precisa ser testada em condições controladas, restringindo o uso a um único departamento ou ambiente seguro (Sandbox). Essa é a Etapa 4, conhecida como:",
+    "id": 13,
+    "title": "13. Distorções na Avaliação de Resultados",
+    "text": "Para evitar confusões conceituais, o gestor deve diferenciar falhas do sistema de indicadores de falhas de avaliação humana. Enquanto o 'Goal Displacement' é um risco estrutural de sistemas de metas, a distorção na avaliação de pessoas motivada por uma impressão geral positiva/negativa prévia é o:",
     "options": [
-      { "id": "A", "text": "Triagem Funcional." },
-      { "id": "B", "text": "Piloto Controlado." },
-      { "id": "C", "text": "Escalonamento Sistêmico." },
-      { "id": "D", "text": "Avaliação Financeira de Mercado." },
-      { "id": "E", "text": "Geração Inicial de Propostas." }
+      { "id": "A", "text": "Viés de Confirmação." },
+      { "id": "B", "text": "Goal Displacement." },
+      { "id": "C", "text": "Efeito Estufa Institucional." },
+      { "id": "D", "text": "Efeito Halo." },
+      { "id": "E", "text": "Plano 5W2H Subjetivo." }
     ],
-    "answer": "B"
-  },
-  {
-    "id": 49,
-    "title": "49. O Funil de Inovação Pública",
-    "text": "Quando um projeto do Funil de Inovação sobrevive ao Piloto Controlado e prova que gera valor mensurável, qual é a última etapa do funil, que visa transformar o experimento isolado em uma 'operação padrão' que abranja toda a secretaria?",
-    "options": [
-      { "id": "A", "text": "Escalonamento." },
-      { "id": "B", "text": "Mínimo Produto Viável (MVP)." },
-      { "id": "C", "text": "Prototipagem Massiva." },
-      { "id": "D", "text": "Reavaliação Burocrática Legal." },
-      { "id": "E", "text": "Lançamento em Sandbox Externo." }
-    ],
-    "answer": "A"
+    "answer": "D"
   },
 
-  // TEMA 9: REFLEXÕES E CASO PRÁTICO LÍCITA ÁGIL
+  // TEMA 6: MONITORAMENTO E AVALIAÇÃO
   {
-    "id": 50,
-    "title": "50. Visão para Consultoria Organizacional",
-    "text": "Segundo a definição trazida por Carlomagno (2009) para a aplicação prática (Consultoria), a Inovação não é apenas criatividade abstrata, não é adequação e não é sinônimo exclusivo de novas tecnologias. Nesse contexto corporativo e governamental, o que define de fato a inovação?",
+    "id": 14,
+    "title": "14. Reunião de Análise Estratégica (RAE) e 5W2H",
+    "text": "Nas RAEs, o objetivo não é celebrar resultados, mas diagnosticar problemas e produzir planos de ação corretivos. O framework utilizado para organizar esse plano responde a sete perguntas em inglês (5W2H). O 'How much' no contexto governamental refere-se a:",
     "options": [
-      { "id": "A", "text": "A aquisição dos softwares empresariais mais recentes do mercado." },
-      { "id": "B", "text": "O desenvolvimento constante de produtos industriais tangíveis." },
-      { "id": "C", "text": "Qualquer melhoria rotineira realizada por um servidor." },
-      { "id": "D", "text": "A transformação de novas ideias em RESULTADO que crie e capture valor para a organização." },
-      { "id": "E", "text": "A exclusividade de criar algo totalmente inédito no planeta (invenção pura)." }
+      { "id": "A", "text": "Quantas pessoas serão atendidas pelo projeto." },
+      { "id": "B", "text": "Qual a duração em meses da correção necessária." },
+      { "id": "C", "text": "Qual o limite técnico do indicador estipulado." },
+      { "id": "D", "text": "Qual o custo estimado para a execução da ação." },
+      { "id": "E", "text": "Quantos indicadores serão revisados naquela sessão." }
     ],
     "answer": "D"
   },
   {
-    "id": 51,
-    "title": "51. O Caso Prático Lícita Ágil",
-    "text": "O caso real do projeto Lícita Ágil dentro do programa PET-GOV (SAD/PE) demonstrou a construção de um Termo de Referência automatizado utilizando planilhas no Excel e macros de baixo custo, reduzindo erros e tempo de tramitação drasticamente. Essa abordagem ilustra perfeitamente qual regra de ouro ensinada na disciplina?",
+    "id": 15,
+    "title": "15. Monitoramento vs Avaliação",
+    "text": "Monitoramento e Avaliação são práticas complementares, porém distintas. Assinale a alternativa que descreve a característica central exclusiva do Monitoramento:",
     "options": [
-      { "id": "A", "text": "A digitalização forçada sempre pode e deve substituir o planejamento." },
-      { "id": "B", "text": "Devemos focar na abertura de uma licitação tradicional antes de desenhar fluxos." },
-      { "id": "C", "text": "Testar pequeno, no Sandbox, e focar no Mínimo Produto Viável (MVP) antes de realizar grandes licitações milionárias." },
-      { "id": "D", "text": "A terceirização da criação do MVP para grandes corporações garante o escalonamento automático." },
-      { "id": "E", "text": "Somente projetos que comprometem orçamentos vultosos de longo prazo conseguem revolucionar o serviço público." }
+      { "id": "A", "text": "É periódico e aplicado apenas em momentos definidos (ex ante, in itinere, ex post)." },
+      { "id": "B", "text": "Seu foco primário é analisar os efeitos de longo prazo e impactos globais produzidos pela política na sociedade." },
+      { "id": "C", "text": "Tenta responder à pergunta central: 'O que funcionou e qual foi o aprendizado institucional gerado?'." },
+      { "id": "D", "text": "É de natureza contínua durante a execução, focado em corrigir desvios operacionais sob a pergunta: 'O que está acontecendo agora?'." },
+      { "id": "E", "text": "Utiliza primariamente instrumentos complexos como Estudos de Caso e Ensaios Clínicos Randomizados (RCTs)." }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 16,
+    "title": "16. Monitoramento vs Avaliação",
+    "text": "Em contrapartida ao monitoramento, a Avaliação de políticas públicas ocorre de modo diferente. Assinale a alternativa que representa corretamente as características da Avaliação:",
+    "options": [
+      { "id": "A", "text": "Contínua, operacional e respondendo à pergunta 'o que está acontecendo hoje?'." },
+      { "id": "B", "text": "Focada apenas em corrigir pequenos desvios em dashboards estaduais." },
+      { "id": "C", "text": "Periódica (em momentos definidos), visando aprendizado institucional, accountability e compreensão dos efeitos e impactos." },
+      { "id": "D", "text": "Elaborada com o único intuito de definir o Baseline (Linha de Base) anual." },
+      { "id": "E", "text": "Substitui totalmente o uso do Plano Plurianual nas gestões contemporâneas." }
     ],
     "answer": "C"
   }
 ];
 
+        let currentQuestions = [];
         let currentQuestionIndex = 0;
         let score = 0;
         let answered = false;
+        let currentSet = '1-2';
 
+        const emptyStateEl = document.getElementById('empty-state');
+        const quizContainerEl = document.getElementById('quiz-container');
+        const lessonsContainerEl = document.getElementById('lessons-container');
         const questionCounterEl = document.getElementById('question-counter');
         const questionTitleEl = document.getElementById('question-title');
         const questionTextEl = document.getElementById('question-text');
@@ -1022,7 +1238,57 @@
         const resultContainerEl = document.getElementById('result-container');
         const progressContainerEl = document.getElementById('progress-container');
 
-        function startQuiz() {
+        // Utils: shuffle array
+        function shuffleArray(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        function selectModule(modNum) {
+            // Update tabs UI
+            document.getElementById('tab-mod1').classList.remove('active');
+            document.getElementById('tab-mod2').classList.remove('active');
+            document.getElementById(`tab-mod${modNum}`).classList.add('active');
+
+            if (modNum === 1) {
+                lessonsContainerEl.style.display = 'none';
+                quizContainerEl.style.display = 'none';
+                emptyStateEl.style.display = 'block';
+            } else {
+                emptyStateEl.style.display = 'none';
+                lessonsContainerEl.style.display = 'flex';
+                // Auto start first set
+                startQuizSet('1-2');
+            }
+        }
+
+        function startQuizSet(setName) {
+            currentSet = setName;
+            
+            // Update buttons
+            document.getElementById('btn-aula12').classList.remove('active');
+            document.getElementById('btn-aula34').classList.remove('active');
+            document.getElementById('btn-simulado').classList.remove('active');
+
+            if (setName === '1-2') document.getElementById('btn-aula12').classList.add('active');
+            if (setName === '3-4') document.getElementById('btn-aula34').classList.add('active');
+            if (setName === 'simulado') document.getElementById('btn-simulado').classList.add('active');
+
+            if (setName === '1-2') {
+                currentQuestions = [...qsAulas1_2];
+            } else if (setName === '3-4') {
+                currentQuestions = [...qsAulas3_4];
+            } else if (setName === 'simulado') {
+                const rand12 = shuffleArray(qsAulas1_2).slice(0, 10);
+                const rand34 = shuffleArray(qsAulas3_4).slice(0, 10);
+                currentQuestions = shuffleArray([...rand12, ...rand34]);
+            }
+
+            quizContainerEl.style.display = 'block';
             currentQuestionIndex = 0;
             score = 0;
             quizContentEl.style.display = 'block';
@@ -1037,12 +1303,11 @@
             actionAreaEl.style.display = 'none';
             optionsListEl.innerHTML = '';
             
-            const q = questions[currentQuestionIndex];
+            const q = currentQuestions[currentQuestionIndex];
             
-            // Format Progress
-            const progress = (currentQuestionIndex / questions.length) * 100;
+            const progress = (currentQuestionIndex / currentQuestions.length) * 100;
             progressBarEl.style.width = `${progress}%`;
-            questionCounterEl.textContent = `Questão ${currentQuestionIndex + 1} de ${questions.length}`;
+            questionCounterEl.textContent = `Questão ${currentQuestionIndex + 1} de ${currentQuestions.length}`;
             
             questionTitleEl.textContent = q.title;
             questionTextEl.textContent = q.text;
@@ -1060,14 +1325,12 @@
             if (answered) return;
             answered = true;
 
-            const q = questions[currentQuestionIndex];
+            const q = currentQuestions[currentQuestionIndex];
             const isCorrect = selectedOpt.id === q.answer;
 
-            // Desativar todos os botões
             const allBtns = optionsListEl.querySelectorAll('.option-btn');
             allBtns.forEach(btn => {
                 btn.disabled = true;
-                // Destacar a resposta correta mesmo se o usuário errou
                 const letterSpan = btn.querySelector('.option-letter').textContent;
                 if (letterSpan === q.answer) {
                     btn.classList.add('correct');
@@ -1087,7 +1350,7 @@
 
             actionAreaEl.style.display = 'block';
 
-            if (currentQuestionIndex === questions.length - 1) {
+            if (currentQuestionIndex === currentQuestions.length - 1) {
                 nextBtnEl.textContent = 'Ver Resultado Final';
             } else {
                 nextBtnEl.textContent = 'Próxima Questão';
@@ -1095,7 +1358,7 @@
         }
 
         nextBtnEl.addEventListener('click', () => {
-            if (currentQuestionIndex < questions.length - 1) {
+            if (currentQuestionIndex < currentQuestions.length - 1) {
                 currentQuestionIndex++;
                 loadQuestion();
             } else {
@@ -1108,13 +1371,13 @@
             progressContainerEl.style.display = 'none';
             resultContainerEl.style.display = 'block';
 
-            const percentage = Math.round((score / questions.length) * 100);
-            document.getElementById('score-text').textContent = `${score} / ${questions.length}`;
+            const percentage = Math.round((score / currentQuestions.length) * 100);
+            document.getElementById('score-text').textContent = `${score} / ${currentQuestions.length}`;
             document.getElementById('score-percentage').textContent = `${percentage}% de acertos`;
 
             const messageEl = document.getElementById('score-message');
             if (percentage >= 90) {
-                messageEl.textContent = 'Excelente! Você domina muito bem o assunto de Inovação e Tecnologia.';
+                messageEl.textContent = 'Excelente! Você domina muito bem o assunto.';
                 triggerConfetti();
             } else if (percentage >= 70) {
                 messageEl.textContent = 'Muito bom! Seu desempenho foi sólido.';
@@ -1131,29 +1394,14 @@
             var end = Date.now() + duration;
 
             (function frame() {
-                confetti({
-                    particleCount: 5,
-                    angle: 60,
-                    spread: 55,
-                    origin: { x: 0 },
-                    colors: ['#4F46E5', '#10B981', '#F59E0B']
-                });
-                confetti({
-                    particleCount: 5,
-                    angle: 120,
-                    spread: 55,
-                    origin: { x: 1 },
-                    colors: ['#4F46E5', '#10B981', '#F59E0B']
-                });
-
-                if (Date.now() < end) {
-                    requestAnimationFrame(frame);
-                }
+                confetti({ particleCount: 5, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#4F46E5', '#10B981', '#F59E0B'] });
+                confetti({ particleCount: 5, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#4F46E5', '#10B981', '#F59E0B'] });
+                if (Date.now() < end) { requestAnimationFrame(frame); }
             }());
         }
 
-        // Iniciar quiz
-        startQuiz();
+        // Inicia no Módulo 2 por padrão, nas Aulas 1-2
+        selectModule(2);
     </script>
 </body>
 </html>
