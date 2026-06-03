@@ -1813,34 +1813,6 @@ const qsMod3Aula1 = [
       }
     ],
     "answer": "A"
-  },
-  {
-    "id": 26,
-    "title": "26. Princípio Central da Matriz de Riscos",
-    "text": "Na elaboração da Matriz de Riscos em contratos de concessão e PPPs, a alocação das responsabilidades não é aleatória. Segundo o slide final da apresentação, qual é o princípio central que orienta quem deve assumir determinado risco?",
-    "options": [
-      {
-        "id": "A",
-        "text": "O risco deve ser transferido integralmente para o parceiro privado, já que este visa a obtenção de lucro."
-      },
-      {
-        "id": "B",
-        "text": "O risco deve ser assumido solidariamente, com a divisão obrigatória e igualitária dos custos entre o Estado e a empresa."
-      },
-      {
-        "id": "C",
-        "text": "O risco deve ser alocado à parte que possui melhor capacidade de preveni-lo, administrá-lo ou mitigar seus efeitos."
-      },
-      {
-        "id": "D",
-        "text": "O risco recai sempre sobre o Poder Público, por ser o titular original do bem ou serviço delegado."
-      },
-      {
-        "id": "E",
-        "text": "O risco deve ser mitigado exclusivamente por meio da contratação de seguradoras independentes."
-      }
-    ],
-    "answer": "C"
   }
 ]
 ;
