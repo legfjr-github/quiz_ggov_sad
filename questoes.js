@@ -1113,7 +1113,737 @@ const qsMod2Aulas3_4 = [
 ];
 
 // Módulo 3
-const qsMod3Aula1 = [];
+const qsMod3Aula1 = [
+  {
+    "id": 1,
+    "title": "1. Era das Delegações",
+    "text": "Segundo o slide sobre 'A Era das Delegação', quais são as duas leis principais que estabeleceram as rodadas de concessões e PPPs, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lei nº 14.133/21 e Lei nº 13.303/16."
+      },
+      {
+        "id": "B",
+        "text": "Lei nº 8.987/95 e Lei nº 11.079/04."
+      },
+      {
+        "id": "C",
+        "text": "Lei de Responsabilidade Fiscal e LDO."
+      },
+      {
+        "id": "D",
+        "text": "Lei das Estatais e Lei de Licitações."
+      },
+      {
+        "id": "E",
+        "text": "Constituição Federal e Programa Nacional de Desestatização."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "title": "2. Era das Delegações",
+    "text": "O material divide a 'Era das Delegação' em leis distintas. Como são caracterizados o foco financeiro dos projetos da Lei nº 8.987/95 e da Lei nº 11.079/04, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Projetos de baixo custo e projetos de alto impacto financeiro."
+      },
+      {
+        "id": "B",
+        "text": "Contratos precários e contratos de gestão de estatais."
+      },
+      {
+        "id": "C",
+        "text": "Venda definitiva de ativos e transferência temporária de gestão."
+      },
+      {
+        "id": "D",
+        "text": "Projetos autossustentáveis e projetos com 'subsídio estatal'."
+      },
+      {
+        "id": "E",
+        "text": "Apenas serviços administrativos e apenas grandes obras rodoviárias."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 3,
+    "title": "3. Privatização vs. Delegação",
+    "text": "De acordo com o material (slide 9), qual é a principal diferença conceitual entre privatização e delegação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na privatização, o Estado continua titular; na delegação, ele vende todos os ativos para fundos privados."
+      },
+      {
+        "id": "B",
+        "text": "A privatização exige o pagamento de uma contraprestação mensal; a delegação não."
+      },
+      {
+        "id": "C",
+        "text": "Na privatização, o Estado vende; na delegação, o Estado continua titular e apenas transfere a operação."
+      },
+      {
+        "id": "D",
+        "text": "Na privatização, há um compartilhamento de riscos; na delegação, o Estado assume todos os prejuízos."
+      },
+      {
+        "id": "E",
+        "text": "Não há diferenças, ambas significam a transferência definitiva da propriedade para investidores estrangeiros."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "title": "4. Concessão Comum",
+    "text": "A Concessão Comum (Lei nº 8.987/1995) é uma espécie de contrato administrativo. Quais são as duas modalidades expressas no slide para esse tipo de concessão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Concessão patrocinada e concessão administrativa."
+      },
+      {
+        "id": "B",
+        "text": "Concessão de serviço público; e concessão de serviço público precedida da execução de obra pública."
+      },
+      {
+        "id": "C",
+        "text": "Concessão integral e concessão parcial de infraestrutura."
+      },
+      {
+        "id": "D",
+        "text": "Parceria direta e parceria indireta autossustentável."
+      },
+      {
+        "id": "E",
+        "text": "Privatização total de ativos e venda de ações na bolsa."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "title": "5. Concessão Comum",
+    "text": "Como se caracteriza a remuneração do concessionário que assume a gestão do negócio por sua conta e risco na Concessão Comum?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Remuneração mista, dependendo de contraprestação garantida do parceiro público."
+      },
+      {
+        "id": "B",
+        "text": "Obtém a remuneração integralmente pela tarifação paga pelos usuários."
+      },
+      {
+        "id": "C",
+        "text": "Remuneração exclusivamente por aportes do Tesouro Estadual antes da operação."
+      },
+      {
+        "id": "D",
+        "text": "Remuneração feita apenas pelo Fundo Garantidor de Parcerias."
+      },
+      {
+        "id": "E",
+        "text": "Remuneração decorrente exclusivamente de receitas acessórias imobiliárias."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "title": "6. Concessão por PPP",
+    "text": "A Concessão por PPP (Lei nº 11.079/2004) é uma concessão de serviços conjugado com obras de engenharia. Qual a característica financeira central que justifica o seu uso em oposição à Concessão Comum?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A receita tarifária é suficiente para cobrir os lucros, mas o Estado deseja participar."
+      },
+      {
+        "id": "B",
+        "text": "O projeto não envolve execução de obras ou fornecimento de bens."
+      },
+      {
+        "id": "C",
+        "text": "A receita tarifária é insuficiente para remunerar o investimento."
+      },
+      {
+        "id": "D",
+        "text": "O Estado deseja alienar o controle acionário da infraestrutura."
+      },
+      {
+        "id": "E",
+        "text": "A tarifa não pode ser cobrada em contratos com prazo inferior a 5 anos."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "title": "7. Concessão por PPP",
+    "text": "O regime das Parcerias Público-Privadas admite duas modalidades de remuneração. Na modalidade de Concessão Administrativa, como ocorre a remuneração e quem é o principal usuário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Combinação de tarifas dos cidadãos e remuneração do poder público para usuários carentes."
+      },
+      {
+        "id": "B",
+        "text": "Pagamento integral pelo poder concedente, sendo o principal usuário do serviço o próprio Poder Público."
+      },
+      {
+        "id": "C",
+        "text": "A concessionária recebe inteiramente por meio da tarifa paga pelos cidadãos na catraca."
+      },
+      {
+        "id": "D",
+        "text": "Os custos são cobertos exclusivamente pela exploração publicitária de espaços estatais."
+      },
+      {
+        "id": "E",
+        "text": "O Estado realiza um único pagamento inicial para transferir a responsabilidade total à empresa privada."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "title": "8. Concessão por PPP",
+    "text": "Diferentemente da concessão administrativa, a Concessão Patrocinada possui uma estrutura de remuneração mais ampla. Conforme o slide, como é composta essa remuneração?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pagamento integral e exclusivo pelo poder concedente, sem nenhuma cobrança do usuário comum."
+      },
+      {
+        "id": "B",
+        "text": "Tarifa cobrada exclusivamente dos usuários, sem qualquer repasse do poder público."
+      },
+      {
+        "id": "C",
+        "text": "Remuneração feita 100% por meio de doações e patrocínios de entidades internacionais."
+      },
+      {
+        "id": "D",
+        "text": "Combinação de tarifas pagas pelos usuários, mais remuneração paga pelo poder concedente, mais receitas acessórias (quando for o caso)."
+      },
+      {
+        "id": "E",
+        "text": "Arrecadação decorrente de impostos indiretos vinculados exclusivamente a fundos de previdência."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 9,
+    "title": "9. Concessão por PPP",
+    "text": "Na estruturação da PPP, o material aponta que há um compartilhamento de atribuições entre empresas e governo. Em quais áreas principais ocorre esse compartilhamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pagamento de folha de servidores efetivos e criação de novas taxas de fiscalização."
+      },
+      {
+        "id": "B",
+        "text": "Edição de leis setoriais e no julgamento final de recursos tarifários."
+      },
+      {
+        "id": "C",
+        "text": "Na mobilização de recursos e na gestão de riscos associados ao financiamento do investimento (sistema de garantias)."
+      },
+      {
+        "id": "D",
+        "text": "Na emissão de licenças ambientais prévias e no controle exclusivo do tráfego urbano."
+      },
+      {
+        "id": "E",
+        "text": "Na arrecadação de tributos federais e na venda de títulos da dívida estadual."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "title": "10. Matriz de Riscos",
+    "text": "Os contratos de concessão autorizam a repartição objetiva de riscos. Qual é o princípio central definido nos slides para a alocação de um risco específico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todos os riscos devem ser divididos na exata proporção de 50% para cada parte, independentemente de quem gerou o dano."
+      },
+      {
+        "id": "B",
+        "text": "A concessionária deve assumir todos os riscos estruturais para poder justificar a margem de lucro projetada."
+      },
+      {
+        "id": "C",
+        "text": "O Poder Público, em razão de sua soberania, é isento e não pode assumir financeiramente nenhum risco contratual."
+      },
+      {
+        "id": "D",
+        "text": "O risco deve ser alocado à parte que possui melhor capacidade de preveni-lo, administrá-lo ou mitigar seus efeitos."
+      },
+      {
+        "id": "E",
+        "text": "Os riscos mais graves devem ser assumidos integralmente por companhias de seguro privado internacionais."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 11,
+    "title": "11. Matriz de Riscos",
+    "text": "Segundo a regra geral da matriz de riscos constante no slide 42, quem assume, em regra, o risco de uma 'Mudança legislativa relevante'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Concessionária."
+      },
+      {
+        "id": "B",
+        "text": "Usuário do serviço."
+      },
+      {
+        "id": "C",
+        "text": "Seguradora Privada."
+      },
+      {
+        "id": "D",
+        "text": "Poder Público."
+      },
+      {
+        "id": "E",
+        "text": "Agência Reguladora Independente."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 12,
+    "title": "12. Matriz de Riscos",
+    "text": "O 'Fato do príncipe' consiste em atos do Estado que afetam o contrato de forma extracontratual. Na matriz de riscos apresentada, quem assume esse impacto, em regra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Poder Público."
+      },
+      {
+        "id": "B",
+        "text": "Concessionária."
+      },
+      {
+        "id": "C",
+        "text": "Empreiteira Subcontratada."
+      },
+      {
+        "id": "D",
+        "text": "Fundo Monetário Internacional."
+      },
+      {
+        "id": "E",
+        "text": "Sociedade Civil."
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 13,
+    "title": "13. Matriz de Riscos",
+    "text": "A construção de rodovias frequentemente exige a retirada de propriedades ao redor do traçado. Segundo o material, quem assume o risco inerente às 'Desapropriações'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "BNDES."
+      },
+      {
+        "id": "B",
+        "text": "Poder Público."
+      },
+      {
+        "id": "C",
+        "text": "Concessionária."
+      },
+      {
+        "id": "D",
+        "text": "Construtor da Obra."
+      },
+      {
+        "id": "E",
+        "text": "Câmara de Arbitragem."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "title": "14. Matriz de Riscos",
+    "text": "Em projetos onde o risco de aprovação de impactos ambientais iniciais é transferido no contrato, a matriz aponta que o 'Licenciamento prévio (alguns projetos)' é um encargo assumido, em regra, por qual parte?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Concessionária."
+      },
+      {
+        "id": "B",
+        "text": "Tribunal de Contas."
+      },
+      {
+        "id": "C",
+        "text": "Poder Público."
+      },
+      {
+        "id": "D",
+        "text": "Agência de Meio Ambiente de forma isolada."
+      },
+      {
+        "id": "E",
+        "text": "Sindicato dos Trabalhadores."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "title": "15. Matriz de Riscos",
+    "text": "Caso o Estado decida construir uma estrada gratuita paralela à rodovia sob concessão pedagiada, criando 'Rotas concorrentes', a quem a matriz de riscos impõe o prejuízo, em regra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Usuários remanescentes."
+      },
+      {
+        "id": "B",
+        "text": "Concessionária."
+      },
+      {
+        "id": "C",
+        "text": "Fiadores do Contrato."
+      },
+      {
+        "id": "D",
+        "text": "Poder Público."
+      },
+      {
+        "id": "E",
+        "text": "Câmara de Compensação de Tarifas."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 16,
+    "title": "16. Matriz de Riscos",
+    "text": "Durante o funcionamento de um complexo operado pela iniciativa privada, a 'Performance operacional' está sujeita a ineficiências internas. Segundo a matriz do slide 42, quem assume esse risco?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Poder Público."
+      },
+      {
+        "id": "B",
+        "text": "Concessionária."
+      },
+      {
+        "id": "C",
+        "text": "Ouvidoria Estatal."
+      },
+      {
+        "id": "D",
+        "text": "Fundos de Investimento."
+      },
+      {
+        "id": "E",
+        "text": "População local."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "title": "17. Matriz de Riscos",
+    "text": "Ao executar uma obra estipulada em contrato, os 'Custos de construção' podem exceder a previsão inicial devido a oscilações normais do mercado de insumos. A matriz estabelece que, em regra, este risco fica com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Poder Público, mediante reequilíbrio automático."
+      },
+      {
+        "id": "B",
+        "text": "A Secretaria de Infraestrutura Estadual."
+      },
+      {
+        "id": "C",
+        "text": "O Consórcio Estatal Minoritário."
+      },
+      {
+        "id": "D",
+        "text": "A Concessionária."
+      },
+      {
+        "id": "E",
+        "text": "A Agência Reguladora."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 18,
+    "title": "18. Matriz de Riscos",
+    "text": "Se a empresa construtora subcontratada atrasar o cronograma de entrega da infraestrutura configurando 'Atrasos executivos', a matriz aponta que a responsabilidade é assumida, em regra, pela:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Poder Público."
+      },
+      {
+        "id": "B",
+        "text": "Concessionária."
+      },
+      {
+        "id": "C",
+        "text": "Administração Indireta."
+      },
+      {
+        "id": "D",
+        "text": "Prefeitura local."
+      },
+      {
+        "id": "E",
+        "text": "União."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "title": "19. Matriz de Riscos",
+    "text": "Garantir a preservação da estrutura física durante todo o prazo para que ela seja devolvida em perfeito estado consiste no risco da 'Manutenção do ativo'. Quem o assume, em regra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Concessionária."
+      },
+      {
+        "id": "B",
+        "text": "Poder Público."
+      },
+      {
+        "id": "C",
+        "text": "Tribunal de Contas da União."
+      },
+      {
+        "id": "D",
+        "text": "Ministério da Economia."
+      },
+      {
+        "id": "E",
+        "text": "Fornecedores e fabricantes de peças."
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "title": "20. Matriz de Riscos",
+    "text": "Garantir as metas de qualidade exigidas no caderno de encargos do contrato, correspondendo ao risco sobre a 'Eficiência do serviço', é uma tarefa assumida na matriz por quem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Usuários pagantes."
+      },
+      {
+        "id": "B",
+        "text": "Poder Público concedente."
+      },
+      {
+        "id": "C",
+        "text": "Comissão de Auditoria Estatal."
+      },
+      {
+        "id": "D",
+        "text": "Concessionária."
+      },
+      {
+        "id": "E",
+        "text": "Assembleia Legislativa."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 21,
+    "title": "21. Matriz de Riscos",
+    "text": "De acordo com o quadro do slide 42, assinale a alternativa que elenca EXCLUSIVAMENTE os riscos assumidos, em regra, pelo Poder Público:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Performance operacional, atrasos executivos e manutenção do ativo."
+      },
+      {
+        "id": "B",
+        "text": "Mudança legislativa relevante, fato do príncipe, desapropriações, licenciamento prévio e rotas concorrentes."
+      },
+      {
+        "id": "C",
+        "text": "Custos de construção, eficiência do serviço e mudança legislativa."
+      },
+      {
+        "id": "D",
+        "text": "Desapropriações, fato do príncipe e custos de construção operacionais."
+      },
+      {
+        "id": "E",
+        "text": "Licenciamento prévio, performance do serviço delegável e rotas concorrentes."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "title": "22. Matriz de Riscos",
+    "text": "Conforme o mesmo slide resumo da matriz, assinale a alternativa que lista EXCLUSIVAMENTE os riscos assumidos, em regra, pela Concessionária:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mudança legislativa relevante, fato do príncipe e desapropriações contíguas."
+      },
+      {
+        "id": "B",
+        "text": "Custos de construção, licenciamento prévio e rotas concorrentes."
+      },
+      {
+        "id": "C",
+        "text": "Performance operacional, custos de construção, atrasos executivos, manutenção do ativo e eficiência do serviço."
+      },
+      {
+        "id": "D",
+        "text": "Manutenção do ativo, eficiência do serviço e obrigações com desapropriações rurais."
+      },
+      {
+        "id": "E",
+        "text": "Atrasos executivos, fato do príncipe e performance operacional de rotas."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 23,
+    "title": "23. Requisitos da PPP",
+    "text": "Conforme o slide 33 que detalha a 'Configuração requerida para contratos de PPP', qual é a limitação temporal estipulada para o período de prestação de serviço nestes contratos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Superior a 1 ano e inferior a 10 anos."
+      },
+      {
+        "id": "B",
+        "text": "Superior a 10 anos e inferior a 50 anos."
+      },
+      {
+        "id": "C",
+        "text": "Superior a 3 anos e inferior a 15 anos."
+      },
+      {
+        "id": "D",
+        "text": "Superior a 5 e inferior a 35 anos."
+      },
+      {
+        "id": "E",
+        "text": "Prazo único e invariável de 25 anos."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 24,
+    "title": "24. Requisitos da PPP",
+    "text": "Além do requisito de prazo e da realização conjunta de obras e serviços, os contratos de PPP necessitam de uma 'trava' orçamentária para serem configurados. Segundo o slide 33, os projetos de PPP exigem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Valores superiores a R$ 1 milhão."
+      },
+      {
+        "id": "B",
+        "text": "Valores superiores a R$ 5 milhões."
+      },
+      {
+        "id": "C",
+        "text": "Valores superiores a R$ 10 milhões."
+      },
+      {
+        "id": "D",
+        "text": "Valores superiores a R$ 50 milhões."
+      },
+      {
+        "id": "E",
+        "text": "Qualquer valor de contratação, não havendo limitação estipulada em lei."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 25,
+    "title": "25. Sociedade de Propósito Específico (SPE)",
+    "text": "O slide 41 pontua que antes da celebração do contrato de PPP, deverá ser constituída uma SPE. Qual restrição esse slide impõe à Administração Pública na composição dessa sociedade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fica vedado à Administração Pública ser titular da maioria do capital votante."
+      },
+      {
+        "id": "B",
+        "text": "A Administração Pública é obrigada a possuir, pelo menos, 51% do capital votante."
+      },
+      {
+        "id": "C",
+        "text": "O Poder Público não pode deter, sob nenhuma hipótese, participações acionárias ou cotas da SPE."
+      },
+      {
+        "id": "D",
+        "text": "A SPE deve ser inteiramente formada por capital de investidores estrangeiros não associados."
+      },
+      {
+        "id": "E",
+        "text": "É vedado à SPE assumir a forma de companhia aberta com valores mobiliários na bolsa."
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 26,
+    "title": "26. Princípio Central da Matriz de Riscos",
+    "text": "Na elaboração da Matriz de Riscos em contratos de concessão e PPPs, a alocação das responsabilidades não é aleatória. Segundo o slide final da apresentação, qual é o princípio central que orienta quem deve assumir determinado risco?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O risco deve ser transferido integralmente para o parceiro privado, já que este visa a obtenção de lucro."
+      },
+      {
+        "id": "B",
+        "text": "O risco deve ser assumido solidariamente, com a divisão obrigatória e igualitária dos custos entre o Estado e a empresa."
+      },
+      {
+        "id": "C",
+        "text": "O risco deve ser alocado à parte que possui melhor capacidade de preveni-lo, administrá-lo ou mitigar seus efeitos."
+      },
+      {
+        "id": "D",
+        "text": "O risco recai sempre sobre o Poder Público, por ser o titular original do bem ou serviço delegado."
+      },
+      {
+        "id": "E",
+        "text": "O risco deve ser mitigado exclusivamente por meio da contratação de seguradoras independentes."
+      }
+    ],
+    "answer": "C"
+  }
+]
+;
 const qsMod3Aula2 = [];
 const qsMod3Aulas3_4 = [];
 
