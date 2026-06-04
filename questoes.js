@@ -1813,7 +1813,7 @@ const qsMod3Aula1 = [
       }
     ],
     "answer": "A"
-  };
+  }];
 
 const qsMod3Aula2 = [
   {
@@ -2207,6 +2207,7 @@ const qsMod3Aula2 = [
     "answer": "C"
   }
 ];
+
 const qsMod3Aulas3_4 = [];
 
 // Módulo 4
