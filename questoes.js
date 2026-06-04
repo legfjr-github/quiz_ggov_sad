@@ -1813,10 +1813,400 @@ const qsMod3Aula1 = [
       }
     ],
     "answer": "A"
-  }
-]
-;
-const qsMod3Aula2 = [];
+  };
+
+const qsMod3Aula2 = [
+  {
+    "id": 1,
+    "title": "1. Classificação de Bens Públicos",
+    "text": "De acordo com o Código Civil e as normativas de gestão patrimonial, os bens que pertencem ao Estado, mas que estão à disposição de toda a coletividade sem restrições específicas (como praias, rios, estradas e praças), são classificados juridicamente como:",
+    "options": [
+      { "id": "A", "text": "Bens de uso especial." },
+      { "id": "B", "text": "Bens dominicais." },
+      { "id": "C", "text": "Bens de uso comum do povo." },
+      { "id": "D", "text": "Bens alienáveis." },
+      { "id": "E", "text": "Bens de fruição restrita." }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 2,
+    "title": "2. Classificação de Bens Públicos",
+    "text": "Os edifícios onde funcionam secretarias de governo, hospitais públicos, escolas e a frota de viaturas oficiais são bens afetados a uma finalidade pública específica. Como esses bens são classificados?",
+    "options": [
+      { "id": "A", "text": "Bens de uso comum do povo." },
+      { "id": "B", "text": "Bens de uso especial." },
+      { "id": "C", "text": "Bens dominicais." },
+      { "id": "D", "text": "Bens de capital." },
+      { "id": "E", "text": "Bens disponíveis para leilão imediato." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "title": "3. Classificação de Bens Públicos",
+    "text": "A categoria de bens que integram o patrimônio do Estado, mas que não possuem uma destinação pública específica (não estão afetados à administração ou à população), constituindo o acervo disponível para alienação, é denominada:",
+    "options": [
+      { "id": "A", "text": "Bens dominicais." },
+      { "id": "B", "text": "Bens de uso comum do povo." },
+      { "id": "C", "text": "Bens de uso especial." },
+      { "id": "D", "text": "Bens de interesse social." },
+      { "id": "E", "text": "Bens inalienáveis por natureza." }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "title": "4. Afetação de Bens Públicos",
+    "text": "O instituto jurídico pelo qual o Poder Público confere a um bem uma finalidade pública específica, seja para uso da população ou para a prestação de um serviço administrativo, é conhecido como:",
+    "options": [
+      { "id": "A", "text": "Alienação." },
+      { "id": "B", "text": "Imissão de Posse." },
+      { "id": "C", "text": "Desafetação." },
+      { "id": "D", "text": "Afetação." },
+      { "id": "E", "text": "Tombamento." }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 5,
+    "title": "5. Desafetação de Bens Públicos",
+    "text": "Se a Administração Pública deseja vender ou doar um prédio onde antes funcionava uma escola estadual (bem de uso especial), qual é o requisito jurídico INDISPENSÁVEL que deve preceder o processo de alienação?",
+    "options": [
+      { "id": "A", "text": "A afetação do bem como uso comum do povo." },
+      { "id": "B", "text": "A desafetação, convertendo-o legalmente em bem dominical." },
+      { "id": "C", "text": "A autorização direta do Cartório de Registro de Imóveis." },
+      { "id": "D", "text": "A imissão provisória na posse." },
+      { "id": "E", "text": "A abertura de sindicância patrimonial." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "title": "6. Mecanismo de Desafetação",
+    "text": "A desafetação de um bem público tem como efeito principal:",
+    "options": [
+      { "id": "A", "text": "Tornar o bem impenhorável e imprescritível para sempre." },
+      { "id": "B", "text": "Transferir automaticamente a propriedade do bem para a União." },
+      { "id": "C", "text": "Retirar a finalidade pública específica do bem, inserindo-o na categoria de bem dominical e tornando-o alienável." },
+      { "id": "D", "text": "Garantir que a população possa utilizá-lo livremente sem restrições de horário." },
+      { "id": "E", "text": "Averbar a imissão de posse definitiva em favor do antigo proprietário." }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "title": "7. Movimentação e Destinação de Bens",
+    "text": "Na gestão de materiais e patrimônio, um equipamento que se encontra em perfeitas condições de uso, mas que não está sendo utilizado pelo setor ao qual pertence, é classificado como:",
+    "options": [
+      { "id": "A", "text": "Inservível." },
+      { "id": "B", "text": "Antieconômico." },
+      { "id": "C", "text": "Ocioso." },
+      { "id": "D", "text": "Recuperável." },
+      { "id": "E", "text": "Sucata." }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "title": "8. Movimentação e Destinação de Bens",
+    "text": "Um veículo oficial da frota estadual ainda funciona, mas o custo anual com manutenção e consertos já supera o valor de mercado do próprio bem. Para a administração pública, esse bem é tipificado como:",
+    "options": [
+      { "id": "A", "text": "Ocioso." },
+      { "id": "B", "text": "Antieconômico." },
+      { "id": "C", "text": "Irrecuperável." },
+      { "id": "D", "text": "Dominical restrito." },
+      { "id": "E", "text": "Bem de uso comum." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "title": "9. Movimentação e Destinação de Bens",
+    "text": "Quando um bem móvel não tem mais utilidade para o serviço público em nenhum setor, seja por obsolescência, dano irreparável ou perda total de funcionalidade, ele recebe a classificação de:",
+    "options": [
+      { "id": "A", "text": "Bem de Uso Comum." },
+      { "id": "B", "text": "Bem Dominical Intangível." },
+      { "id": "C", "text": "Bem Ocioso." },
+      { "id": "D", "text": "Bem Inservível." },
+      { "id": "E", "text": "Bem Penhorável." }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 10,
+    "title": "10. Movimentação e Destinação de Bens",
+    "text": "A transferência física de um computador de um setor para outro dentro da mesma secretaria exige que a carga patrimonial acompanhe o bem. Qual o documento indispensável para formalizar essa movimentação?",
+    "options": [
+      { "id": "A", "text": "Termo de Desafetação." },
+      { "id": "B", "text": "Termo de Imissão de Posse." },
+      { "id": "C", "text": "Termo de Transferência ou Movimentação Interna." },
+      { "id": "D", "text": "Edital de Leilão." },
+      { "id": "E", "text": "Nota Fiscal de Aquisição original." }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "title": "11. Procedimentos de Transferência",
+    "text": "Para que a responsabilidade sobre um equipamento transferido entre setores seja efetivamente legalizada, o Termo de Movimentação deve conter, obrigatoriamente:",
+    "options": [
+      { "id": "A", "text": "Apenas a assinatura do servidor que está entregando o bem." },
+      { "id": "B", "text": "As assinaturas conjuntas de quem transfere e de quem recebe o bem, assumindo a nova carga." },
+      { "id": "C", "text": "A assinatura de um juiz de direito homologando a transferência." },
+      { "id": "D", "text": "Apenas a assinatura do setor de contabilidade." },
+      { "id": "E", "text": "O aval do Governador do Estado." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "title": "12. Tratamento de Bens Ociosos",
+    "text": "Qual é a conduta administrativa correta e prioritária quando se identifica um lote de bens 'ociosos' (em bom estado, mas sem uso) em um departamento?",
+    "options": [
+      { "id": "A", "text": "Descartá-los imediatamente como lixo comum." },
+      { "id": "B", "text": "Enviá-los diretamente a leilão como sucata." },
+      { "id": "C", "text": "Doar para servidores da própria unidade." },
+      { "id": "D", "text": "Disponibilizá-los para transferência ou redistribuição a outros órgãos/setores que tenham demanda." },
+      { "id": "E", "text": "Aguardar que quebrem para solicitar a baixa contábil." }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 13,
+    "title": "13. Desapropriação Judicial",
+    "text": "No curso de um processo de desapropriação por utilidade pública, o Estado pode requerer o ingresso antecipado no imóvel para iniciar imediatamente uma obra, mediante o depósito judicial do valor avaliado. Esse ato jurídico é denominado:",
+    "options": [
+      { "id": "A", "text": "Desafetação compulsória." },
+      { "id": "B", "text": "Imissão provisória na posse." },
+      { "id": "C", "text": "Tombamento cautelar." },
+      { "id": "D", "text": "Averbação de uso especial." },
+      { "id": "E", "text": "Alienação judicial." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "title": "14. Desapropriação Judicial",
+    "text": "Qual é o principal foco dos litígios movidos por particulares contra o Estado nas ações de desapropriação, uma vez que o mérito da utilidade pública é de difícil contestação?",
+    "options": [
+      { "id": "A", "text": "A escolha do engenheiro da obra." },
+      { "id": "B", "text": "A discussão sobre o valor da indenização considerada justa." },
+      { "id": "C", "text": "A cor da pintura do imóvel." },
+      { "id": "D", "text": "O direito de continuar morando no imóvel permanentemente." },
+      { "id": "E", "text": "A anulação da Constituição Estadual." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "title": "15. Desapropriação Judicial",
+    "text": "Por que é obrigatório e fundamental que o ente público averbe ou registre o mandado de imissão de posse (e futuramente a sentença) na matrícula do imóvel no Cartório de Registro de Imóveis (CRI)?",
+    "options": [
+      { "id": "A", "text": "Para evitar que o antigo proprietário venda o imóvel a terceiros de boa-fé ou sofra penhoras por dívidas." },
+      { "id": "B", "text": "Apenas para gerar recolhimento de taxas cartorárias ao município." },
+      { "id": "C", "text": "Para que o juiz possa iniciar o processo de licitação da obra." },
+      { "id": "D", "text": "Para isentar a construtora de impostos federais." },
+      { "id": "E", "text": "O registro em cartório é opcional nas desapropriações estaduais." }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "title": "16. Desapropriação Judicial",
+    "text": "Após o encerramento do processo judicial de desapropriação, com o pagamento da indenização justa e o trânsito em julgado da sentença, ocorre a fase de:",
+    "options": [
+      { "id": "A", "text": "Imissão provisória na posse." },
+      { "id": "B", "text": "Retroatividade dominical." },
+      { "id": "C", "text": "Imissão definitiva na posse e consolidação da propriedade em nome do ente público." },
+      { "id": "D", "text": "Desafetação automática do bem desapropriado." },
+      { "id": "E", "text": "Devolução do bem ao particular." }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "title": "17. Desapropriação Judicial",
+    "text": "Se o Estado construir um hospital em uma área desapropriada, mas a Procuradoria não registrar a sentença no Cartório de Imóveis, qual a situação desse bem perante a gestão patrimonial pública?",
+    "options": [
+      { "id": "A", "text": "Estará perfeitamente regularizado, pois a construção da obra valida a propriedade." },
+      { "id": "B", "text": "Estará em situação irregular (pendência de averbação), o que inviabiliza a segurança jurídica e a exatidão do inventário contábil." },
+      { "id": "C", "text": "O imóvel passará automaticamente a ser bem de uso comum do povo." },
+      { "id": "D", "text": "O Estado perde imediatamente a posse do hospital construído." },
+      { "id": "E", "text": "O bem será considerado ocioso pelo sistema." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "title": "18. Desapropriação Judicial",
+    "text": "Na sistemática da desapropriação, a consolidação da propriedade do Estado (imissão definitiva) encerra o litígio possessório. Nesse momento, para fechar a cadeia dominial e formalizar a propriedade pública, a sentença judicial serve como:",
+    "options": [
+      { "id": "A", "text": "Ato de infração de trânsito." },
+      { "id": "B", "text": "Título hábil para registro no Cartório de Imóveis, substituindo a escritura pública de compra e venda." },
+      { "id": "C", "text": "Alvará de funcionamento da secretaria." },
+      { "id": "D", "text": "Autorização para leilão imediato do bem." },
+      { "id": "E", "text": "Termo de Sindicância Patrimonial." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "title": "19. Responsabilidade do Servidor",
+    "text": "Quando um servidor público recebe um notebook ou veículo oficial para o exercício de suas funções, ele deve assinar um Termo de Guarda e Responsabilidade. O que esse termo implica juridicamente?",
+    "options": [
+      { "id": "A", "text": "Que o bem passa a ser propriedade particular do servidor." },
+      { "id": "B", "text": "Que o servidor é pessoalmente responsável por zelar, conservar e responder por perdas ou danos causados ao bem sob sua custódia." },
+      { "id": "C", "text": "Que o servidor pode alienar o bem quando achar que ele ficou obsoleto." },
+      { "id": "D", "text": "Que o servidor só responde pelo bem durante o horário de expediente, estando isento de furto fora da repartição." },
+      { "id": "E", "text": "Que o Estado isenta o servidor de qualquer dano, independentemente de negligência." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "title": "20. Sindicância e Dano ao Erário",
+    "text": "Se um servidor acidentalmente derruba e quebra um equipamento de alto valor, qual é o procedimento administrativo OBRIGATÓRIO antes de se imputar qualquer dever de ressarcimento ao erário?",
+    "options": [
+      { "id": "A", "text": "Desconto automático no próximo contracheque do servidor." },
+      { "id": "B", "text": "Exoneração sumária do servidor." },
+      { "id": "C", "text": "Instauração de Sindicância Patrimonial para apurar os fatos e o nexo de causalidade." },
+      { "id": "D", "text": "Baixa imediata do bem como sucata, sem apuração." },
+      { "id": "E", "text": "Cobrança via cartão de crédito do funcionário." }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "title": "21. Sindicância e Dano ao Erário",
+    "text": "Durante o rito de uma Sindicância Patrimonial, a Constituição Federal garante ao servidor investigado um direito inafastável, sob pena de nulidade do processo. Que direito é esse?",
+    "options": [
+      { "id": "A", "text": "O direito ao anonimato permanente." },
+      { "id": "B", "text": "A garantia do contraditório e da ampla defesa, podendo apresentar sua versão e produzir provas." },
+      { "id": "C", "text": "O direito de substituir o bem quebrado por qualquer outro objeto." },
+      { "id": "D", "text": "A garantia de impunidade caso o bem tenha mais de 5 anos de uso." },
+      { "id": "E", "text": "O direito de não assinar o termo de guarda." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "title": "22. Sindicância e Dano ao Erário",
+    "text": "É correto afirmar sobre o desconto financeiro direto na folha de pagamento do servidor em caso de sumiço ou quebra de um bem permanente:",
+    "options": [
+      { "id": "A", "text": "É perfeitamente legal fazê-lo de ofício, sem nenhum processo prévio, para garantir o ressarcimento rápido do erário." },
+      { "id": "B", "text": "É ilegal e nulo caso seja efetuado sem a instauração prévia do rito formal de apuração (Sindicância) e sem garantir a ampla defesa." },
+      { "id": "C", "text": "Deve ser aplicado apenas a bens de baixo valor (até R$ 100)." },
+      { "id": "D", "text": "Pode ser feito pelo chefe imediato por meio de comunicação verbal à folha de pagamento." },
+      { "id": "E", "text": "Nunca é permitido em nenhuma hipótese, devendo o Estado assumir todo e qualquer prejuízo." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 23,
+    "title": "23. Sindicância e Dano ao Erário",
+    "text": "Na responsabilização patrimonial, o nexo de causalidade para imputar o ressarcimento ao servidor depende da comprovação de que o dano ocorreu em decorrência de:",
+    "options": [
+      { "id": "A", "text": "Força maior ou caso fortuito exclusivamente." },
+      { "id": "B", "text": "Dolo (intenção) ou culpa (negligência, imprudência ou imperícia) por parte do agente público." },
+      { "id": "C", "text": "Ação de terceiros sem qualquer facilitação do servidor." },
+      { "id": "D", "text": "Desgaste natural e obsolescência tecnológica do equipamento." },
+      { "id": "E", "text": "Falta de manutenção preventiva por parte da empresa contratada." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "title": "24. Sindicância e Dano ao Erário",
+    "text": "Confirmada a culpa do servidor na sindicância, ele ressarce o erário. Após essa etapa (ou em caso de força maior sem culpados), o que a comissão patrimonial deve fazer com o registro do equipamento totalmente destruído?",
+    "options": [
+      { "id": "A", "text": "Mantê-lo no balanço contábil indefinidamente como 'bem ativo'." },
+      { "id": "B", "text": "Formalizar a baixa contábil definitiva do ativo permanente com base no relatório final da sindicância." },
+      { "id": "C", "text": "Transferir a carga patrimonial para o CPF do servidor punido." },
+      { "id": "D", "text": "Doar os destroços simbolicamente a uma ONG." },
+      { "id": "E", "text": "Leiloar o registro fantasma do equipamento." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 25,
+    "title": "25. Desfazimento de Bens e Leilão",
+    "text": "O processo de destinação final de bens inservíveis à Administração Pública (como mobiliário quebrado ou frota de veículos sucateados), dando a eles um encerramento legal (doação, venda ou descarte), é conhecido como processo de:",
+    "options": [
+      { "id": "A", "text": "Afetação patrimonial." },
+      { "id": "B", "text": "Tombamento histórico." },
+      { "id": "C", "text": "Desfazimento." },
+      { "id": "D", "text": "Requisição administrativa." },
+      { "id": "E", "text": "Sindicância de aquisição." }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 26,
+    "title": "26. Desfazimento de Bens e Leilão",
+    "text": "Conforme a nova Lei de Licitações (Lei nº 14.133/2021) e normativas aplicáveis, a alienação de bens móveis inservíveis e sucatas da administração pública deve utilizar, como regra geral, qual modalidade de licitação?",
+    "options": [
+      { "id": "A", "text": "Concurso." },
+      { "id": "B", "text": "Convite." },
+      { "id": "C", "text": "Leilão." },
+      { "id": "D", "text": "Diálogo Competitivo." },
+      { "id": "E", "text": "Tomada de Preços." }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 27,
+    "title": "27. Desfazimento de Bens e Leilão",
+    "text": "Antes que uma frota de viaturas seja colocada no pátio para arremate em um Leilão Eletrônico, qual procedimento patrimonial prévio é exigido para assegurar que o lote pode ser vendido legalmente?",
+    "options": [
+      { "id": "A", "text": "A classificação documentada de inservibilidade e a avaliação prévia com valor de referência." },
+      { "id": "B", "text": "A afetação dos veículos como bens de uso comum do povo." },
+      { "id": "C", "text": "A lavratura de uma escritura em cartório para cada veículo." },
+      { "id": "D", "text": "O perdão das dívidas do IPVA pelo Governo Federal." },
+      { "id": "E", "text": "A pintura dos carros com as cores oficiais do Estado." }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 28,
+    "title": "28. Desfazimento de Bens e Leilão",
+    "text": "A condução da sessão de lances do leilão de bens móveis inservíveis pode ser realizada por:",
+    "options": [
+      { "id": "A", "text": "Exclusivamente por um juiz de direito estadual." },
+      { "id": "B", "text": "Somente pelo Secretário de Administração pessoalmente." },
+      { "id": "C", "text": "Qualquer cidadão que tenha interesse em comprar um dos bens." },
+      { "id": "D", "text": "Servidor público designado para essa função ou por leiloeiro oficial credenciado." },
+      { "id": "E", "text": "Apenas pelo consórcio das empresas automobilísticas." }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 29,
+    "title": "29. Desfazimento de Bens e Leilão",
+    "text": "O que deve ser feito com bens que, após criteriosa avaliação patrimonial, são considerados totalmente sem valor econômico ou comercial (lixo inservível), tornando inviável o custo de realizar um leilão?",
+    "options": [
+      { "id": "A", "text": "Devem ser escondidos no almoxarifado indefinidamente." },
+      { "id": "B", "text": "Podem passar por um descarte ambientalmente adequado, seguindo as normas de resíduos sólidos e eletrônicos." },
+      { "id": "C", "text": "A Administração deve obrigar o servidor do setor a levá-los para casa." },
+      { "id": "D", "text": "Devem ser vendidos em leilão obrigatoriamente, mesmo que o Estado tenha prejuízo na operação do evento." },
+      { "id": "E", "text": "Voltam a figurar como bens antieconômicos e ganham nova carga no sistema." }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "title": "30. Desfazimento de Bens e Leilão",
+    "text": "Após a realização bem-sucedida do Leilão, o arremate do lote e o devido pagamento efetuado pelo vencedor, qual é o ato final da comissão patrimonial para encerrar o ciclo de vida do bem?",
+    "options": [
+      { "id": "A", "text": "Emitir uma nova plaqueta de patrimônio com o nome do arrematante." },
+      { "id": "B", "text": "Averbar a venda na Sindicância." },
+      { "id": "C", "text": "Realizar a baixa contábil no sistema patrimonial e registrar a receita gerada pela venda." },
+      { "id": "D", "text": "Devolver o dinheiro arrecadado ao setor que antes utilizava o bem." },
+      { "id": "E", "text": "Aguardar 5 anos para formalizar o termo de desfazimento." }
+    ],
+    "answer": "C"
+  };
+
 const qsMod3Aulas3_4 = [];
 
 // Módulo 4
