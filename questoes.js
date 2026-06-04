@@ -2205,7 +2205,7 @@ const qsMod3Aula2 = [
       { "id": "E", "text": "Aguardar 5 anos para formalizar o termo de desfazimento." }
     ],
     "answer": "C"
-  };
+  }
 ];
 const qsMod3Aulas3_4 = [];
 
