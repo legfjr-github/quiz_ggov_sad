@@ -2206,7 +2206,7 @@ const qsMod3Aula2 = [
     ],
     "answer": "C"
   };
-
+];
 const qsMod3Aulas3_4 = [];
 
 // Módulo 4
