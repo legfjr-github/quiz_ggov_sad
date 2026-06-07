@@ -2208,7 +2208,428 @@ const qsMod3Aula2 = [
   }
 ];
 
-const qsMod3Aulas3_4 = [];
+const qsMod3Aulas3_4 = [
+  {
+    "id": 1,
+    "title": "1. Era das Privatizações",
+    "text": "A evolução da infraestrutura brasileira passou pela “Era das Privatizações”, que teve como marco a criação do Programa Nacional de Desestatização (PND) em 1990. Qual das opções abaixo NÃO faz parte do “tripé” que fundamentou o PND?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conferir eficiência aos serviços transferidos."
+      },
+      {
+        "id": "B",
+        "text": "Redução da dívida pública."
+      },
+      {
+        "id": "C",
+        "text": "Retomada de investimentos nas atividades transferidas."
+      },
+      {
+        "id": "D",
+        "text": "Ocupação exclusiva de setores de interesse público estratégico."
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das anteriores, pois todas formam o tripé."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 2,
+    "title": "2. Privatização vs. Delegação",
+    "text": "A “Era das Delegações” introduziu marcos legais fundamentais para a infraestrutura. Qual é a diferença essencial entre uma “Privatização” e uma “Delegação”?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na delegação, o Estado vende definitivamente os ativos para cobrir a dívida pública."
+      },
+      {
+        "id": "B",
+        "text": "Na privatização, o Estado vende a titularidade do ativo; na delegação, o Estado continua titular e transfere apenas a operação."
+      },
+      {
+        "id": "C",
+        "text": "Ambas significam a venda definitiva da empresa estatal, divergindo apenas no prazo de pagamento."
+      },
+      {
+        "id": "D",
+        "text": "A delegação é restrita a setores onde a economia de mercado não atua."
+      },
+      {
+        "id": "E",
+        "text": "A privatização transfere a operação por um prazo determinado (ex.: 35 anos) e depois os bens são revertidos ao Estado."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "title": "3. Lei das Concessões",
+    "text": "O material apresenta o contraste entre as leis da “Era das Delegações” (slides 8 e 9). Sobre a Lei das Concessões (Lei nº 8.987/95), é correto afirmar que seu foco primordial são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Projetos que dependem majoritariamente de subsídio estatal."
+      },
+      {
+        "id": "B",
+        "text": "Projetos estritamente autossustentáveis."
+      },
+      {
+        "id": "C",
+        "text": "Contratos sofisticados voltados exclusivamente para obras sem cobrança de tarifa."
+      },
+      {
+        "id": "D",
+        "text": "Contratos onde o Poder Público é o único usuário."
+      },
+      {
+        "id": "E",
+        "text": "Situações de falência de empresas públicas, visando à estatização."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 4,
+    "title": "4. Marcos Legais e Formas de Contratação",
+    "text": "O material lista as formas de contratação e os marcos legais pelo Estado (slides 16 e 17). Assinale a alternativa que relaciona corretamente a legislação ao seu respectivo objeto principal:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lei nº 14.133/21 – Lei das Estatais."
+      },
+      {
+        "id": "B",
+        "text": "Lei nº 13.303/16 – Lei de Concessões."
+      },
+      {
+        "id": "C",
+        "text": "Lei nº 8.987/95 – Lei de Licitações e Contratos Administrativos."
+      },
+      {
+        "id": "D",
+        "text": "Lei nº 11.079/04 – Lei das Parcerias Público-Privadas (PPPs)."
+      },
+      {
+        "id": "E",
+        "text": "Lei nº 14.133/21 – Institui o Programa de Parceria em Investimentos (PPI)."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 5,
+    "title": "5. Concessão Comum",
+    "text": "De acordo com a caracterização da Concessão Comum (Lei nº 8.987/1995), a assunção da gestão do negócio pelo concessionário ocorre:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sob a responsabilidade financeira exclusiva do Estado, sem riscos para o ente privado."
+      },
+      {
+        "id": "B",
+        "text": "Por sua conta e risco, obtendo a remuneração integralmente pela tarifação paga pelos usuários."
+      },
+      {
+        "id": "C",
+        "text": "Com a garantia de que o Estado cobrirá qualquer insuficiência na arrecadação das tarifas."
+      },
+      {
+        "id": "D",
+        "text": "De forma que o risco seja sempre de 50% para o Estado e 50% para o concessionário."
+      },
+      {
+        "id": "E",
+        "text": "Apenas se houver pagamento integral do serviço por parte do poder concedente."
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "title": "6. Modalidades da Concessão Comum",
+    "text": "A Lei nº 8.987/1995 define duas modalidades para a concessão comum. Quais são elas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Concessão patrocinada e concessão administrativa."
+      },
+      {
+        "id": "B",
+        "text": "Concessão autossustentável e concessão de risco."
+      },
+      {
+        "id": "C",
+        "text": "Concessão de serviço público e concessão de serviço público precedida da execução de obra pública."
+      },
+      {
+        "id": "D",
+        "text": "Privatização integral e delegação parcial."
+      },
+      {
+        "id": "E",
+        "text": "Concessão tarifada e concessão subsidiada."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "title": "7. Justificativa Financeira da PPP",
+    "text": "Na estruturação de uma Parceria Público-Privada (Lei nº 11.079/2004), o modelo se justifica financeiramente quando:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A receita tarifária é autossuficiente para gerar lucro e pagar o investimento sem ajuda do Estado."
+      },
+      {
+        "id": "B",
+        "text": "O serviço puder ser executado sem a necessidade de obras de engenharia."
+      },
+      {
+        "id": "C",
+        "text": "A receita tarifária é insuficiente para remunerar o investimento de forma isolada."
+      },
+      {
+        "id": "D",
+        "text": "O projeto for destinado à alienação definitiva de ativos governamentais."
+      },
+      {
+        "id": "E",
+        "text": "O contrato tiver duração inferior a 5 anos e valor até 10 milhões."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "title": "8. Concessão Administrativa (PPP)",
+    "text": "Dentro do conceito das PPPs (Lei nº 11.079/2004), a modalidade de Concessão Administrativa é caracterizada quando:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cobrança é feita de forma combinada entre tarifas pagas pelos usuários e remuneração do Estado."
+      },
+      {
+        "id": "B",
+        "text": "A remuneração é obtida exclusivamente por meio de receitas acessórias (ex.: publicidade)."
+      },
+      {
+        "id": "C",
+        "text": "O pagamento é feito integralmente pelo poder concedente, sendo o principal usuário do serviço o próprio Poder Público."
+      },
+      {
+        "id": "D",
+        "text": "Envolve concessão de serviços públicos sem necessidade de contraprestação pecuniária do governo."
+      },
+      {
+        "id": "E",
+        "text": "O concessionário assume o risco apenas sobre mudanças legislativas relevantes."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 9,
+    "title": "9. Concessão Patrocinada (PPP)",
+    "text": "Sobre a modalidade de Concessão Patrocinada nas PPPs, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não permite o pagamento de tarifas pelos usuários em nenhuma hipótese."
+      },
+      {
+        "id": "B",
+        "text": "O poder concedente arca com o pagamento total, sendo o único beneficiário direto."
+      },
+      {
+        "id": "C",
+        "text": "Consiste na combinação de tarifas pagas pelos usuários, mais remuneração paga pelo poder concedente, além de eventuais receitas acessórias."
+      },
+      {
+        "id": "D",
+        "text": "A titularidade da empresa estatal é transferida permanentemente para a iniciativa privada."
+      },
+      {
+        "id": "E",
+        "text": "Elimina o compartilhamento de atribuições entre empresas e governo."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "title": "10. Requisitos do Serviço Adequado",
+    "text": "A prestação de serviços delegados requer o pleno atendimento do usuário por meio de um “serviço adequado”. Como é denominado o requisito voltado para a modernidade das técnicas, dos equipamentos e das instalações, bem como sua conservação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Modicidade."
+      },
+      {
+        "id": "B",
+        "text": "Cortesia."
+      },
+      {
+        "id": "C",
+        "text": "Continuidade."
+      },
+      {
+        "id": "D",
+        "text": "Atualidade."
+      },
+      {
+        "id": "E",
+        "text": "Generalidade."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 11,
+    "title": "11. Princípio Central da Matriz de Riscos",
+    "text": "A Matriz de Riscos (slide 42) é fundamental nos contratos de concessão, autorizando a repartição objetiva de riscos. Qual é o princípio central que norteia a alocação desses riscos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O risco deve ser repassado integralmente à parte privada, que visa lucros operacionais."
+      },
+      {
+        "id": "B",
+        "text": "O risco deve ser assumido pelo Estado para proteger o cidadão de aumentos tarifários."
+      },
+      {
+        "id": "C",
+        "text": "O risco deve ser alocado à parte que possui melhor capacidade de preveni-lo, administrá-lo ou mitigar seus efeitos."
+      },
+      {
+        "id": "D",
+        "text": "Os riscos devem ser divididos obrigatoriamente e equitativamente, independentemente de quem os causou."
+      },
+      {
+        "id": "E",
+        "text": "O risco é transferido aos financiadores e fiadores por meio da cláusula step in right."
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "title": "12. Matriz de Riscos: Poder Público",
+    "text": "Na divisão padrão proposta pela Matriz de Riscos em contratos de concessão (slide 42), qual dos seguintes riscos é comumente assumido pelo Poder Público?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fato do príncipe (atos de autoridade) e desapropriações."
+      },
+      {
+        "id": "B",
+        "text": "Performance operacional do ativo."
+      },
+      {
+        "id": "C",
+        "text": "Custos adicionais de construção por falha de projeto."
+      },
+      {
+        "id": "D",
+        "text": "Atrasos executivos e ineficiência do serviço."
+      },
+      {
+        "id": "E",
+        "text": "Manutenção das estruturas a longo prazo."
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 13,
+    "title": "13. Matriz de Riscos: Empresa Concessionária",
+    "text": "Ainda sobre a Matriz de Riscos (slide 42), qual responsabilidade recai primordialmente sobre a Empresa Concessionária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mudança legislativa relevante."
+      },
+      {
+        "id": "B",
+        "text": "Liberação de licenciamento prévio, quando for encargo do projeto original."
+      },
+      {
+        "id": "C",
+        "text": "Concorrência de novas rotas estatais adjacentes."
+      },
+      {
+        "id": "D",
+        "text": "Performance operacional, custos de construção e manutenção do ativo."
+      },
+      {
+        "id": "E",
+        "text": "Pagamento por desapropriações de terras ao longo do projeto."
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 14,
+    "title": "14. Requisitos para Configuração de PPP",
+    "text": "A Lei de PPPs (Lei nº 11.079/04) possui requisitos rígidos para sua configuração (slides 16 e 17). Assinale a alternativa que contempla os parâmetros orçamentários e temporais mínimos para firmar esse tipo de contrato:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Valores superiores a R$ 10 milhões e período de prestação superior a 5 e inferior a 35 anos."
+      },
+      {
+        "id": "B",
+        "text": "Valores superiores a R$ 1 milhão e período de prestação superior a 2 e inferior a 10 anos."
+      },
+      {
+        "id": "C",
+        "text": "Valores inferiores a R$ 10 milhões por dispensa de licitação e período ilimitado."
+      },
+      {
+        "id": "D",
+        "text": "Qualquer valor que justifique obras de engenharia superiores a 5 anos."
+      },
+      {
+        "id": "E",
+        "text": "Limite orçamentário definido a cada ano pela Lei de Diretrizes Orçamentárias, sem prazo máximo de contrato."
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 15,
+    "title": "15. Sociedade de Propósito Específico (SPE)",
+    "text": "A constituição de uma Sociedade de Propósito Específico (SPE) é obrigatória antes da celebração do contrato de PPP. Sobre a SPE, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Administração Pública tem exclusividade na gestão administrativa da empresa."
+      },
+      {
+        "id": "B",
+        "text": "A transferência do controle societário da SPE para terceiros independe da aprovação do Estado."
+      },
+      {
+        "id": "C",
+        "text": "Fica vedado à Administração Pública ser titular da maioria do capital votante."
+      },
+      {
+        "id": "D",
+        "text": "A SPE não pode assumir a forma de companhia aberta ou negociar valores mobiliários."
+      },
+      {
+        "id": "E",
+        "text": "A inobservância da formação da SPE transfere os riscos de construção automaticamente para o Poder Público."
+      }
+    ],
+    "answer": "C"
+  }
+];
 
 // Módulo 4
 const qsMod4Aula1 = [];
