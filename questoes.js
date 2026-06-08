@@ -2629,7 +2629,526 @@ const qsMod3Aula2 = [
   }
 ];
 
-const qsMod3Aulas3_4 = [];
+const qsMod3Aulas3_4 = [
+  {
+    "id": 1,
+    "title": "1. Âmbito de Aplicação e Exceções (Art. 1º)",
+    "text": "A Lei nº 14.133/2021 estabelece normas gerais de licitação e contratação para as Administrações Públicas diretas, autárquicas e fundacionais[span_0](start_span)[span_0](end_span). Segundo o §1º do Art. 1º, qual entidade possui regramento próprio e NÃO é abrangida por esta Lei?",
+    "options": [
+      { "id": "A", "text": "Órgãos do Poder Legislativo municipal em função administrativa[span_1](start_span)[span_1](end_span)." },
+      { "id": "B", "text": "Fundos especiais controlados pela Administração Pública[span_2](start_span)[span_2](end_span)." },
+      { "id": "C", "text": "Empresas públicas, sociedades de economia mista e suas subsidiárias[span_3](start_span)[span_3](end_span)." },
+      { "id": "D", "text": "Autarquias estaduais e municipais[span_4](start_span)[span_4](end_span)." },
+      { "id": "E", "text": "Órgãos do Poder Judiciário da União em função administrativa[span_5](start_span)[span_5](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O Art. 1º, §1º determina expressamente que não são abrangidas por esta Lei as empresas públicas, as sociedades de economia mista e as suas subsidiárias, que são regidas pela Lei nº 13.303/2016[span_6](start_span)[span_6](end_span)."
+  },
+  {
+    "id": 2,
+    "title": "2. Âmbito de Aplicação: Poderes (Art. 1º)",
+    "text": "Os órgãos dos Poderes Legislativo e Judiciário da União, dos Estados e do Distrito Federal estão subordinados às normas gerais da Lei nº 14.133/2021 em qual situação específica[span_7](start_span)[span_7](end_span)?",
+    "options": [
+      { "id": "A", "text": "Em qualquer hipótese, devido ao princípio da simetria[span_8](start_span)[span_8](end_span)." },
+      { "id": "B", "text": "Apenas quando realizarem operações de crédito externo[span_9](start_span)[span_9](end_span)." },
+      { "id": "C", "text": "Quando no desempenho de função legislativa ou jurisdicional atípica[span_10](start_span)[span_10](end_span)." },
+      { "id": "D", "text": "Quando no desempenho de função administrativa[span_11](start_span)[span_11](end_span)." },
+      { "id": "E", "text": "Eles não são abrangidos pela Lei, que se restringe ao Poder Executivo[span_12](start_span)[span_12](end_span)." }
+    ],
+    "answer": "D",
+    "explanation": "Gabarito: D. O Art. 1º, inciso I, abrange os órgãos dos Poderes Legislativo e Judiciário quando no desempenho de função administrativa[span_13](start_span)[span_13](end_span)."
+  },
+  {
+    "id": 3,
+    "title": "3. Âmbito de Aplicação: Fundos Especiais (Art. 1º)",
+    "text": "De acordo com o Art. 1º da Nova Lei de Licitações, estão sujeitos ao regime da Lei nº 14.133/2021[span_14](start_span)[span_14](end_span):",
+    "options": [
+      { "id": "A", "text": "Os fundos especiais e as demais entidades controladas direta ou indiretamente pela Administração Pública[span_15](start_span)[span_15](end_span)." },
+      { "id": "B", "text": "Exclusivamente as entidades da administração indireta com personalidade jurídica de direito privado[span_16](start_span)[span_16](end_span)." },
+      { "id": "C", "text": "As empresas subsidiárias de sociedades de economia mista[span_17](start_span)[span_17](end_span)." },
+      { "id": "D", "text": "Os contratos que tenham por objeto operação de crédito interno ou externo[span_18](start_span)[span_18](end_span)." },
+      { "id": "E", "text": "Apenas os fundos especiais federais, excluindo-se os estaduais e municipais[span_19](start_span)[span_19](end_span)." }
+    ],
+    "answer": "A",
+    "explanation": "Gabarito: A. O Art. 1º, inciso II, estabelece claramente que a lei abrange os fundos especiais e as demais entidades controladas direta ou indiretamente pela Administração Pública[span_20](start_span)[span_20](end_span)."
+  },
+  {
+    "id": 4,
+    "title": "4. Definições: Estudo Técnico Preliminar (Art. 6º)",
+    "text": "O Estudo Técnico Preliminar (ETP) é conceituado pelo Art. 6º, inciso XX, como o documento constitutivo de qual etapa da contratação[span_21](start_span)[span_21](end_span)?",
+    "options": [
+      { "id": "A", "text": "Da fase recursal, justificando o interesse público da proposta[span_22](start_span)[span_22](end_span)." },
+      { "id": "B", "text": "Da última etapa da fase de planejamento, que aprova o edital[span_23](start_span)[span_23](end_span)." },
+      { "id": "C", "text": "Da primeira etapa do planejamento de uma contratação, que caracteriza o interesse público envolvido e a sua melhor solução[span_24](start_span)[span_24](end_span)." },
+      { "id": "D", "text": "Do encerramento do contrato, para atestar o recebimento definitivo[span_25](start_span)[span_25](end_span)." },
+      { "id": "E", "text": "Da fase de habilitação, demonstrando a qualificação técnica do licitante[span_26](start_span)[span_26](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. Segundo o Art. 6º, XX, o estudo técnico preliminar é o documento constitutivo da primeira etapa do planejamento de uma contratação[span_27](start_span)[span_27](end_span)."
+  },
+  {
+    "id": 5,
+    "title": "5. Definições: Termo de Referência (Art. 6º)",
+    "text": "O Termo de Referência (TR) é o documento necessário para a contratação de bens e serviços[span_28](start_span)[span_28](end_span). O que a fundamentação do TR deve conter primariamente, segundo o Art. 6º, XXIII?",
+    "options": [
+      { "id": "A", "text": "A cópia integral das notas fiscais dos concorrentes[span_29](start_span)[span_29](end_span)." },
+      { "id": "B", "text": "A referência aos estudos técnicos preliminares correspondentes ou o extrato de suas partes não sigilosas[span_30](start_span)[span_30](end_span)." },
+      { "id": "C", "text": "O atestado de exclusividade do produtor do bem[span_31](start_span)[span_31](end_span)." },
+      { "id": "D", "text": "A qualificação econômico-financeira exigida para a contratação[span_32](start_span)[span_32](end_span)." },
+      { "id": "E", "text": "O projeto arquitetônico completo da obra pública[span_33](start_span)[span_33](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. O Art. 6º, XXIII, alínea 'b', determina que a fundamentação da contratação consiste na referência aos estudos técnicos preliminares correspondentes[span_34](start_span)[span_34](end_span)."
+  },
+  {
+    "id": 6,
+    "title": "6. Definições: Elementos do Termo de Referência (Art. 6º)",
+    "text": "Ao elaborar um Termo de Referência, a Administração Pública deve incluir parâmetros descritivos exigidos por lei[span_35](start_span)[span_35](end_span). Dentre as opções abaixo, qual é um elemento legalmente obrigatório no TR (Art. 6º, XXIII)?",
+    "options": [
+      { "id": "A", "text": "O nome do fiscal de contrato já previamente nomeado pela alta administração[span_36](start_span)[span_36](end_span)." },
+      { "id": "B", "text": "O modelo de execução do objeto e os critérios de medição e de pagamento[span_37](start_span)[span_37](end_span)." },
+      { "id": "C", "text": "A decisão arbitral referente a disputas do contrato anterior[span_38](start_span)[span_38](end_span)." },
+      { "id": "D", "text": "O orçamento da licitação impresso e divulgado abertamente no momento inicial da pesquisa[span_39](start_span)[span_39](end_span)." },
+      { "id": "E", "text": "O documento de formalização de demanda assinado pelo ordenador de despesas[span_40](start_span)[span_40](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. Conforme o Art. 6º, XXIII, alíneas 'e' e 'g', o TR deve conter o modelo de execução do objeto e os critérios de medição e de pagamento[span_41](start_span)[span_41](end_span)."
+  },
+  {
+    "id": 7,
+    "title": "7. Modalidades Licitatórias: Concorrência (Art. 6º)",
+    "text": "A concorrência é a modalidade de licitação aplicável à contratação de bens e serviços especiais e de obras e serviços comuns e especiais de engenharia[span_42](start_span)[span_42](end_span). Qual critério de julgamento NÃO pode ser utilizado na concorrência?",
+    "options": [
+      { "id": "A", "text": "Menor preço[span_43](start_span)[span_43](end_span)." },
+      { "id": "B", "text": "Melhor técnica ou conteúdo artístico[span_44](start_span)[span_44](end_span)." },
+      { "id": "C", "text": "Maior lance[span_45](start_span)[span_45](end_span)." },
+      { "id": "D", "text": "Maior retorno econômico[span_46](start_span)[span_46](end_span)." },
+      { "id": "E", "text": "Maior desconto[span_47](start_span)[span_47](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O critério de 'maior lance' é exclusivo da modalidade leilão. O Art. 6º, XXXVIII, estabelece para a concorrência: menor preço, melhor técnica/conteúdo artístico, técnica e preço, maior retorno econômico e maior desconto[span_48](start_span)[span_48](end_span)."
+  },
+  {
+    "id": 8,
+    "title": "8. Modalidades Licitatórias: Concurso (Art. 6º)",
+    "text": "A modalidade de licitação voltada para a escolha de trabalho técnico, científico ou artístico, que concede prêmio ou remuneração ao vencedor, é denominada[span_49](start_span)[span_49](end_span):",
+    "options": [
+      { "id": "A", "text": "Pregão[span_50](start_span)[span_50](end_span)." },
+      { "id": "B", "text": "Concorrência[span_51](start_span)[span_51](end_span)." },
+      { "id": "C", "text": "Diálogo competitivo[span_52](start_span)[span_52](end_span)." },
+      { "id": "D", "text": "Concurso[span_53](start_span)[span_53](end_span)." },
+      { "id": "E", "text": "Leilão[span_54](start_span)[span_54](end_span)." }
+    ],
+    "answer": "D",
+    "explanation": "Gabarito: D. O Art. 6º, XXXIX define o concurso como a modalidade para escolha de trabalho técnico, científico ou artístico, com critério de julgamento de melhor técnica ou conteúdo artístico, concedendo prêmio ou remuneração[span_55](start_span)[span_55](end_span)."
+  },
+  {
+    "id": 9,
+    "title": "9. Modalidades Licitatórias: Leilão (Art. 6º)",
+    "text": "A administração estadual necessita realizar a alienação de sua frota de viaturas inservíveis[span_56](start_span)[span_56](end_span). A modalidade de licitação adequada para alienação de bens móveis inservíveis, baseada no critério de maior lance, é o(a):",
+    "options": [
+      { "id": "A", "text": "Concorrência[span_57](start_span)[span_57](end_span)." },
+      { "id": "B", "text": "Leilão[span_58](start_span)[span_58](end_span)." },
+      { "id": "C", "text": "Pregão presencial[span_59](start_span)[span_59](end_span)." },
+      { "id": "D", "text": "Diálogo competitivo[span_60](start_span)[span_60](end_span)." },
+      { "id": "E", "text": "Concurso de lances[span_61](start_span)[span_61](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. Conforme o Art. 6º, XL, o leilão é a modalidade para alienação de bens imóveis ou de bens móveis inservíveis ou legalmente apreendidos a quem oferecer o maior lance[span_62](start_span)[span_62](end_span)."
+  },
+  {
+    "id": 10,
+    "title": "10. Modalidades Licitatórias: Pregão (Art. 6º)",
+    "text": "O pregão é uma modalidade de licitação obrigatória para a aquisição de bens e serviços comuns[span_63](start_span)[span_63](end_span). De acordo com a Lei nº 14.133/2021, quais são os únicos critérios de julgamento aplicáveis ao pregão?",
+    "options": [
+      { "id": "A", "text": "Menor preço ou técnica e preço[span_64](start_span)[span_64](end_span)." },
+      { "id": "B", "text": "Menor preço ou maior desconto[span_65](start_span)[span_65](end_span)." },
+      { "id": "C", "text": "Melhor técnica ou conteúdo artístico[span_66](start_span)[span_66](end_span)." },
+      { "id": "D", "text": "Maior lance ou maior retorno econômico[span_67](start_span)[span_67](end_span)." },
+      { "id": "E", "text": "Técnica e preço ou maior desconto[span_68](start_span)[span_68](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. O Art. 6º, XLI, prevê explicitamente que o pregão terá como critério de julgamento o menor preço ou o maior desconto[span_69](start_span)[span_69](end_span)."
+  },
+  {
+    "id": 11,
+    "title": "11. Modalidades Licitatórias: Diálogo Competitivo (Art. 6º)",
+    "text": "Como é chamada a modalidade de licitação em que a Administração Pública realiza diálogos com licitantes previamente selecionados mediante critérios objetivos, com o intuito de desenvolver uma ou mais alternativas capazes de atender às suas necessidades[span_70](start_span)[span_70](end_span)?",
+    "options": [
+      { "id": "A", "text": "Diálogo competitivo[span_71](start_span)[span_71](end_span)." },
+      { "id": "B", "text": "Credenciamento[span_72](start_span)[span_72](end_span)." },
+      { "id": "C", "text": "Procedimento de Manifestação de Interesse (PMI)[span_73](start_span)[span_73](end_span)." },
+      { "id": "D", "text": "Concorrência com negociação[span_74](start_span)[span_74](end_span)." },
+      { "id": "E", "text": "Registro Cadastral interativo[span_75](start_span)[span_75](end_span)." }
+    ],
+    "answer": "A",
+    "explanation": "Gabarito: A. A descrição corresponde fielmente à modalidade Diálogo Competitivo, instituída pelo Art. 6º, XLII da Lei nº 14.133/2021[span_76](start_span)[span_76](end_span)."
+  },
+  {
+    "id": 12,
+    "title": "12. Instrumentos de Planejamento: PCA e DFD (Art. 12)",
+    "text": "A Lei de Licitações enfatiza o planejamento. Para elaborar o Plano de Contratações Anual (PCA), o órgão responsável pelo planejamento utiliza como base inicial qual documento oriundo dos setores demandantes[span_77](start_span)[span_77](end_span)?",
+    "options": [
+      { "id": "A", "text": "O Estudo Técnico Preliminar (ETP)[span_78](start_span)[span_78](end_span)." },
+      { "id": "B", "text": "A Matriz de Risco[span_79](start_span)[span_79](end_span)." },
+      { "id": "C", "text": "O Documento de Formalização de Demandas (DFD)[span_80](start_span)[span_80](end_span)." },
+      { "id": "D", "text": "O Termo de Referência (TR) consolidado[span_81](start_span)[span_81](end_span)." },
+      { "id": "E", "text": "O Anteprojeto de arquitetura[span_82](start_span)[span_82](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O Art. 12, inciso VII, afirma que 'a partir de documentos de formalização de demandas (DFD), os órgãos responsáveis... poderão elaborar plano de contratações anual[span_83](start_span)'[span_83](end_span)."
+  },
+  {
+    "id": 13,
+    "title": "13. Objetivos do Plano de Contratações Anual (Art. 12)",
+    "text": "Ao elaborar o Plano de Contratações Anual (PCA), a Administração busca atingir finalidades legais específicas[span_84](start_span)[span_84](end_span). Qual das opções abaixo representa adequadamente esses objetivos legais (Art. 12, VII)?",
+    "options": [
+      { "id": "A", "text": "Substituir o Estudo Técnico Preliminar e dispensar as licitações em massa[span_85](start_span)[span_85](end_span)." },
+      { "id": "B", "text": "Racionalizar as contratações, garantir alinhamento com o planejamento estratégico e subsidiar as leis orçamentárias[span_86](start_span)[span_86](end_span)." },
+      { "id": "C", "text": "Permitir a criação de novas modalidades de licitação ajustadas à realidade do órgão[span_87](start_span)[span_87](end_span)." },
+      { "id": "D", "text": "Garantir o sigilo das compras da administração até o momento da homologação[span_88](start_span)[span_88](end_span)." },
+      { "id": "E", "text": "Suprimir a fase de divulgação de editais no Portal Nacional de Contratações Públicas[span_89](start_span)[span_89](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. Conforme o Art. 12, VII, o objetivo do PCA é racionalizar as contratações, garantir alinhamento com o planejamento estratégico e subsidiar a elaboração das respectivas leis orçamentárias[span_90](start_span)[span_90](end_span)."
+  },
+  {
+    "id": 14,
+    "title": "14. Publicidade do PCA (Art. 12)",
+    "text": "Uma vez elaborado o plano de contratações anual (PCA) pelo órgão, o que a Lei nº 14.133/2021 exige em relação à sua transparência e eficácia perante o público[span_91](start_span)[span_91](end_span)?",
+    "options": [
+      { "id": "A", "text": "Deverá ser mantido sob sigilo até a conclusão de todas as licitações nele previstas[span_92](start_span)[span_92](end_span)." },
+      { "id": "B", "text": "Poderá ser divulgado apenas fisicamente no mural do órgão central[span_93](start_span)[span_93](end_span)." },
+      { "id": "C", "text": "Deverá ser divulgado e mantido à disposição do público em sítio eletrônico oficial[span_94](start_span)[span_94](end_span)." },
+      { "id": "D", "text": "Será obrigatoriamente encaminhado a todos os fornecedores cadastrados por e-mail[span_95](start_span)[span_95](end_span)." },
+      { "id": "E", "text": "Ficará restrito à consulta dos órgãos de controle interno e externo[span_96](start_span)[span_96](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O Art. 12, §1º dispõe explicitamente que o PCA deverá ser divulgado e mantido à disposição do público em sítio eletrônico oficial[span_97](start_span)[span_97](end_span)."
+  },
+  {
+    "id": 15,
+    "title": "15. Fases do Processo Licitatório (Art. 17)",
+    "text": "O processo de licitação na Lei nº 14.133/2021 segue um rito procedimental comum[span_98](start_span)[span_98](end_span). Qual alternativa aponta a ordem exata das fases estabelecida no caput do Art. 17?",
+    "options": [
+      { "id": "A", "text": "Preparatória; divulgação do edital; apresentação de propostas/lances; julgamento; habilitação; recursal; homologação[span_99](start_span)[span_99](end_span)." },
+      { "id": "B", "text": "Preparatória; divulgação do edital; habilitação; apresentação de propostas/lances; julgamento; recursal; homologação[span_100](start_span)[span_100](end_span)." },
+      { "id": "C", "text": "Planejamento; habilitação; julgamento; divulgação do edital; homologação; recursal[span_101](start_span)[span_101](end_span)." },
+      { "id": "D", "text": "Divulgação do edital; preparatória; apresentação de propostas; habilitação; julgamento; recursal; homologação[span_102](start_span)[span_102](end_span)." },
+      { "id": "E", "text": "Preparatória; apresentação de propostas; divulgação do edital; julgamento; habilitação; homologação; recursal[span_103](start_span)[span_103](end_span)." }
+    ],
+    "answer": "A",
+    "explanation": "Gabarito: A. O Art. 17 define as fases sequenciais: preparatória; divulgação do edital; apresentação de propostas/lances; julgamento; habilitação; recursal; e homologação[span_104](start_span)[span_104](end_span)."
+  },
+  {
+    "id": 16,
+    "title": "16. Inversão de Fases na Licitação (Art. 17)",
+    "text": "Como regra geral, a habilitação ocorre após o julgamento das propostas. Contudo, a Lei permite a inversão de fases, antecipando a habilitação[span_105](start_span)[span_105](end_span). Para que a fase de habilitação anteceda as propostas e o julgamento, é necessário:",
+    "options": [
+      { "id": "A", "text": "Apenas o consentimento prévio dos licitantes presentes na sessão[span_106](start_span)[span_106](end_span)." },
+      { "id": "B", "text": "Decisão do pregoeiro durante a sessão, sem necessidade de previsão no edital[span_107](start_span)[span_107](end_span)." },
+      { "id": "C", "text": "Ato motivado com explicitação dos benefícios e previsão expressa no edital de licitação[span_108](start_span)[span_108](end_span)." },
+      { "id": "D", "text": "Autorização do Tribunal de Contas após consulta formal[span_109](start_span)[span_109](end_span)." },
+      { "id": "E", "text": "Que o critério de julgamento seja obrigatoriamente de menor preço[span_110](start_span)[span_110](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. Segundo o Art. 17, §1º, a fase de habilitação poderá anteceder a apresentação de propostas e o julgamento mediante ato motivado com explicitação dos benefícios, desde que expressamente previsto no edital[span_111](start_span)[span_111](end_span)."
+  },
+  {
+    "id": 17,
+    "title": "17. Forma de Realização da Licitação (Art. 17)",
+    "text": "No que tange ao formato em que os atos e sessões licitatórias devem ocorrer, o §2º do Art. 17 orienta a Administração Pública[span_112](start_span)[span_112](end_span). A lei estabelece que as licitações serão realizadas:",
+    "options": [
+      { "id": "A", "text": "Preferencialmente sob a forma presencial, para garantir a ampla defesa[span_113](start_span)[span_113](end_span)." },
+      { "id": "B", "text": "Exclusivamente sob a forma eletrônica, sendo vedada a presencial sob pena de nulidade[span_114](start_span)[span_114](end_span)." },
+      { "id": "C", "text": "Alternadamente entre presencial e eletrônica para assegurar igualdade de acesso[span_115](start_span)[span_115](end_span)." },
+      { "id": "D", "text": "Preferencialmente sob a forma eletrônica, admitida a presencial desde que motivada[span_116](start_span)[span_116](end_span)." },
+      { "id": "E", "text": "Somente de forma eletrônica quando a contratação envolver tecnologia da informação[span_117](start_span)[span_117](end_span)." }
+    ],
+    "answer": "D",
+    "explanation": "Gabarito: D. O Art. 17, §2º, afirma que as licitações serão realizadas preferencialmente sob a forma eletrônica, admitida a utilização da forma presencial, desde que motivada[span_118](start_span)[span_118](end_span)."
+  },
+  {
+    "id": 18,
+    "title": "18. Sessão Presencial Excepcional (Art. 17)",
+    "text": "Na hipótese excepcional de a licitação ser realizada sob a forma presencial de forma motivada, qual é o requisito instrumental obrigatório estipulado pela Lei para resguardar a transparência da sessão pública de apresentação de propostas[span_119](start_span)[span_119](end_span)?",
+    "options": [
+      { "id": "A", "text": "Deve ser registrada apenas por meio de ata física redigida a mão[span_120](start_span)[span_120](end_span)." },
+      { "id": "B", "text": "A sessão deverá ser gravada em áudio e vídeo, e a gravação juntada aos autos do processo[span_121](start_span)[span_121](end_span)." },
+      { "id": "C", "text": "Exige a presença obrigatória de um representante do Ministério Público[span_122](start_span)[span_122](end_span)." },
+      { "id": "D", "text": "Deve ser transmitida obrigatoriamente por rádio de difusão estatal[span_123](start_span)[span_123](end_span)." },
+      { "id": "E", "text": "A documentação deverá ser rubricada em todas as páginas por todos os presentes na sala, sem necessidade de gravação[span_124](start_span)[span_124](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. De acordo com o Art. 17, §5º, na hipótese excepcional de licitação presencial, a sessão pública deverá ser gravada em áudio e vídeo, sendo a gravação juntada aos autos[span_125](start_span)[span_125](end_span)."
+  },
+  {
+    "id": 19,
+    "title": "19. Fase Preparatória (Art. 18)",
+    "text": "A primeira fase do processo licitatório tem uma característica marcante no escopo da nova lei[span_126](start_span)[span_126](end_span). O Art. 18 destaca que a fase preparatória é caracterizada fundamentalmente pelo:",
+    "options": [
+      { "id": "A", "text": "Julgamento sigiloso[span_127](start_span)[span_127](end_span)." },
+      { "id": "B", "text": "Desfazimento do bem[span_128](start_span)[span_128](end_span)." },
+      { "id": "C", "text": "Planejamento[span_129](start_span)[span_129](end_span)." },
+      { "id": "D", "text": "Empenho da despesa[span_130](start_span)[span_130](end_span)." },
+      { "id": "E", "text": "Equilíbrio econômico-financeiro[span_131](start_span)[span_131](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O caput do Art. 18 inicia estabelecendo que 'a fase preparatória do processo licitatório é caracterizada pelo planejamento[span_132](start_span)'[span_132](end_span)."
+  },
+  {
+    "id": 20,
+    "title": "20. Minuta de Contrato na Fase Preparatória (Art. 18)",
+    "text": "Durante a organização dos documentos na fase de planejamento (fase preparatória), o que a lei estabelece quanto à minuta do futuro contrato a ser assinado[span_133](start_span)[span_133](end_span)?",
+    "options": [
+      { "id": "A", "text": "Ela só deve ser elaborada após a declaração do vencedor do certame[span_134](start_span)[span_134](end_span)." },
+      { "id": "B", "text": "Sua elaboração é facultativa e, se feita, não pode integrar o edital para preservar o sigilo[span_135](start_span)[span_135](end_span)." },
+      { "id": "C", "text": "Constará obrigatoriamente como anexo do edital de licitação, quando necessária sua elaboração[span_136](start_span)[span_136](end_span)." },
+      { "id": "D", "text": "Ficará guardada sob posse exclusiva do pregoeiro até o fim da sessão de lances[span_137](start_span)[span_137](end_span)." },
+      { "id": "E", "text": "Deverá ser registrada no Cartório de Registro de Títulos antes de ser divulgada[span_138](start_span)[span_138](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. Segundo o Art. 18, inciso VI, a fase preparatória compreende a elaboração de minuta de contrato, quando necessária, que constará obrigatoriamente como anexo do edital de licitação[span_139](start_span)[span_139](end_span)."
+  },
+  {
+    "id": 21,
+    "title": "21. Análise de Riscos (Art. 18)",
+    "text": "A fase preparatória das licitações sob a Lei nº 14.133/2021 modernizou a visão de controle. Qual dos seguintes elementos tornou-se uma etapa legal requerida nesta fase preparatória (Art. 18, inciso X)[span_140](start_span)[span_140](end_span)?",
+    "options": [
+      { "id": "A", "text": "A convocação obrigatória de audiência pública do Ministério da Fazenda[span_141](start_span)[span_141](end_span)." },
+      { "id": "B", "text": "A análise dos riscos que possam comprometer o sucesso da licitação e a boa execução contratual[span_142](start_span)[span_142](end_span)." },
+      { "id": "C", "text": "A emissão direta do contrato social pela junta comercial do Estado[span_143](start_span)[span_143](end_span)." },
+      { "id": "D", "text": "O depósito caução prévio obrigatório em conta do Tribunal de Contas[span_144](start_span)[span_144](end_span)." },
+      { "id": "E", "text": "O pagamento antecipado do fiscal de contrato[span_145](start_span)[span_145](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. O Art. 18, inciso X, prevê que a fase preparatória compreende a análise dos riscos que possam comprometer o sucesso da licitação e a boa execução contratual[span_146](start_span)[span_146](end_span)."
+  },
+  {
+    "id": 22,
+    "title": "22. Motivação do Edital (Art. 18)",
+    "text": "Em respeito ao princípio da transparência e da motivação, exigências restritivas no edital não podem ser arbitrárias[span_147](start_span)[span_147](end_span). Segundo o Art. 18, inciso IX, a Administração deve providenciar na fase preparatória a:",
+    "options": [
+      { "id": "A", "text": "Remessa do edital em sigilo ao licitante mais qualificado[span_148](start_span)[span_148](end_span)." },
+      { "id": "B", "text": "Dispensa genérica de justificativas para qualificação técnica, presumindo a complexidade[span_149](start_span)[span_149](end_span)." },
+      { "id": "C", "text": "Motivação circunstanciada das condições do edital, tais como justificativa de exigências de qualificação técnica e regras para consórcios[span_150](start_span)[span_150](end_span)." },
+      { "id": "D", "text": "Aprovação unânime de todos os conselhos profissionais envolvidos na obra[span_151](start_span)[span_151](end_span)." },
+      { "id": "E", "text": "Delegação da justificativa técnica diretamente ao vencedor da licitação[span_152](start_span)[span_152](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O Art. 18, inciso IX, exige a motivação circunstanciada das condições do edital, justificando as exigências de qualificação técnica e de participação de consórcios, entre outras[span_153](start_span)[span_153](end_span)."
+  },
+  {
+    "id": 23,
+    "title": "23. Orçamento Estimado: Regra Geral (Art. 23)",
+    "text": "A apuração do orçamento estimado da contratação deve assegurar a veracidade dos custos[span_154](start_span)[span_154](end_span). Segundo a regra geral do Art. 23, caput, o valor previamente estimado deverá ser compatível com os praticados no mercado, observando-se expressamente:",
+    "options": [
+      { "id": "A", "text": "O maior preço encontrado para evitar contratações inexequíveis e as taxas de câmbio nominais[span_155](start_span)[span_155](end_span)." },
+      { "id": "B", "text": "Os preços estipulados internamente pelo prefeito, desconsiderando sistemas oficiais[span_156](start_span)[span_156](end_span)." },
+      { "id": "C", "text": "A potencial economia de escala e as peculiaridades do local de execução do objeto[span_157](start_span)[span_157](end_span)." },
+      { "id": "D", "text": "O valor da inflação presumida para a próxima década[span_158](start_span)[span_158](end_span)." },
+      { "id": "E", "text": "Apenas o menor orçamento enviado pelos representantes comerciais exclusivos[span_159](start_span)[span_159](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O caput do Art. 23 dita que o valor estimado deverá ser compatível com o mercado, observadas a potencial economia de escala e as peculiaridades do local de execução do objeto[span_160](start_span)[span_160](end_span)."
+  },
+  {
+    "id": 24,
+    "title": "24. Pesquisa de Preços no Portal Nacional (Art. 23)",
+    "text": "Para a aquisição de bens e serviços, a lei estabelece parâmetros para a aferição do melhor preço. Um dos parâmetros (Art. 23, §1º, I) consiste na adoção da composição de custos unitários obtidos[span_161](start_span)[span_161](end_span):",
+    "options": [
+      { "id": "A", "text": "Nos sites das maiores empresas estrangeiras privadas[span_162](start_span)[span_162](end_span)." },
+      { "id": "B", "text": "Menores ou iguais à mediana do item correspondente no painel para consulta de preços do Portal Nacional de Contratações Públicas (PNCP)[span_163](start_span)[span_163](end_span)." },
+      { "id": "C", "text": "Na média aritmética dos últimos três anos do Diário Oficial da União[span_164](start_span)[span_164](end_span)." },
+      { "id": "D", "text": "Igual ao maior valor encontrado no banco de preços em saúde[span_165](start_span)[span_165](end_span)." },
+      { "id": "E", "text": "Em orçamentos verbais registrados em ata interna pela equipe de planejamento[span_166](start_span)[span_166](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. O Art. 23, §1º, inciso I, orienta a definição com base em composição de custos menores ou iguais à mediana do item correspondente no painel de preços do PNCP ou banco de saúde[span_167](start_span)[span_167](end_span)."
+  },
+  {
+    "id": 25,
+    "title": "25. Pesquisa de Preços em Contratações Similares (Art. 23)",
+    "text": "Outro parâmetro válido para definir o valor estimado é a pesquisa com contratações similares feitas pela própria Administração Pública[span_168](start_span)[span_168](end_span). Qual é a janela de tempo máxima estipulada pela Lei para considerar a contratação similar válida como parâmetro de pesquisa (Art. 23, §1º, II)?",
+    "options": [
+      { "id": "A", "text": "Concluídas ou em execução no período de 5 (cinco) anos anteriores à pesquisa[span_169](start_span)[span_169](end_span)." },
+      { "id": "B", "text": "Concluídas no período de 6 (seis) meses anteriores à pesquisa[span_170](start_span)[span_170](end_span)." },
+      { "id": "C", "text": "Em execução ou concluídas no período de 1 (um) ano anterior à data da pesquisa de preços[span_171](start_span)[span_171](end_span)." },
+      { "id": "D", "text": "Realizadas apenas no mesmo mês da publicação do edital[span_172](start_span)[span_172](end_span)." },
+      { "id": "E", "text": "Até 10 (dez) anos de retroatividade se os preços forem corrigidos pela inflação[span_173](start_span)[span_173](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O Art. 23, §1º, inciso II, estabelece como parâmetro contratações similares feitas pela Administração Pública, em execução ou concluídas no período de 1 (um) ano anterior à data da pesquisa de preços[span_174](start_span)[span_174](end_span)."
+  },
+  {
+    "id": 26,
+    "title": "26. Pesquisa Direta com Fornecedores (Art. 23)",
+    "text": "Caso a Administração opte por realizar pesquisa direta com os fornecedores do mercado para obter o orçamento estimado (Art. 23, §1º, IV), ela deverá respeitar os seguintes limites[span_175](start_span)[span_175](end_span):",
+    "options": [
+      { "id": "A", "text": "Mínimo de 3 (três) fornecedores e orçamentos obtidos a não mais de 6 (seis) meses de antecedência da data de divulgação do edital[span_176](start_span)[span_176](end_span)." },
+      { "id": "B", "text": "Mínimo de 5 (cinco) fornecedores e orçamentos com validade ilimitada[span_177](start_span)[span_177](end_span)." },
+      { "id": "C", "text": "Qualquer quantidade de fornecedores, desde que consultados verbalmente[span_178](start_span)[span_178](end_span)." },
+      { "id": "D", "text": "Mínimo de 2 (dois) fornecedores, com orçamentos obtidos a não mais de 1 (um) ano[span_179](start_span)[span_179](end_span)." },
+      { "id": "E", "text": "Pesquisa exclusiva com fornecedores já credenciados que apresentem orçamento há mais de 8 (oito) meses[span_180](start_span)[span_180](end_span)." }
+    ],
+    "answer": "A",
+    "explanation": "Gabarito: A. Conforme o Art. 23, §1º, inciso IV, exige-se pesquisa direta com no mínimo 3 fornecedores, justificativa de escolha e que os orçamentos não tenham sido obtidos há mais de 6 meses da divulgação do edital[span_181](start_span)[span_181](end_span)."
+  },
+  {
+    "id": 27,
+    "title": "27. Inovação na Pesquisa de Preços: Notas Fiscais (Art. 23)",
+    "text": "A Lei nº 14.133/2021 trouxe como inovação a adoção de sistemas eletrônicos avançados para pesquisa de preços[span_182](start_span)[span_182](end_span). Qual é o parâmetro indicado no Art. 23, §1º, inciso V?",
+    "options": [
+      { "id": "A", "text": "Pesquisa no balanço financeiro fechado do IBGE[span_183](start_span)[span_183](end_span)." },
+      { "id": "B", "text": "Pesquisa na base de dados das declarações do Imposto de Renda Pessoa Jurídica[span_184](start_span)[span_184](end_span)." },
+      { "id": "C", "text": "Pesquisa na base nacional de notas fiscais eletrônicas, na forma de regulamento[span_185](start_span)[span_185](end_span)." },
+      { "id": "D", "text": "Pesquisa no fórum de reclamações de consumidores Procon online[span_186](start_span)[span_186](end_span)." },
+      { "id": "E", "text": "Pesquisa exclusiva nas notas de empenho canceladas da União[span_187](start_span)[span_187](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O Art. 23, §1º, inciso V, introduz como parâmetro válido a 'pesquisa na base nacional de notas fiscais eletrônicas, na forma de regulamento[span_188](start_span)'[span_188](end_span)."
+  },
+  {
+    "id": 28,
+    "title": "28. Rol de Modalidades de Licitação (Art. 28)",
+    "text": "O Art. 28 da Lei nº 14.133/2021 taxou as modalidades licitatórias aplicáveis sob seu regime, abolindo figuras antigas (como Tomada de Preços e Convite) e introduzindo novos modelos[span_189](start_span)[span_189](end_span). O rol completo e correto de modalidades na nova lei é:",
+    "options": [
+      { "id": "A", "text": "Pregão, concorrência, credenciamento, leilão e tomada de preços[span_190](start_span)[span_190](end_span)." },
+      { "id": "B", "text": "Pregão, concorrência, concurso, leilão e diálogo competitivo[span_191](start_span)[span_191](end_span)." },
+      { "id": "C", "text": "Concorrência, convite, leilão, pregão e manifestação de interesse[span_192](start_span)[span_192](end_span)." },
+      { "id": "D", "text": "Concorrência, leilão, sistema de registro de preços, diálogo competitivo e concurso[span_193](start_span)[span_193](end_span)." },
+      { "id": "E", "text": "Pregão eletrônico, convite aberto, leilão reverso, concorrência e diálogo público[span_194](start_span)[span_194](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. O Art. 28 elenca expressamente as seguintes modalidades: I - pregão; II - concorrência; III - concurso; IV - leilão; V - diálogo competitivo[span_195](start_span)[span_195](end_span)."
+  },
+  {
+    "id": 29,
+    "title": "29. Vedação à Criação de Modalidades (Art. 28)",
+    "text": "Um prefeito de um município de médio porte decide criar uma modalidade mista de licitação, juntando o rito do leilão com o pregão, por acreditar ser mais benéfico ao erário local[span_196](start_span)[span_196](end_span). Diante da Lei nº 14.133/2021 (Art. 28, §2º), essa atitude é:",
+    "options": [
+      { "id": "A", "text": "Permitida, em nome da autonomia dos entes federativos e do princípio da economicidade[span_197](start_span)[span_197](end_span)." },
+      { "id": "B", "text": "Autorizada, desde que aprovada pela Câmara Municipal em lei específica[span_198](start_span)[span_198](end_span)." },
+      { "id": "C", "text": "Vedada, pois a lei proíbe expressamente a criação de outras modalidades de licitação ou a combinação daquelas referidas em seu texto[span_199](start_span)[span_199](end_span)." },
+      { "id": "D", "text": "Permitida apenas para a alienação de bens inservíveis[span_200](start_span)[span_200](end_span)." },
+      { "id": "E", "text": "Obrigatória em casos de emergência[span_201](start_span)[span_201](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O §2º do Art. 28 é taxativo ao afirmar: 'É vedada a criação de outras modalidades de licitação ou, ainda, a combinação daquelas referidas no caput deste artigo[span_202](start_span)'[span_202](end_span)."
+  },
+  {
+    "id": 30,
+    "title": "30. Prerrogativas da Administração (Art. 104)",
+    "text": "O regime jurídico dos contratos confere à Administração prerrogativas (cláusulas exorbitantes) perante o contratado particular[span_203](start_span)[span_203](end_span). Dentre elas, o Art. 104 autoriza expressamente a Administração a:",
+    "options": [
+      { "id": "A", "text": "Modificá-los unilateralmente para melhor adequação às finalidades de interesse público, respeitados os direitos do contratado[span_204](start_span)[span_204](end_span)." },
+      { "id": "B", "text": "Retardar os pagamentos livremente em até dois anos caso haja déficit orçamentário[span_205](start_span)[span_205](end_span)." },
+      { "id": "C", "text": "Substituir os sócios da empresa contratada unilateralmente[span_206](start_span)[span_206](end_span)." },
+      { "id": "D", "text": "Extingui-los unilateralmente por mera discordância verbal do gestor, sem amparo legal prévio[span_207](start_span)[span_207](end_span)." },
+      { "id": "E", "text": "Assumir a propriedade definitiva dos bens móveis do contratado em qualquer cenário[span_208](start_span)[span_208](end_span)." }
+    ],
+    "answer": "A",
+    "explanation": "Gabarito: A. Consoante o Art. 104, inciso I, a Administração pode modificá-los, unilateralmente, para melhor adequação às finalidades de interesse público, respeitados os direitos do contratado[span_209](start_span)[span_209](end_span)."
+  },
+  {
+    "id": 31,
+    "title": "31. Modificação das Cláusulas Econômico-Financeiras (Art. 104)",
+    "text": "A Administração Pública exerce seu poder de alteração unilateral do projeto ou serviço. Porém, existe uma proteção legal quanto à remuneração[span_210](start_span)[span_210](end_span). Segundo o §1º do Art. 104, as cláusulas econômico-financeiras e monetárias dos contratos:",
+    "options": [
+      { "id": "A", "text": "Podem ser alteradas unilateralmente pelo Estado em caso de calamidade[span_211](start_span)[span_211](end_span)." },
+      { "id": "B", "text": "Estão sujeitas à redução forçada, sem direito a ressarcimento[span_212](start_span)[span_212](end_span)." },
+      { "id": "C", "text": "Não poderão ser alteradas sem prévia concordância do contratado[span_213](start_span)[span_213](end_span)." },
+      { "id": "D", "text": "Ficam subordinadas exclusivamente à taxa de lucro prefixada em lei municipal[span_214](start_span)[span_214](end_span)." },
+      { "id": "E", "text": "Podem ser modificadas de ofício pelo fiscal do contrato[span_215](start_span)[span_215](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O §1º do Art. 104 assegura que as cláusulas econômico-financeiras e monetárias dos contratos não poderão ser alteradas sem prévia concordância do contratado[span_216](start_span)[span_216](end_span)."
+  },
+  {
+    "id": 32,
+    "title": "32. Reequilíbrio Econômico-Financeiro (Art. 104)",
+    "text": "Na hipótese em que a Administração utiliza sua prerrogativa de modificar unilateralmente as quantidades ou as especificações do objeto (aumentando ou diminuindo os encargos), o que determina o §2º do Art. 104[span_217](start_span)[span_217](end_span)?",
+    "options": [
+      { "id": "A", "text": "Que o contrato deverá ser obrigatoriamente rompido e licitado novamente[span_218](start_span)[span_218](end_span)." },
+      { "id": "B", "text": "Que as cláusulas econômico-financeiras do contrato deverão ser revistas para que se mantenha o equilíbrio contratual[span_219](start_span)[span_219](end_span)." },
+      { "id": "C", "text": "Que o contratado deve absorver o prejuízo financeiro como risco inerente à atividade[span_220](start_span)[span_220](end_span)." },
+      { "id": "D", "text": "Que o Tribunal de Contas deverá assumir o repasse das diferenças[span_221](start_span)[span_221](end_span)." },
+      { "id": "E", "text": "Que qualquer aumento de custos só poderá ser pago no próximo ano fiscal[span_222](start_span)[span_222](end_span)." }
+    ],
+    "answer": "B",
+    "explanation": "Gabarito: B. O §2º do Art. 104 determina que as cláusulas econômico-financeiras do contrato deverão ser revistas para que se mantenha o equilíbrio contratual nas alterações unilaterais[span_223](start_span)[span_223](end_span)."
+  },
+  {
+    "id": 33,
+    "title": "33. Ocupação Provisória de Bens e Pessoal (Art. 104)",
+    "text": "O regime jurídico dos contratos confere à Administração a prerrogativa (Art. 104, V) de ocupar provisoriamente bens móveis e imóveis e utilizar pessoal e serviços vinculados ao objeto do contrato[span_224](start_span)[span_224](end_span). Essa prerrogativa é lícita em quais hipóteses?",
+    "options": [
+      { "id": "A", "text": "Por mera conveniência do fiscal da obra de usufruir de ferramentas mais modernas[span_225](start_span)[span_225](end_span)." },
+      { "id": "B", "text": "Para evitar qualquer tipo de licitação futura e assumir de vez o serviço privado[span_226](start_span)[span_226](end_span)." },
+      { "id": "C", "text": "Nas hipóteses de risco à prestação de serviços essenciais e para acautelar apuração administrativa de faltas contratuais[span_227](start_span)[span_227](end_span)." },
+      { "id": "D", "text": "Quando a administração desejar aumentar o lucro da empresa subsidiária[span_228](start_span)[span_228](end_span)." },
+      { "id": "E", "text": "Apenas em contratos regidos por lei internacional e convênios[span_229](start_span)[span_229](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O Art. 104, inciso V, alíneas 'a' e 'b', autoriza a ocupação provisória nas hipóteses de risco à prestação de serviços essenciais e na necessidade de acautelar apuração administrativa de faltas contratuais[span_230](start_span)[span_230](end_span)."
+  },
+  {
+    "id": 34,
+    "title": "34. Quantidade de Fiscais de Contrato (Art. 117)",
+    "text": "A correta gestão do contrato administrativo exige o acompanhamento constante da prestação do serviço[span_231](start_span)[span_231](end_span). Segundo o caput do Art. 117, a execução do contrato deverá ser acompanhada e fiscalizada por:",
+    "options": [
+      { "id": "A", "text": "Uma comissão obrigatória de no mínimo 3 membros[span_232](start_span)[span_232](end_span)." },
+      { "id": "B", "text": "Exclusivamente pelo Tribunal de Contas respectivo[span_233](start_span)[span_233](end_span)." },
+      { "id": "C", "text": "Uma empresa privada terceirizada, dispensando-se a figura do servidor público[span_234](start_span)[span_234](end_span)." },
+      { "id": "D", "text": "1 (um) ou mais fiscais do contrato, representantes da Administração especialmente designados[span_235](start_span)[span_235](end_span)." },
+      { "id": "E", "text": "Apenas pelo agente de contratação, que não poderá ter auxílio ou substituto[span_236](start_span)[span_236](end_span)." }
+    ],
+    "answer": "D",
+    "explanation": "Gabarito: D. O caput do Art. 117 dita que a execução deverá ser acompanhada por 1 (um) ou mais fiscais do contrato, representantes da Administração especialmente designados[span_237](start_span)[span_237](end_span)."
+  },
+  {
+    "id": 35,
+    "title": "35. Contratação de Terceiros para Auxílio ao Fiscal (Art. 117)",
+    "text": "Em virtude da complexidade técnica de determinados objetos (ex. obras complexas de engenharia ou TI), a Administração pode necessitar de expertise extra[span_238](start_span)[span_238](end_span). Sobre a atuação de terceiros na fiscalização, o Art. 117 define que:",
+    "options": [
+      { "id": "A", "text": "É permitida a contratação de terceiros para assistir e subsidiar o fiscal com informações pertinentes à sua atribuição[span_239](start_span)[span_239](end_span)." },
+      { "id": "B", "text": "É totalmente vedada, devendo o fiscal dominar absolutamente todas as disciplinas técnicas[span_240](start_span)[span_240](end_span)." },
+      { "id": "C", "text": "O terceiro contratado substitui formal e legalmente o fiscal do contrato, assumindo a cadeira do servidor[span_241](start_span)[span_241](end_span)." },
+      { "id": "D", "text": "É permitida apenas por cooperação voluntária e não remunerada do setor privado[span_242](start_span)[span_242](end_span)." },
+      { "id": "E", "text": "A contratação transfere aos terceiros o poder de aplicar sanções unilaterais[span_243](start_span)[span_243](end_span)." }
+    ],
+    "answer": "A",
+    "explanation": "Gabarito: A. O caput do Art. 117 expressamente permite 'a contratação de terceiros para assisti-los e subsidiá-los com informações pertinentes a essa atribuição[span_244](start_span)'[span_244](end_span)."
+  },
+  {
+    "id": 36,
+    "title": "36. Limitações da Atuação de Terceiros Auxiliares (Art. 117)",
+    "text": "Quando a Administração contrata um terceiro para auxiliar o fiscal do contrato na obtenção de informações especializadas[span_245](start_span)[span_245](end_span), esse terceiro está sujeito a severas regras (Art. 117, §4º). Qual limitação ele sofre?",
+    "options": [
+      { "id": "A", "text": "Ele adquire poder total de mando sobre o andamento da obra[span_246](start_span)[span_246](end_span)." },
+      { "id": "B", "text": "Ele responderá civilmente de forma subjetiva, dependendo de comprovação de culpa gravíssima[span_247](start_span)[span_247](end_span)." },
+      { "id": "C", "text": "Ele assumirá responsabilidade civil objetiva, firmará termo de confidencialidade e NÃO poderá exercer atribuição própria e exclusiva de fiscal de contrato[span_248](start_span)[span_248](end_span)." },
+      { "id": "D", "text": "Ele se torna isento de responsabilidade sobre a veracidade das informações se atuar de boa-fé[span_249](start_span)[span_249](end_span)." },
+      { "id": "E", "text": "Ele passa a ter exclusividade na assinatura da ordem de paralisação dos serviços[span_250](start_span)[span_250](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. Segundo o §4º, I do Art. 117, o contratado assumirá responsabilidade civil objetiva, assinará termo de confidencialidade e não poderá exercer atribuição própria e exclusiva do fiscal[span_251](start_span)[span_251](end_span)."
+  },
+  {
+    "id": 37,
+    "title": "37. Responsabilidade do Fiscal de Contrato Assistido (Art. 117)",
+    "text": "Se o fiscal do contrato possuir a assistência de uma consultoria terceirizada[span_252](start_span)[span_252](end_span), o que acontece com a sua própria responsabilidade funcional (Art. 117, §4º, II)?",
+    "options": [
+      { "id": "A", "text": "A contratação do terceiro isenta totalmente o fiscal público de qualquer responsabilidade pela medição[span_253](start_span)[span_253](end_span)." },
+      { "id": "B", "text": "O fiscal responderá apenas no âmbito penal, sendo liberado da responsabilidade administrativa[span_254](start_span)[span_254](end_span)." },
+      { "id": "C", "text": "A contratação de terceiros não eximirá de responsabilidade o fiscal do contrato, nos limites das informações recebidas do terceiro contratado[span_255](start_span)[span_255](end_span)." },
+      { "id": "D", "text": "O fiscal responde sozinho, e a empresa terceirizada é isenta de responsabilização no Brasil[span_256](start_span)[span_256](end_span)." },
+      { "id": "E", "text": "Ele delega a responsabilidade formalmente ao órgão central de fiscalização governamental[span_257](start_span)[span_257](end_span)." }
+    ],
+    "answer": "C",
+    "explanation": "Gabarito: C. O §4º, inciso II do Art. 117 alerta que a contratação de terceiros não eximirá de responsabilidade o fiscal do contrato, nos limites das informações recebidas do terceiro[span_258](start_span)[span_258](end_span)."
+  }
+];
 
 // Módulo 4
 const qsMod4Aula1 = [];
