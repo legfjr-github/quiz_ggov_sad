@@ -602,23 +602,32 @@
             });
 
             if (isCorrect) {
-                btnElement.classList.add('correct');
-                score++;
-                feedbackAreaEl.textContent = "🎉 Correto! Muito bem.";
-                feedbackAreaEl.className = 'feedback-area success';
-            } else {
-                btnElement.classList.add('incorrect');
-                feedbackAreaEl.innerHTML = `❌ Incorreto. A resposta correta era <strong>${q.answer}</strong>.`;
-                feedbackAreaEl.className = 'feedback-area error';
-            }
+    btnElement.classList.add('correct');
+    score++;
+    
+    // Verifica se a explicação existe. Se sim, formata o texto; se não, fica vazio.
+    const explanationText = q.explanation ? `<br><small>${q.explanation}</small>` : '';
+    
+    feedbackAreaEl.innerHTML = `🎉 Correto! Muito bem. ${explanationText}`;
+    feedbackAreaEl.className = 'feedback-area success';
+} else {
+    btnElement.classList.add('incorrect');
+    
+    // Mesma verificação para o caso de erro
+    const explanationText = q.explanation ? `<br><small>${q.explanation}</small>` : '';
+    
+    feedbackAreaEl.innerHTML = `❌ Incorreto. A resposta correta era <strong>${q.answer}</strong>. ${explanationText}`;
+    feedbackAreaEl.className = 'feedback-area error';
+}
 
-            actionAreaEl.style.display = 'block';
+actionAreaEl.style.display = 'block';
 
-            if (currentQuestionIndex === currentQuestions.length - 1) {
-                nextBtnEl.textContent = 'Ver Resultado Final';
-            } else {
-                nextBtnEl.textContent = 'Próxima Questão';
-            }
+if (currentQuestionIndex === currentQuestions.length - 1) {
+    nextBtnEl.textContent = 'Ver Resultado Final';
+} else {
+    nextBtnEl.textContent = 'Próxima Questão';
+}
+
         }
 
         nextBtnEl.addEventListener('click', () => {
