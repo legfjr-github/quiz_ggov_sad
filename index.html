@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -273,8 +274,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .feedback-area.success {
@@ -296,7 +304,8 @@
             display: none;
         }
 
-        .next-btn, .restart-btn {
+        .next-btn,
+        .restart-btn {
             width: 100%;
             padding: 16px;
             background-color: var(--primary);
@@ -310,8 +319,28 @@
             box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
         }
 
-        .next-btn:hover, .restart-btn:hover {
+        .next-btn:hover,
+        .restart-btn:hover {
             background-color: var(--primary-hover);
+        }
+
+        .skip-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: transparent;
+            color: var(--text-muted);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .skip-btn:hover {
+            background-color: var(--background);
+            color: var(--text-main);
+            border-color: var(--text-muted);
         }
 
         .result-container {
@@ -360,21 +389,26 @@
             body {
                 padding: 16px;
             }
+
             .quiz-header {
                 padding: 24px 20px 10px;
             }
+
             .quiz-body {
                 padding: 0 20px 24px;
             }
+
             .question-title {
                 font-size: 1.15rem;
             }
+
             .option-btn {
                 padding: 14px 16px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <div class="header-container">
@@ -395,7 +429,8 @@
     <div class="main-content">
         <div class="empty-state" id="empty-state" style="display: none;">
             <h2>Módulo em branco</h2>
-            <p style="color: var(--text-muted); margin-top: 10px;">Ainda não há questões disponíveis para este módulo.</p>
+            <p style="color: var(--text-muted); margin-top: 10px;">Ainda não há questões disponíveis para este módulo.
+            </p>
         </div>
 
         <div class="quiz-container" id="quiz-container">
@@ -416,6 +451,7 @@
                     </div>
                     <div class="feedback-area" id="feedback-area"></div>
                     <div class="action-area" id="action-area">
+                        <button class="skip-btn" id="skip-btn" onclick="skipQuestion()">Pular Questão</button>
                         <button class="next-btn" id="next-btn">Próxima Questão</button>
                     </div>
                 </div>
@@ -435,19 +471,18 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script src="questoes.js"></script>
+    <script src="questoes.js"></script>
     <script>
         const modulesConfig = {
             1: [],
             2: [
                 { id: '1-2', label: 'Aulas 1-2', data: qsMod2Aulas1_2 },
-                { id: '3-4', label: 'Aulas 3-4', data: qsMod2Aulas3_4 },
-                { id: 'simulado', label: 'Simulado (1-4)', data: 'simulado' }
+                { id: '3-4', label: 'Aulas 3-4', data: qsMod2Aulas3_4 }
             ],
             3: [
                 { id: '1', label: 'Aulas 1', data: qsMod3Aula1 },
                 { id: '2', label: 'Aulas 2', data: qsMod3Aula2 },
-                { id: '3-4', label: 'Aulas 3-4', data: qsMod3Aulas3_4 },
-                { id: 'simulado', label: 'Simulado (1-4)', data: 'simulado' }
+                { id: '3-4', label: 'Aulas 3-4', data: qsMod3Aulas3_4 }
             ],
             4: [
                 { id: '1', label: 'Aulas 1', data: qsMod4Aula1 },
@@ -459,9 +494,10 @@
         let currentQuestions = [];
         let currentQuestionIndex = 0;
         let score = 0;
+        let answeredQuestionsCount = 0;
         let answered = false;
-        let currentModule = 3;
-        let currentSet = '1';
+        let currentModule = 2;
+        let currentSet = '1-2';
 
         const emptyStateEl = document.getElementById('empty-state');
         const quizContainerEl = document.getElementById('quiz-container');
@@ -472,6 +508,7 @@
         const optionsListEl = document.getElementById('options-list');
         const feedbackAreaEl = document.getElementById('feedback-area');
         const actionAreaEl = document.getElementById('action-area');
+        const skipBtnEl = document.getElementById('skip-btn');
         const nextBtnEl = document.getElementById('next-btn');
         const progressBarEl = document.getElementById('progress-bar');
         const quizContentEl = document.getElementById('quiz-content');
@@ -488,15 +525,27 @@
             return arr;
         }
 
+        // Dynamically get lessons including simulation if applicable
+        function getLessonsForModule(modNum) {
+            let lessons = modulesConfig[modNum] ? [...modulesConfig[modNum]] : [];
+            // Filter out any hardcoded simulado to avoid duplication
+            lessons = lessons.filter(l => l.id !== 'simulado');
+            if (lessons.length > 0) {
+                lessons.push({ id: 'simulado', label: 'Simulado (Geral)', data: 'simulado' });
+            }
+            return lessons;
+        }
+
         function selectModule(modNum) {
             currentModule = modNum;
-            
+
             // Update tabs UI
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            document.getElementById(`tab-mod${modNum}`).classList.add('active');
+            const tabEl = document.getElementById(`tab-mod${modNum}`);
+            if (tabEl) tabEl.classList.add('active');
 
-            const lessons = modulesConfig[modNum];
-            
+            const lessons = getLessonsForModule(modNum);
+
             if (!lessons || lessons.length === 0) {
                 lessonsContainerEl.style.display = 'none';
                 quizContainerEl.style.display = 'none';
@@ -504,7 +553,7 @@
             } else {
                 emptyStateEl.style.display = 'none';
                 lessonsContainerEl.style.display = 'flex';
-                
+
                 // Render lesson buttons
                 lessonsContainerEl.innerHTML = '';
                 lessons.forEach(lesson => {
@@ -515,7 +564,7 @@
                     btn.onclick = () => startQuizSet(lesson.id);
                     lessonsContainerEl.appendChild(btn);
                 });
-                
+
                 // Auto start first set
                 startQuizSet(lessons[0].id);
             }
@@ -523,21 +572,25 @@
 
         function startQuizSet(setId) {
             currentSet = setId;
-            
+
             // Update buttons
             document.querySelectorAll('.lesson-btn').forEach(btn => btn.classList.remove('active'));
             const activeBtn = document.getElementById(`btn-aula-${setId}`);
             if (activeBtn) activeBtn.classList.add('active');
 
-            const lessons = modulesConfig[currentModule];
+            const lessons = getLessonsForModule(currentModule);
             const lesson = lessons.find(l => l.id === setId);
-            
+
+            if (!lesson) return;
+
             if (lesson.data === 'simulado') {
                 // Collect all non-simulado data from the current module
                 let allRandoms = [];
                 lessons.forEach(l => {
-                    if (l.data !== 'simulado' && l.data.length > 0) {
-                        allRandoms.push(...shuffleArray(l.data).slice(0, 10));
+                    if (l.id !== 'simulado' && l.data && l.data.length > 0) {
+                        // 5 questions if no hyphen (e.g. '1', '2'), 10 questions if hyphen (e.g. '1-2', '3-4')
+                        const count = l.id.includes('-') ? 10 : 5;
+                        allRandoms.push(...shuffleArray(l.data).slice(0, count));
                     }
                 });
                 currentQuestions = shuffleArray(allRandoms);
@@ -556,6 +609,7 @@
 
             currentQuestionIndex = 0;
             score = 0;
+            answeredQuestionsCount = 0;
             quizContentEl.style.display = 'block';
             resultContainerEl.style.display = 'none';
             progressContainerEl.style.display = 'block';
@@ -565,15 +619,18 @@
         function loadQuestion() {
             answered = false;
             feedbackAreaEl.className = 'feedback-area';
-            actionAreaEl.style.display = 'none';
+            feedbackAreaEl.style.display = 'none';
+            actionAreaEl.style.display = 'block';
+            skipBtnEl.style.display = 'block';
+            nextBtnEl.style.display = 'none';
             optionsListEl.innerHTML = '';
-            
+
             const q = currentQuestions[currentQuestionIndex];
-            
+
             const progress = (currentQuestionIndex / currentQuestions.length) * 100;
             progressBarEl.style.width = `${progress}%`;
             questionCounterEl.textContent = `Questão ${currentQuestionIndex + 1} de ${currentQuestions.length}`;
-            
+
             questionTitleEl.textContent = q.title;
             questionTextEl.textContent = q.text;
 
@@ -589,6 +646,7 @@
         function selectOption(selectedOpt, btnElement) {
             if (answered) return;
             answered = true;
+            answeredQuestionsCount++;
 
             const q = currentQuestions[currentQuestionIndex];
             const isCorrect = selectedOpt.id === q.answer;
@@ -603,32 +661,41 @@
             });
 
             if (isCorrect) {
-    btnElement.classList.add('correct');
-    score++;
-    
-    // Verifica se a explicação existe. Se sim, formata o texto; se não, fica vazio.
-    const explanationText = q.explanation ? `<br><small>${q.explanation}</small>` : '';
-    
-    feedbackAreaEl.innerHTML = `🎉 Correto! Muito bem. ${explanationText}`;
-    feedbackAreaEl.className = 'feedback-area success';
-} else {
-    btnElement.classList.add('incorrect');
-    
-    // Mesma verificação para o caso de erro
-    const explanationText = q.explanation ? `<br><small>${q.explanation}</small>` : '';
-    
-    feedbackAreaEl.innerHTML = `❌ Incorreto. A resposta correta era <strong>${q.answer}</strong>. ${explanationText}`;
-    feedbackAreaEl.className = 'feedback-area error';
-}
+                btnElement.classList.add('correct');
+                score++;
 
-actionAreaEl.style.display = 'block';
+                // Verifica se a explicação existe. Se sim, formata o texto; se não, fica vazio.
+                const explanationText = q.explanation ? `<br><small>${q.explanation}</small>` : '';
 
-if (currentQuestionIndex === currentQuestions.length - 1) {
-    nextBtnEl.textContent = 'Ver Resultado Final';
-} else {
-    nextBtnEl.textContent = 'Próxima Questão';
-}
+                feedbackAreaEl.innerHTML = `🎉 Correto! Muito bem. ${explanationText}`;
+                feedbackAreaEl.className = 'feedback-area success';
+            } else {
+                btnElement.classList.add('incorrect');
 
+                // Mesma verificação para o caso de erro
+                const explanationText = q.explanation ? `<br><small>${q.explanation}</small>` : '';
+
+                feedbackAreaEl.innerHTML = `❌ Incorreto. A resposta correta era <strong>${q.answer}</strong>. ${explanationText}`;
+                feedbackAreaEl.className = 'feedback-area error';
+            }
+
+            skipBtnEl.style.display = 'none';
+            nextBtnEl.style.display = 'block';
+
+            if (currentQuestionIndex === currentQuestions.length - 1) {
+                nextBtnEl.textContent = 'Ver Resultado Final';
+            } else {
+                nextBtnEl.textContent = 'Próxima Questão';
+            }
+        }
+
+        function skipQuestion() {
+            if (currentQuestionIndex < currentQuestions.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                showResult();
+            }
         }
 
         nextBtnEl.addEventListener('click', () => {
@@ -645,12 +712,15 @@ if (currentQuestionIndex === currentQuestions.length - 1) {
             progressContainerEl.style.display = 'none';
             resultContainerEl.style.display = 'block';
 
-            const percentage = Math.round((score / currentQuestions.length) * 100);
-            document.getElementById('score-text').textContent = `${score} / ${currentQuestions.length}`;
+            const totalForScore = answeredQuestionsCount;
+            const percentage = totalForScore > 0 ? Math.round((score / totalForScore) * 100) : 0;
+            document.getElementById('score-text').textContent = `${score} / ${totalForScore}`;
             document.getElementById('score-percentage').textContent = `${percentage}% de acertos`;
 
             const messageEl = document.getElementById('score-message');
-            if (percentage >= 90) {
+            if (totalForScore === 0) {
+                messageEl.textContent = 'Você não respondeu nenhuma questão. Tente responder a algumas questões para testar seu conhecimento!';
+            } else if (percentage >= 90) {
                 messageEl.textContent = 'Excelente! Você domina muito bem o assunto.';
                 triggerConfetti();
             } else if (percentage >= 70) {
@@ -675,7 +745,8 @@ if (currentQuestionIndex === currentQuestions.length - 1) {
         }
 
         // Inicia no Módulo 2 por padrão, nas Aulas 1-2
-        selectModule(3);
+        selectModule(2);
 </script>
 </body>
+
 </html>
