@@ -38,6 +38,6 @@ const qsHardMod3Aula2 = [
 const qsHardMod3Aulas3_4 = [];
 
 // Módulo 4
-const qsHardMod4Aula1 = [];
-const qsHardMod4Aula2 = [];
-const qsHardMod4Aulas3_4 = [];
+const qsHardMod4Aulas1_2 = [];
+const qsHardMod4Aula3 = [];
+const qsHardMod4Aula4 = [];
