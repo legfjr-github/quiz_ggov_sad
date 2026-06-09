@@ -3671,6 +3671,6 @@ const qsMod3Aulas3_4 = [
 ];
 
 // Módulo 4
-const qsMod4Aula1 = [];
-const qsMod4Aula2 = [];
-const qsMod4Aulas3_4 = [];
+const qsMod4Aulas1_2 = [];
+const qsMod4Aula3 = [];
+const qsMod4Aula4 = [];
