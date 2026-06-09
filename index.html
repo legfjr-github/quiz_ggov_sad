@@ -517,6 +517,7 @@
                 <div class="trophy-icon">🏆</div>
                 <div class="score-text" id="score-text">18/20</div>
                 <div class="score-percentage" id="score-percentage">90%</div>
+                <img id="celebration-img" src="babyggov.jpeg" alt="BabyGGov" style="display: none; max-width: 250px; border-radius: 16px; margin: 0 auto 20px auto; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
                 <div class="score-message" id="score-message">Excelente trabalho!</div>
                 <button class="restart-btn" onclick="startQuizSet(currentSet)">Tentar Novamente</button>
             </div>
@@ -538,9 +539,9 @@
             get qsMod3Aula1() { return typeof qsHardMod3Aula1 !== 'undefined' ? qsHardMod3Aula1 : []; },
             get qsMod3Aula2() { return typeof qsHardMod3Aula2 !== 'undefined' ? qsHardMod3Aula2 : []; },
             get qsMod3Aulas3_4() { return typeof qsHardMod3Aulas3_4 !== 'undefined' ? qsHardMod3Aulas3_4 : []; },
-            get qsMod4Aula1() { return typeof qsHardMod4Aula1 !== 'undefined' ? qsHardMod4Aula1 : []; },
-            get qsMod4Aula2() { return typeof qsHardMod4Aula2 !== 'undefined' ? qsHardMod4Aula2 : []; },
-            get qsMod4Aulas3_4() { return typeof qsHardMod4Aulas3_4 !== 'undefined' ? qsHardMod4Aulas3_4 : []; }
+            get qsMod4Aulas1_2() { return typeof qsHardMod4Aulas1_2 !== 'undefined' ? qsHardMod4Aulas1_2 : []; },
+            get qsMod4Aula3() { return typeof qsHardMod4Aula3 !== 'undefined' ? qsHardMod4Aula3 : []; },
+            get qsMod4Aula4() { return typeof qsHardMod4Aula4 !== 'undefined' ? qsHardMod4Aula4 : []; }
         };
 
         function buildModulesConfig() {
@@ -557,9 +558,9 @@
                     { id: '3-4', label: 'Aulas 3-4', data: h ? _hardVars.qsMod3Aulas3_4 : qsMod3Aulas3_4 }
                 ],
                 4: [
-                    { id: '1', label: 'Aulas 1', data: h ? _hardVars.qsMod4Aula1 : qsMod4Aula1 },
-                    { id: '2', label: 'Aulas 2', data: h ? _hardVars.qsMod4Aula2 : qsMod4Aula2 },
-                    { id: '3-4', label: 'Aulas 3-4', data: h ? _hardVars.qsMod4Aulas3_4 : qsMod4Aulas3_4 }
+                    { id: '1-2', label: 'Aulas 1-2', data: h ? _hardVars.qsMod4Aulas1_2 : qsMod4Aulas1_2 },
+                    { id: '3', label: 'Aula 3', data: h ? _hardVars.qsMod4Aula3 : qsMod4Aula3 },
+                    { id: '4', label: 'Aula 4', data: h ? _hardVars.qsMod4Aula4 : qsMod4Aula4 }
                 ]
             };
         }
@@ -806,10 +807,14 @@
             document.getElementById('score-percentage').textContent = `${percentage}% de acertos`;
 
             const messageEl = document.getElementById('score-message');
+            const celebrationImg = document.getElementById('celebration-img');
+            if (celebrationImg) celebrationImg.style.display = 'none';
+
             if (totalForScore === 0) {
                 messageEl.textContent = 'Você não respondeu nenhuma questão. Tente responder a algumas questões para testar seu conhecimento!';
             } else if (percentage >= 90) {
-                messageEl.textContent = 'Excelente! Você domina muito bem o assunto.';
+                messageEl.innerHTML = 'Excelente! Você domina muito bem o assunto.<br><br><strong>BabyGGov, em busca do 9</strong>';
+                if (celebrationImg) celebrationImg.style.display = 'block';
                 triggerConfetti();
             } else if (percentage >= 70) {
                 messageEl.textContent = 'Muito bom! Seu desempenho foi sólido.';
@@ -832,9 +837,9 @@
             }());
         }
 
-        // Inicia no Módulo 2 por padrão, nas Aulas 1-2
-        selectModule(2);
-</script>
+        // Inicia no Módulo 4 por padrão, nas Aulas 1-2
+        selectModule(4);
+    </script>
 </body>
 
 </html>
