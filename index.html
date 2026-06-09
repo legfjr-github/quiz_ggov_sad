@@ -472,6 +472,7 @@
 
     <script src="questoes.js"></script>
     <script src="questoes.js"></script>
+    <script src="questoes.js"></script>
     <script>
         const modulesConfig = {
             1: [],
@@ -619,7 +620,6 @@
         function loadQuestion() {
             answered = false;
             feedbackAreaEl.className = 'feedback-area';
-            feedbackAreaEl.style.display = 'none';
             actionAreaEl.style.display = 'block';
             skipBtnEl.style.display = 'block';
             nextBtnEl.style.display = 'none';
@@ -744,8 +744,8 @@
             }());
         }
 
-        // Inicia no Módulo 4 por padrão, na Aula 1
-        selectModule(3);
+        // Inicia no Módulo 2 por padrão, nas Aulas 1-2
+        selectModule(2);
 </script>
 </body>
 
