@@ -1140,7 +1140,8 @@ const qsMod3Aula1 = [
         "text": "Constituição Federal e Programa Nacional de Desestatização."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. Conforme os slides sobre a 'Era das Delegação', as duas leis principais que estabeleceram as rodadas de concessões e PPPs are a Lei n. 8987/95, conhecida como Lei das Concessões, e a Lei n. 11.079/04, conhecida como Lei das PPPs."
   },
   {
     "id": 2,
@@ -1168,7 +1169,8 @@ const qsMod3Aula1 = [
         "text": "Apenas serviços administrativos e apenas grandes obras rodoviárias."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. De acordo com o material, a Lei n. 8987/95 (Lei das Concessões) envolve projetos autossustentáveis, enquanto a Lei n. 11.079/04 (Lei das PPPs) foca em projetos com 'subsídio estatal'."
   },
   {
     "id": 3,
@@ -1185,7 +1187,7 @@ const qsMod3Aula1 = [
       },
       {
         "id": "C",
-        "text": "Na privatização, o Estado vende; na delegação, o Estado continua titular e apenas transfere a operação."
+        "text": "Na privatização, o Estado vende; na delegação, o State continua titular e apenas transfere a operação."
       },
       {
         "id": "D",
@@ -1196,7 +1198,8 @@ const qsMod3Aula1 = [
         "text": "Não há diferenças, ambas significam a transferência definitiva da propriedade para investidores estrangeiros."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. O material esclarece que a principal diferença é que na privatização, o Estado vende, ao passo que na delegação, o Estado continua titular e apenas transfere a operação."
   },
   {
     "id": 4,
@@ -1224,7 +1227,8 @@ const qsMod3Aula1 = [
         "text": "Privatização total de ativos e venda de ações na bolsa."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. O slide sobre a Concessão Comum aponta expressamente suas duas modalidades: concessão de serviço público e concessão de serviço público precedida da execução de obra pública."
   },
   {
     "id": 5,
@@ -1252,7 +1256,8 @@ const qsMod3Aula1 = [
         "text": "Remuneração decorrente exclusivamente de receitas acessórias imobiliárias."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. Na caracterização da Concessão Comum, o concessionário assume a gestão do negócio por sua conta e risco, e obtém a remuneração integralmente pela tarifação paga pelos usuários."
   },
   {
     "id": 6,
@@ -1273,14 +1278,15 @@ const qsMod3Aula1 = [
       },
       {
         "id": "D",
-        "text": "O Estado deseja alienar o controle acionário da infraestrutura."
+        "text": "O State deseja alienar o controle acionário da infraestrutura."
       },
       {
         "id": "E",
         "text": "A tarifa não pode ser cobrada em contratos com prazo inferior a 5 anos."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. A característica central que justifica a adoção de uma Concessão por PPP é a circunstância na qual a receita tarifária é insuficiente para remunerar o investimento."
   },
   {
     "id": 7,
@@ -1308,7 +1314,8 @@ const qsMod3Aula1 = [
         "text": "O Estado realiza um único pagamento inicial para transferir a responsabilidade total à empresa privada."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. Na modalidade de concessão administrativa de uma PPP, a remuneração ocorre mediante pagamento integral pelo poder concedente, e o principal usuário do serviço é o próprio Poder Público."
   },
   {
     "id": 8,
@@ -1336,7 +1343,8 @@ const qsMod3Aula1 = [
         "text": "Arrecadação decorrente de impostos indiretos vinculados exclusivamente a fundos de previdência."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. A remuneração na concessão patrocinada baseia-se em uma combinação de tarifas pagas pelos usuários, mais remuneração paga pelo poder concedente, mais receitas acessórias, quando for o caso."
   },
   {
     "id": 9,
@@ -1364,7 +1372,8 @@ const qsMod3Aula1 = [
         "text": "Na arrecadação de tributos federais e na venda de títulos da dívida estadual."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. O compartilhamento de atribuições em uma PPP ocorre primariamente na mobilização de recursos, e na gestão de riscos associados ao financiamento do investimento, através de um sistema de garantias."
   },
   {
     "id": 10,
@@ -1392,7 +1401,8 @@ const qsMod3Aula1 = [
         "text": "Os riscos mais graves devem ser assumidos integralmente por companhias de seguro privado internacionais."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. A Matriz de Riscos estabelece como princípio central que o risco deve ser alocado à parte que possui melhor capacidade de preveni-lo, administrá-lo ou mitigar seus efeitos."
   },
   {
     "id": 11,
@@ -1420,7 +1430,8 @@ const qsMod3Aula1 = [
         "text": "Agência Reguladora Independente."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. De acordo com a Matriz de Riscos apresentada, o Poder Público é quem assume, em regra, o risco decorrente de uma mudança legislativa relevante."
   },
   {
     "id": 12,
@@ -1437,7 +1448,7 @@ const qsMod3Aula1 = [
       },
       {
         "id": "C",
-        "text": "Empreiteira Subcontratada."
+        "text": "Empreiteira Subcontractada."
       },
       {
         "id": "D",
@@ -1448,7 +1459,8 @@ const qsMod3Aula1 = [
         "text": "Sociedade Civil."
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Gabarito: A. A Matriz de Riscos define claramente que o Poder Público assume, em regra, os riscos referentes ao Fato do príncipe."
   },
   {
     "id": 13,
@@ -1476,7 +1488,8 @@ const qsMod3Aula1 = [
         "text": "Câmara de Arbitragem."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. Conforme o material, as desapropriações consistem em um risco assumido, em regra, pelo Poder Público."
   },
   {
     "id": 14,
@@ -1504,7 +1517,8 @@ const qsMod3Aula1 = [
         "text": "Sindicato dos Trabalhadores."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. O licenciamento prévio para alguns projetos está diretamente elencado na Matriz de Riscos como uma responsabilidade assumida, em regra, pelo Poder Público."
   },
   {
     "id": 15,
@@ -1532,7 +1546,8 @@ const qsMod3Aula1 = [
         "text": "Câmara de Compensação de Tarifas."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. O risco gerado pelo estabelecimento de rotas concorrentes é assumido, em regra, pelo Poder Público."
   },
   {
     "id": 16,
@@ -1560,7 +1575,8 @@ const qsMod3Aula1 = [
         "text": "População local."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. A performance operacional é um dos riscos operacionais atribuídos, em regra, à Concessionária."
   },
   {
     "id": 17,
@@ -1588,7 +1604,8 @@ const qsMod3Aula1 = [
         "text": "A Agência Reguladora."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. De acordo com a Matriz de Riscos, a Concessionária é quem assume, em regra, a gestão e a variação dos custos de construção."
   },
   {
     "id": 18,
@@ -1616,7 +1633,8 @@ const qsMod3Aula1 = [
         "text": "União."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. Os atrasos executivos estão listados expressamente como um risco que a Concessionária assume em regra."
   },
   {
     "id": 19,
@@ -1644,7 +1662,8 @@ const qsMod3Aula1 = [
         "text": "Fornecedores e fabricantes de peças."
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Gabarito: A. A Matriz de Riscos determina que a manutenção do ativo ao longo da execução da operação é uma responsabilidade da Concessionária."
   },
   {
     "id": 20,
@@ -1672,7 +1691,8 @@ const qsMod3Aula1 = [
         "text": "Assembleia Legislativa."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. O risco relacionado à busca e manutenção da eficiência do serviço é assumido, em regra, pela Concessionária."
   },
   {
     "id": 21,
@@ -1700,7 +1720,8 @@ const qsMod3Aula1 = [
         "text": "Licenciamento prévio, performance do serviço delegável e rotas concorrentes."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. A Matriz de Riscos detalha que o Poder Público assume, em regra: Mudança legislativa relevante, Fato do príncipe, Desapropriações, Licenciamento prévio (em alguns projetos) e Rotas concorrentes."
   },
   {
     "id": 22,
@@ -1728,7 +1749,8 @@ const qsMod3Aula1 = [
         "text": "Atrasos executivos, fato do príncipe e performance operacional de rotas."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. A Concessionária assume, de acordo com o material base, os riscos vinculados à Performance operacional, Custos de construção, Atrasos executivos, Manutenção do ativo e Eficiência do serviço."
   },
   {
     "id": 23,
@@ -1756,7 +1778,8 @@ const qsMod3Aula1 = [
         "text": "Prazo único e invariável de 25 anos."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. A configuração estrita requerida para os contratos de PPP estipula um período de prestação de serviço que deve ser superior a 5 e inferior a 35 anos."
   },
   {
     "id": 24,
@@ -1784,7 +1807,8 @@ const qsMod3Aula1 = [
         "text": "Qualquer valor de contratação, não havendo limitação estipulada em lei."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. O material delimita que a configuração de contratos de PPP demanda valores superiores a R$ 10 milhões."
   },
   {
     "id": 25,
@@ -1812,7 +1836,8 @@ const qsMod3Aula1 = [
         "text": "É vedado à SPE assumir a forma de companhia aberta com valores mobiliários na bolsa."
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Gabarito: A. O slide que trata das regras sobre a constituição da SPE indica expressamente que fica vedado à Administração Pública ser titular da maioria do capital votante da referida sociedade."
   },
   {
     "id": 26,
@@ -1840,7 +1865,8 @@ const qsMod3Aula1 = [
         "text": "Nenhuma das anteriores, pois todas formam o tripé."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. O tripé que fundamenta o Programa Nacional de Desestatização é formado por conferir eficiência aos serviços transferidos, reduzir a dívida pública e retomar os investimentos nas atividades transferidas. A ocupação exclusiva de setores não integra esse tripé estrutural."
   },
   {
     "id": 27,
@@ -1868,7 +1894,8 @@ const qsMod3Aula1 = [
         "text": "A privatização transfere a operação por um prazo determinado (ex.: 35 anos) e depois os bens são revertidos ao Estado."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. A diferença fundamental abordagem é que na privatização, o Estado realiza a venda dos ativos, e na delegação, ele continua sendo o titular do bem, transferindo à iniciativa privada apenas a operação do serviço."
   },
   {
     "id": 28,
@@ -1896,7 +1923,8 @@ const qsMod3Aula1 = [
         "text": "Situações de falência de empresas públicas, visando à estatização."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. Ao contrastar as leis, o material define explicitamente que a Lei n. 8987/95 é voltada primordialmente para projetos autossustentáveis."
   },
   {
     "id": 29,
@@ -1924,7 +1952,8 @@ const qsMod3Aula1 = [
         "text": "Lei nº 14.133/21 – Institui o Programa de Parceria em Investimentos (PPI)."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. Dentre as formas de contratação pelo Estado, o material relaciona a Lei n. 11.079/04 como a norma que institui a Lei das Parcerias Público-Privadas."
   },
   {
     "id": 30,
@@ -1952,7 +1981,8 @@ const qsMod3Aula1 = [
         "text": "Apenas se houver pagamento integral do serviço por parte do poder concedente."
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Gabarito: B. A Concessão Comum se caracteriza pela assunção da gestão do negócio por parte do concessionário por sua conta e risco, com a remuneração ocorrendo integralmente através da tarifação paga pelos usuários."
   },
   {
     "id": 31,
@@ -1980,7 +2010,8 @@ const qsMod3Aula1 = [
         "text": "Concessão tarifada e concessão subsidiada."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. A norma expressa que a Concessão Comum se divide nas modalidades de concessão de serviço público e concessão de serviço público precedida da execução de obra pública."
   },
   {
     "id": 32,
@@ -2008,7 +2039,8 @@ const qsMod3Aula1 = [
         "text": "O contrato tiver duração inferior a 5 anos e valor até 10 milhões."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. O modelo de Parceria Público-Privada é financeiramente estruturado e justificado perante projetos em que a receita tarifária é considerada insuficiente para remunerar o investimento de forma isolada."
   },
   {
     "id": 33,
@@ -2036,7 +2068,8 @@ const qsMod3Aula1 = [
         "text": "O concessionário assume o risco apenas sobre mudanças legislativas relevantes."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. A Concessão Administrativa é definida pelo pagamento integral efetuado pelo poder concedente, situação na qual o próprio Poder Público figura como o principal usuário do serviço delegado."
   },
   {
     "id": 34,
@@ -2064,7 +2097,8 @@ const qsMod3Aula1 = [
         "text": "Elimina o compartilhamento de atribuições entre empresas e governo."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. A modalidade de concessão patrocinada caracteriza-se pela combinação de tarifas pagas pelos usuários acrescidas da remuneração paga pelo poder concedente, admitindo-se também receitas acessórias quando for o caso."
   },
   {
     "id": 35,
@@ -2092,7 +2126,8 @@ const qsMod3Aula1 = [
         "text": "Generalidade."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. O requisito que se refere especificamente à modernidade das técnicas utilizadas na prestação do serviço público adequado é a atualidade."
   },
   {
     "id": 36,
@@ -2120,7 +2155,8 @@ const qsMod3Aula1 = [
         "text": "O risco é transferido aos financiadores e fiadores por meio da cláusula step in right."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. A estruturação da Matriz de Riscos repousa sobre o princípio central de que o risco deve ser alocado à parte que possui a melhor capacidade de preveni-lo, administrá-lo ou mitigar seus efeitos."
   },
   {
     "id": 37,
@@ -2148,7 +2184,8 @@ const qsMod3Aula1 = [
         "text": "Manutenção das estruturas a longo prazo."
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Gabarito: A. Dentro da Matriz de Riscos, atribui-se ao Poder Público, em regra, a assunção de encargos derivados do Fato do príncipe e da realização de desapropriações."
   },
   {
     "id": 38,
@@ -2176,7 +2213,8 @@ const qsMod3Aula1 = [
         "text": "Pagamento por desapropriações de terras ao longo do projeto."
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Gabarito: D. Recai primordialmente sobre a Empresa Concessionária a gestão de riscos referentes à Performance operacional, Custos de construção e à Manutenção do ativo."
   },
   {
     "id": 39,
@@ -2204,7 +2242,8 @@ const qsMod3Aula1 = [
         "text": "Limite orçamentário definido a cada ano pela Lei de Diretrizes Orçamentárias, sem prazo máximo de contrato."
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Gabarito: A. A configuração de contratos no modelo de Parceria Público-Privada (PPP) exige que o montante transacionado possua valores superiores a R$ 10 milhões e que o contrato preveja um período de prestação de serviço superior a 5 e inferior a 35 anos."
   },
   {
     "id": 40,
@@ -2232,401 +2271,882 @@ const qsMod3Aula1 = [
         "text": "A inobservância da formação da SPE transfere os riscos de construção automaticamente para o Poder Público."
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Gabarito: C. Na estrutura da SPE instituída para operacionalizar uma PPP, o material determina que fica vedado à Administração Pública ser titular da maioria do capital votante."
   }
 ];
 
 const qsMod3Aula2 = [
-  {
-    "id": 1,
-    "title": "1. Classificação de Bens Públicos",
-    "text": "De acordo com o Código Civil e as normativas de gestão patrimonial, os bens que pertencem ao Estado, mas que estão à disposição de toda a coletividade sem restrições específicas (como praias, rios, estradas e praças), são classificados juridicamente como:",
-    "options": [
-      { "id": "A", "text": "Bens de uso especial." },
-      { "id": "B", "text": "Bens dominicais." },
-      { "id": "C", "text": "Bens de uso comum do povo." },
-      { "id": "D", "text": "Bens alienáveis." },
-      { "id": "E", "text": "Bens de fruição restrita." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 2,
-    "title": "2. Classificação de Bens Públicos",
-    "text": "Os edifícios onde funcionam secretarias de governo, hospitais públicos, escolas e a frota de viaturas oficiais são bens afetados a uma finalidade pública específica. Como esses bens são classificados?",
-    "options": [
-      { "id": "A", "text": "Bens de uso comum do povo." },
-      { "id": "B", "text": "Bens de uso especial." },
-      { "id": "C", "text": "Bens dominicais." },
-      { "id": "D", "text": "Bens de capital." },
-      { "id": "E", "text": "Bens disponíveis para leilão imediato." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 3,
-    "title": "3. Classificação de Bens Públicos",
-    "text": "A categoria de bens que integram o patrimônio do Estado, mas que não possuem uma destinação pública específica (não estão afetados à administração ou à população), constituindo o acervo disponível para alienação, é denominada:",
-    "options": [
-      { "id": "A", "text": "Bens dominicais." },
-      { "id": "B", "text": "Bens de uso comum do povo." },
-      { "id": "C", "text": "Bens de uso especial." },
-      { "id": "D", "text": "Bens de interesse social." },
-      { "id": "E", "text": "Bens inalienáveis por natureza." }
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 4,
-    "title": "4. Afetação de Bens Públicos",
-    "text": "O instituto jurídico pelo qual o Poder Público confere a um bem uma finalidade pública específica, seja para uso da população ou para a prestação de um serviço administrativo, é conhecido como:",
-    "options": [
-      { "id": "A", "text": "Alienação." },
-      { "id": "B", "text": "Imissão de Posse." },
-      { "id": "C", "text": "Desafetação." },
-      { "id": "D", "text": "Afetação." },
-      { "id": "E", "text": "Tombamento." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 5,
-    "title": "5. Desafetação de Bens Públicos",
-    "text": "Se a Administração Pública deseja vender ou doar um prédio onde antes funcionava uma escola estadual (bem de uso especial), qual é o requisito jurídico INDISPENSÁVEL que deve preceder o processo de alienação?",
-    "options": [
-      { "id": "A", "text": "A afetação do bem como uso comum do povo." },
-      { "id": "B", "text": "A desafetação, convertendo-o legalmente em bem dominical." },
-      { "id": "C", "text": "A autorização direta do Cartório de Registro de Imóveis." },
-      { "id": "D", "text": "A imissão provisória na posse." },
-      { "id": "E", "text": "A abertura de sindicância patrimonial." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 6,
-    "title": "6. Mecanismo de Desafetação",
-    "text": "A desafetação de um bem público tem como efeito principal:",
-    "options": [
-      { "id": "A", "text": "Tornar o bem impenhorável e imprescritível para sempre." },
-      { "id": "B", "text": "Transferir automaticamente a propriedade do bem para a União." },
-      { "id": "C", "text": "Retirar a finalidade pública específica do bem, inserindo-o na categoria de bem dominical e tornando-o alienável." },
-      { "id": "D", "text": "Garantir que a população possa utilizá-lo livremente sem restrições de horário." },
-      { "id": "E", "text": "Averbar a imissão de posse definitiva em favor do antigo proprietário." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 7,
-    "title": "7. Movimentação e Destinação de Bens",
-    "text": "Na gestão de materiais e patrimônio, um equipamento que se encontra em perfeitas condições de uso, mas que não está sendo utilizado pelo setor ao qual pertence, é classificado como:",
-    "options": [
-      { "id": "A", "text": "Inservível." },
-      { "id": "B", "text": "Antieconômico." },
-      { "id": "C", "text": "Ocioso." },
-      { "id": "D", "text": "Recuperável." },
-      { "id": "E", "text": "Sucata." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 8,
-    "title": "8. Movimentação e Destinação de Bens",
-    "text": "Um veículo oficial da frota estadual ainda funciona, mas o custo anual com manutenção e consertos já supera o valor de mercado do próprio bem. Para a administração pública, esse bem é tipificado como:",
-    "options": [
-      { "id": "A", "text": "Ocioso." },
-      { "id": "B", "text": "Antieconômico." },
-      { "id": "C", "text": "Irrecuperável." },
-      { "id": "D", "text": "Dominical restrito." },
-      { "id": "E", "text": "Bem de uso comum." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 9,
-    "title": "9. Movimentação e Destinação de Bens",
-    "text": "Quando um bem móvel não tem mais utilidade para o serviço público em nenhum setor, seja por obsolescência, dano irreparável ou perda total de funcionalidade, ele recebe a classificação de:",
-    "options": [
-      { "id": "A", "text": "Bem de Uso Comum." },
-      { "id": "B", "text": "Bem Dominical Intangível." },
-      { "id": "C", "text": "Bem Ocioso." },
-      { "id": "D", "text": "Bem Inservível." },
-      { "id": "E", "text": "Bem Penhorável." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 10,
-    "title": "10. Movimentação e Destinação de Bens",
-    "text": "A transferência física de um computador de um setor para outro dentro da mesma secretaria exige que a carga patrimonial acompanhe o bem. Qual o documento indispensável para formalizar essa movimentação?",
-    "options": [
-      { "id": "A", "text": "Termo de Desafetação." },
-      { "id": "B", "text": "Termo de Imissão de Posse." },
-      { "id": "C", "text": "Termo de Transferência ou Movimentação Interna." },
-      { "id": "D", "text": "Edital de Leilão." },
-      { "id": "E", "text": "Nota Fiscal de Aquisição original." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 11,
-    "title": "11. Procedimentos de Transferência",
-    "text": "Para que a responsabilidade sobre um equipamento transferido entre setores seja efetivamente legalizada, o Termo de Movimentação deve conter, obrigatoriamente:",
-    "options": [
-      { "id": "A", "text": "Apenas a assinatura do servidor que está entregando o bem." },
-      { "id": "B", "text": "As assinaturas conjuntas de quem transfere e de quem recebe o bem, assumindo a nova carga." },
-      { "id": "C", "text": "A assinatura de um juiz de direito homologando a transferência." },
-      { "id": "D", "text": "Apenas a assinatura do setor de contabilidade." },
-      { "id": "E", "text": "O aval do Governador do Estado." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 12,
-    "title": "12. Tratamento de Bens Ociosos",
-    "text": "Qual é a conduta administrativa correta e prioritária quando se identifica um lote de bens 'ociosos' (em bom estado, mas sem uso) em um departamento?",
-    "options": [
-      { "id": "A", "text": "Descartá-los imediatamente como lixo comum." },
-      { "id": "B", "text": "Enviá-los diretamente a leilão como sucata." },
-      { "id": "C", "text": "Doar para servidores da própria unidade." },
-      { "id": "D", "text": "Disponibilizá-los para transferência ou redistribuição a outros órgãos/setores que tenham demanda." },
-      { "id": "E", "text": "Aguardar que quebrem para solicitar a baixa contábil." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 13,
-    "title": "13. Desapropriação Judicial",
-    "text": "No curso de um processo de desapropriação por utilidade pública, o Estado pode requerer o ingresso antecipado no imóvel para iniciar imediatamente uma obra, mediante o depósito judicial do valor avaliado. Esse ato jurídico é denominado:",
-    "options": [
-      { "id": "A", "text": "Desafetação compulsória." },
-      { "id": "B", "text": "Imissão provisória na posse." },
-      { "id": "C", "text": "Tombamento cautelar." },
-      { "id": "D", "text": "Averbação de uso especial." },
-      { "id": "E", "text": "Alienação judicial." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 14,
-    "title": "14. Desapropriação Judicial",
-    "text": "Qual é o principal foco dos litígios movidos por particulares contra o Estado nas ações de desapropriação, uma vez que o mérito da utilidade pública é de difícil contestação?",
-    "options": [
-      { "id": "A", "text": "A escolha do engenheiro da obra." },
-      { "id": "B", "text": "A discussão sobre o valor da indenização considerada justa." },
-      { "id": "C", "text": "A cor da pintura do imóvel." },
-      { "id": "D", "text": "O direito de continuar morando no imóvel permanentemente." },
-      { "id": "E", "text": "A anulação da Constituição Estadual." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 15,
-    "title": "15. Desapropriação Judicial",
-    "text": "Por que é obrigatório e fundamental que o ente público averbe ou registre o mandado de imissão de posse (e futuramente a sentença) na matrícula do imóvel no Cartório de Registro de Imóveis (CRI)?",
-    "options": [
-      { "id": "A", "text": "Para evitar que o antigo proprietário venda o imóvel a terceiros de boa-fé ou sofra penhoras por dívidas." },
-      { "id": "B", "text": "Apenas para gerar recolhimento de taxas cartorárias ao município." },
-      { "id": "C", "text": "Para que o juiz possa iniciar o processo de licitação da obra." },
-      { "id": "D", "text": "Para isentar a construtora de impostos federais." },
-      { "id": "E", "text": "O registro em cartório é opcional nas desapropriações estaduais." }
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 16,
-    "title": "16. Desapropriação Judicial",
-    "text": "Após o encerramento do processo judicial de desapropriação, com o pagamento da indenização justa e o trânsito em julgado da sentença, ocorre a fase de:",
-    "options": [
-      { "id": "A", "text": "Imissão provisória na posse." },
-      { "id": "B", "text": "Retroatividade dominical." },
-      { "id": "C", "text": "Imissão definitiva na posse e consolidação da propriedade em nome do ente público." },
-      { "id": "D", "text": "Desafetação automática do bem desapropriado." },
-      { "id": "E", "text": "Devolução do bem ao particular." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 17,
-    "title": "17. Desapropriação Judicial",
-    "text": "Se o Estado construir um hospital em uma área desapropriada, mas a Procuradoria não registrar a sentença no Cartório de Imóveis, qual a situação desse bem perante a gestão patrimonial pública?",
-    "options": [
-      { "id": "A", "text": "Estará perfeitamente regularizado, pois a construção da obra valida a propriedade." },
-      { "id": "B", "text": "Estará em situação irregular (pendência de averbação), o que inviabiliza a segurança jurídica e a exatidão do inventário contábil." },
-      { "id": "C", "text": "O imóvel passará automaticamente a ser bem de uso comum do povo." },
-      { "id": "D", "text": "O Estado perde imediatamente a posse do hospital construído." },
-      { "id": "E", "text": "O bem será considerado ocioso pelo sistema." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 18,
-    "title": "18. Desapropriação Judicial",
-    "text": "Na sistemática da desapropriação, a consolidação da propriedade do Estado (imissão definitiva) encerra o litígio possessório. Nesse momento, para fechar a cadeia dominial e formalizar a propriedade pública, a sentença judicial serve como:",
-    "options": [
-      { "id": "A", "text": "Ato de infração de trânsito." },
-      { "id": "B", "text": "Título hábil para registro no Cartório de Imóveis, substituindo a escritura pública de compra e venda." },
-      { "id": "C", "text": "Alvará de funcionamento da secretaria." },
-      { "id": "D", "text": "Autorização para leilão imediato do bem." },
-      { "id": "E", "text": "Termo de Sindicância Patrimonial." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 19,
-    "title": "19. Responsabilidade do Servidor",
-    "text": "Quando um servidor público recebe um notebook ou veículo oficial para o exercício de suas funções, ele deve assinar um Termo de Guarda e Responsabilidade. O que esse termo implica juridicamente?",
-    "options": [
-      { "id": "A", "text": "Que o bem passa a ser propriedade particular do servidor." },
-      { "id": "B", "text": "Que o servidor é pessoalmente responsável por zelar, conservar e responder por perdas ou danos causados ao bem sob sua custódia." },
-      { "id": "C", "text": "Que o servidor pode alienar o bem quando achar que ele ficou obsoleto." },
-      { "id": "D", "text": "Que o servidor só responde pelo bem durante o horário de expediente, estando isento de furto fora da repartição." },
-      { "id": "E", "text": "Que o Estado isenta o servidor de qualquer dano, independentemente de negligência." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 20,
-    "title": "20. Sindicância e Dano ao Erário",
-    "text": "Se um servidor acidentalmente derruba e quebra um equipamento de alto valor, qual é o procedimento administrativo OBRIGATÓRIO antes de se imputar qualquer dever de ressarcimento ao erário?",
-    "options": [
-      { "id": "A", "text": "Desconto automático no próximo contracheque do servidor." },
-      { "id": "B", "text": "Exoneração sumária do servidor." },
-      { "id": "C", "text": "Instauração de Sindicância Patrimonial para apurar os fatos e o nexo de causalidade." },
-      { "id": "D", "text": "Baixa imediata do bem como sucata, sem apuração." },
-      { "id": "E", "text": "Cobrança via cartão de crédito do funcionário." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 21,
-    "title": "21. Sindicância e Dano ao Erário",
-    "text": "Durante o rito de uma Sindicância Patrimonial, a Constituição Federal garante ao servidor investigado um direito inafastável, sob pena de nulidade do processo. Que direito é esse?",
-    "options": [
-      { "id": "A", "text": "O direito ao anonimato permanente." },
-      { "id": "B", "text": "A garantia do contraditório e da ampla defesa, podendo apresentar sua versão e produzir provas." },
-      { "id": "C", "text": "O direito de substituir o bem quebrado por qualquer outro objeto." },
-      { "id": "D", "text": "A garantia de impunidade caso o bem tenha mais de 5 anos de uso." },
-      { "id": "E", "text": "O direito de não assinar o termo de guarda." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 22,
-    "title": "22. Sindicância e Dano ao Erário",
-    "text": "É correto afirmar sobre o desconto financeiro direto na folha de pagamento do servidor em caso de sumiço ou quebra de um bem permanente:",
-    "options": [
-      { "id": "A", "text": "É perfeitamente legal fazê-lo de ofício, sem nenhum processo prévio, para garantir o ressarcimento rápido do erário." },
-      { "id": "B", "text": "É ilegal e nulo caso seja efetuado sem a instauração prévia do rito formal de apuração (Sindicância) e sem garantir a ampla defesa." },
-      { "id": "C", "text": "Deve ser aplicado apenas a bens de baixo valor (até R$ 100)." },
-      { "id": "D", "text": "Pode ser feito pelo chefe imediato por meio de comunicação verbal à folha de pagamento." },
-      { "id": "E", "text": "Nunca é permitido em nenhuma hipótese, devendo o Estado assumir todo e qualquer prejuízo." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 23,
-    "title": "23. Sindicância e Dano ao Erário",
-    "text": "Na responsabilização patrimonial, o nexo de causalidade para imputar o ressarcimento ao servidor depende da comprovação de que o dano ocorreu em decorrência de:",
-    "options": [
-      { "id": "A", "text": "Força maior ou caso fortuito exclusivamente." },
-      { "id": "B", "text": "Dolo (intenção) ou culpa (negligência, imprudência ou imperícia) por parte do agente público." },
-      { "id": "C", "text": "Ação de terceiros sem qualquer facilitação do servidor." },
-      { "id": "D", "text": "Desgaste natural e obsolescência tecnológica do equipamento." },
-      { "id": "E", "text": "Falta de manutenção preventiva por parte da empresa contratada." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 24,
-    "title": "24. Sindicância e Dano ao Erário",
-    "text": "Confirmada a culpa do servidor na sindicância, ele ressarce o erário. Após essa etapa (ou em caso de força maior sem culpados), o que a comissão patrimonial deve fazer com o registro do equipamento totalmente destruído?",
-    "options": [
-      { "id": "A", "text": "Mantê-lo no balanço contábil indefinidamente como 'bem ativo'." },
-      { "id": "B", "text": "Formalizar a baixa contábil definitiva do ativo permanente com base no relatório final da sindicância." },
-      { "id": "C", "text": "Transferir a carga patrimonial para o CPF do servidor punido." },
-      { "id": "D", "text": "Doar os destroços simbolicamente a uma ONG." },
-      { "id": "E", "text": "Leiloar o registro fantasma do equipamento." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 25,
-    "title": "25. Desfazimento de Bens e Leilão",
-    "text": "O processo de destinação final de bens inservíveis à Administração Pública (como mobiliário quebrado ou frota de veículos sucateados), dando a eles um encerramento legal (doação, venda ou descarte), é conhecido como processo de:",
-    "options": [
-      { "id": "A", "text": "Afetação patrimonial." },
-      { "id": "B", "text": "Tombamento histórico." },
-      { "id": "C", "text": "Desfazimento." },
-      { "id": "D", "text": "Requisição administrativa." },
-      { "id": "E", "text": "Sindicância de aquisição." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 26,
-    "title": "26. Desfazimento de Bens e Leilão",
-    "text": "Conforme a nova Lei de Licitações (Lei nº 14.133/2021) e normativas aplicáveis, a alienação de bens móveis inservíveis e sucatas da administração pública deve utilizar, como regra geral, qual modalidade de licitação?",
-    "options": [
-      { "id": "A", "text": "Concurso." },
-      { "id": "B", "text": "Convite." },
-      { "id": "C", "text": "Leilão." },
-      { "id": "D", "text": "Diálogo Competitivo." },
-      { "id": "E", "text": "Tomada de Preços." }
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 27,
-    "title": "27. Desfazimento de Bens e Leilão",
-    "text": "Antes que uma frota de viaturas seja colocada no pátio para arremate em um Leilão Eletrônico, qual procedimento patrimonial prévio é exigido para assegurar que o lote pode ser vendido legalmente?",
-    "options": [
-      { "id": "A", "text": "A classificação documentada de inservibilidade e a avaliação prévia com valor de referência." },
-      { "id": "B", "text": "A afetação dos veículos como bens de uso comum do povo." },
-      { "id": "C", "text": "A lavratura de uma escritura em cartório para cada veículo." },
-      { "id": "D", "text": "O perdão das dívidas do IPVA pelo Governo Federal." },
-      { "id": "E", "text": "A pintura dos carros com as cores oficiais do Estado." }
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 28,
-    "title": "28. Desfazimento de Bens e Leilão",
-    "text": "A condução da sessão de lances do leilão de bens móveis inservíveis pode ser realizada por:",
-    "options": [
-      { "id": "A", "text": "Exclusivamente por um juiz de direito estadual." },
-      { "id": "B", "text": "Somente pelo Secretário de Administração pessoalmente." },
-      { "id": "C", "text": "Qualquer cidadão que tenha interesse em comprar um dos bens." },
-      { "id": "D", "text": "Servidor público designado para essa função ou por leiloeiro oficial credenciado." },
-      { "id": "E", "text": "Apenas pelo consórcio das empresas automobilísticas." }
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 29,
-    "title": "29. Desfazimento de Bens e Leilão",
-    "text": "O que deve ser feito com bens que, após criteriosa avaliação patrimonial, são considerados totalmente sem valor econômico ou comercial (lixo inservível), tornando inviável o custo de realizar um leilão?",
-    "options": [
-      { "id": "A", "text": "Devem ser escondidos no almoxarifado indefinidamente." },
-      { "id": "B", "text": "Podem passar por um descarte ambientalmente adequado, seguindo as normas de resíduos sólidos e eletrônicos." },
-      { "id": "C", "text": "A Administração deve obrigar o servidor do setor a levá-los para casa." },
-      { "id": "D", "text": "Devem ser vendidos em leilão obrigatoriamente, mesmo que o Estado tenha prejuízo na operação do evento." },
-      { "id": "E", "text": "Voltam a figurar como bens antieconômicos e ganham nova carga no sistema." }
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 30,
-    "title": "30. Desfazimento de Bens e Leilão",
-    "text": "Após a realização bem-sucedida do Leilão, o arremate do lote e o devido pagamento efetuado pelo vencedor, qual é o ato final da comissão patrimonial para encerrar o ciclo de vida do bem?",
-    "options": [
-      { "id": "A", "text": "Emitir uma nova plaqueta de patrimônio com o nome do arrematante." },
-      { "id": "B", "text": "Averbar a venda na Sindicância." },
-      { "id": "C", "text": "Realizar a baixa contábil no sistema patrimonial e registrar a receita gerada pela venda." },
-      { "id": "D", "text": "Devolver o dinheiro arrecadado ao setor que antes utilizava o bem." },
-      { "id": "E", "text": "Aguardar 5 anos para formalizar o termo de desfazimento." }
-    ],
-    "answer": "C"
-  }
+{
+"id": 1,
+"title": "1. Classificação de Bens Públicos",
+"text": "De acordo com o Código Civil e as normativas de gestão patrimonial, os bens que pertencem ao Estado, mas que estão à disposição de toda a coletividade sem restrições específicas (como praias, rios, estradas e praças), são classificados juridicamente como:",
+"options": [
+{
+"id": "A",
+"text": "Bens de uso especial."
+},
+{
+"id": "B",
+"text": "Bens dominicais."
+},
+{
+"id": "C",
+"text": "Bens de uso comum do povo."
+},
+{
+"id": "D",
+"text": "Bens alienáveis."
+},
+{
+"id": "E",
+"text": "Bens de fruição restrita."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. São classificados como bens de uso comum do povo aqueles destinados ao uso coletivo e irrestrito da população, não demandando autorização individual, a exemplo de praças, parques, ruas, rios, orlas e praias."
+},
+{
+"id": 2,
+"title": "2. Classificação de Bens Públicos",
+"text": "Os edifícios onde funcionam secretarias de governo, hospitais públicos, escolas e a frota de viaturas oficiais são bens afetados a uma finalidade pública específica. Como esses bens são classificados?",
+"options": [
+{
+"id": "A",
+"text": "Bens de uso comum do povo."
+},
+{
+"id": "B",
+"text": "Bens de uso especial."
+},
+{
+"id": "C",
+"text": "Bens dominicais."
+},
+{
+"id": "D",
+"text": "Bens de capital."
+},
+{
+"id": "E",
+"text": "Bens disponíveis para leilão imediato."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Os bens afetados direta e especificamente à execução e ao funcionamento dos serviços administrativos da administração pública, como escolas, hospitais, secretarias e viaturas oficiais, são classificados como bens de uso especial."
+},
+{
+"id": 3,
+"title": "3. Classificação de Bens Públicos",
+"text": "A categoria de bens que integram o patrimônio do Estado, mas que não possuem uma destinação pública específica (não estão afetados à administração ou à população), constituindo o acervo disponível para alienação, é denominada:",
+"options": [
+{
+"id": "A",
+"text": "Bens dominicais."
+},
+{
+"id": "B",
+"text": "Bens de uso comum do povo."
+},
+{
+"id": "C",
+"text": "Bens de uso especial."
+},
+{
+"id": "D",
+"text": "Bens de interesse social."
+},
+{
+"id": "E",
+"text": "Bens inalienáveis por natureza."
+}
+],
+"answer": "A",
+"explanation": "Gabarito: A. Os bens que compõem o patrimônio disponível do Estado e não possuem uma destinação pública específica ou direta no momento (estão desafetados) são denominados bens dominicais, sendo a categoria passível de alienação."
+},
+{
+"id": 4,
+"title": "4. Afetação de Bens Públicos",
+"text": "O instituto jurídico pelo qual o Poder Público confere a um bem uma finalidade pública específica, seja para uso da população ou para a prestação de um serviço administrativo, é conhecido como:",
+"options": [
+{
+"id": "A",
+"text": "Alienação."
+},
+{
+"id": "B",
+"text": "Imissão de Posse."
+},
+{
+"id": "C",
+"text": "Desafetação."
+},
+{
+"id": "D",
+"text": "Afetação."
+},
+{
+"id": "E",
+"text": "Tombamento."
+}
+],
+"answer": "D",
+"explanation": "Gabarito: D. A afetação consiste na destinação formal ou fática de um bem a uma finalidade pública específica, atribuindo ao bem uma função pública perante o Estado ou a população."
+},
+{
+"id": 5,
+"title": "5. Desafetação de Bens Públicos",
+"text": "Se a Administração Pública deseja vender ou doar um prédio onde antes funcionava uma escola estadual (bem de uso especial), qual é o requisito jurídico INDISPENSÁVEL que deve preceder o processo de alienação?",
+"options": [
+{
+"id": "A",
+"text": "A afetação do bem como uso comum do povo."
+},
+{
+"id": "B",
+"text": "A desafetação, convertendo-o legalmente em bem dominical."
+},
+{
+"id": "C",
+"text": "A autorização direta do Cartório de Registro de Imóveis."
+},
+{
+"id": "D",
+"text": "A imissão provisória na posse."
+},
+{
+"id": "E",
+"text": "A abertura de sindicância patrimonial."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Prédios públicos e bens de uso especial são inalienáveis por natureza; portanto, para que possam ser alienados ou vendidos, devem obrigatoriamente passar por um processo formal de desafetação, que retira sua função pública e os converte em bens dominicais."
+},
+{
+"id": 6,
+"title": "6. Mecanismo de Desafetação",
+"text": "A desafetação de um bem público tem como efeito principal:",
+"options": [
+{
+"id": "A",
+"text": "Tornar o bem impenhorável e imprescritível para sempre."
+},
+{
+"id": "B",
+"text": "Transferir automaticamente a propriedade do bem para a União."
+},
+{
+"id": "C",
+"text": "Retirar a finalidade pública específica do bem, inserindo-o na categoria de bem dominical e tornando-o alienável."
+},
+{
+"id": "D",
+"text": "Garantir que a população possa utilizá-lo livremente sem restrições de horário."
+},
+{
+"id": "E",
+"text": "Averbar a imissão de posse definitiva em favor do antigo proprietário."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. O efeito principal e definidor da desafetação é a retirada formal da destinação ou função pública do bem, o que o transforma em bem dominical e viabiliza a sua disponibilidade para fins de alienação."
+},
+{
+"id": 7,
+"title": "7. Movimentação e Destinação de Bens",
+"text": "Na gestão de materiais e patrimônio, um equipamento que se encontra em perfeitas condições de uso, mas que não está sendo utilizado pelo setor ao qual pertence, é classificado como:",
+"options": [
+{
+"id": "A",
+"text": "Inservível."
+},
+{
+"id": "B",
+"text": "Antieconômico."
+},
+{
+"id": "C",
+"text": "Ocioso."
+},
+{
+"id": "D",
+"text": "Recuperável."
+},
+{
+"id": "E",
+"text": "Sucata."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. O bem que se encontra em perfeitas condições físicas e de funcionamento, mas que se encontra sem utilização atual pelo setor detentor, recebe a classificação de bem ocioso, sendo passível de redistribuição."
+},
+{
+"id": 8,
+"title": "8. Movimentação e Destinação de Bens",
+"text": "Um veículo oficial da frota estadual ainda funciona, mas o custo anual com manutenção e consertos já supera o valor de mercado do próprio bem. Para a administração pública, esse bem é tipificado como:",
+"options": [
+{
+"id": "A",
+"text": "Ocioso."
+},
+{
+"id": "B",
+"text": "Antieconômico."
+},
+{
+"id": "C",
+"text": "Irrecuperável."
+},
+{
+"id": "D",
+"text": "Dominical restrito."
+},
+{
+"id": "E",
+"text": "Bem de uso comum."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Um bem cuja manutenção ou operação tornou-se excessivamente onerosa frente ao benefício ou ao valor do próprio item, não compensando sua permanência em atividade, é classificado como antieconômico."
+},
+{
+"id": 9,
+"title": "9. Movimentação e Destinação de Bens",
+"text": "Quando um bem móvel não tem mais utilidade para o serviço público em nenhum setor, seja por obsolescência, dano irreparável ou perda total de funcionalidade, ele recebe a classificação de:",
+"options": [
+{
+"id": "A",
+"text": "Bem de Uso Comum."
+},
+{
+"id": "B",
+"text": "Bem Dominical Intangível."
+},
+{
+"id": "C",
+"text": "Bem Ocioso."
+},
+{
+"id": "D",
+"text": "Bem Inservível."
+},
+{
+"id": "E",
+"text": "Bem Penhorável."
+}
+],
+"answer": "D",
+"explanation": "Gabarito: D. Quando o bem móvel perde a sua utilidade e funcionalidade para a Administração Pública, seja por estar ocioso, obsoleto, antieconômico ou irrecuperável, ele recebe a classificação de inservibilidade e é encaminhado para desfazimento."
+},
+{
+"id": 10,
+"title": "10. Movimentação e Destinação de Bens",
+"text": "A transferência física de um computador de um setor para outro dentro da mesma secretaria exige que a carga patrimonial acompanhe o bem. Qual o documento indispensável para formalizar essa movimentação?",
+"options": [
+{
+"id": "A",
+"text": "Termo de Desafetação."
+},
+{
+"id": "B",
+"text": "Termo de Imissão de Posse."
+},
+{
+"id": "C",
+"text": "Termo de Transferência ou Movimentação Interna."
+},
+{
+"id": "D",
+"text": "Edital de Leilão."
+},
+{
+"id": "E",
+"text": "Nota Fiscal de Aquisição original."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. A transferência e a mudança de local físico de um bem entre diferentes setores exigem o registro formal e documentado mediante a emissão do termo de movimentação ou transferência assinado para legitimar a carga patrimonial."
+},
+{
+"id": 11,
+"title": "11. Procedimentos de Transferência",
+"text": "Para que a responsabilidade sobre um equipamento transferido entre setores seja efetivamente legalizada, o Termo de Movimentação deve conter, obrigatoriamente:",
+"options": [
+{
+"id": "A",
+"text": "Apenas a assinatura do servidor que está entregando o bem."
+},
+{
+"id": "B",
+"text": "As assinaturas conjuntas de quem transfere e de quem recebe o bem, assumindo a nova carga."
+},
+{
+"id": "C",
+"text": "A assinatura de um juiz de direito homologando a transferência."
+},
+{
+"id": "D",
+"text": "Apenas a assinatura do setor de contabilidade."
+},
+{
+"id": "E",
+"text": "O aval do Governador do Estado."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Todo termo de responsabilidade e movimentação documenta a transferência formal da carga patrimonial, necessitando das assinaturas conjuntas de quem atesta a saída e de quem recebe a guarda (novo responsável) do bem público."
+},
+{
+"id": 12,
+"title": "12. Tratamento de Bens Ociosos",
+"text": "Qual é a conduta administrativa correta e prioritária quando se identifica um lote de bens 'ociosos' (em bom estado, mas sem uso) em um departamento?",
+"options": [
+{
+"id": "A",
+"text": "Descartá-los imediatamente como lixo comum."
+},
+{
+"id": "B",
+"text": "Enviá-los diretamente a leilão como sucata."
+},
+{
+"id": "C",
+"text": "Doar para servidores da própria unidade."
+},
+{
+"id": "D",
+"text": "Disponibilizá-los para transferência ou redistribuição a outros órgãos/setores que tenham demanda."
+},
+{
+"id": "E",
+"text": "Aguardar que quebrem para solicitar a baixa contábil."
+}
+],
+"answer": "D",
+"explanation": "Gabarito: D. A conduta correta e recomendada para tratar bens ociosos em prefeitas condições de uso é priorizar o reaproveitamento interno, disponibilizando-os para redistribuição ou transferência a outros setores que tenham demanda real, antes de realizar o desfazimento."
+},
+{
+"id": 13,
+"title": "13. Desapropriação Judicial",
+"text": "No curso de um processo de desapropriação por utilidade pública, o Estado pode requerer o ingresso antecipado no imóvel para iniciar imediatamente uma obra, mediante o depósito judicial do valor avaliado. Esse ato jurídico é denominado:",
+"options": [
+{
+"id": "A",
+"text": "Desafetação compulsória."
+},
+{
+"id": "B",
+"text": "Imissão provisória na posse."
+},
+{
+"id": "C",
+"text": "Tombamento cautelar."
+},
+{
+"id": "D",
+"text": "Averbação de uso especial."
+},
+{
+"id": "E",
+"text": "Alienação judicial."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Mediante o ajuizamento da ação e o depósito judicial prévio correspondente ao valor de referência, o Estado pode obter o ato de imissão provisória na posse para adentrar no imóvel e iniciar a obra de modo imediato."
+},
+{
+"id": 14,
+"title": "14. Desapropriação Judicial",
+"text": "Qual é o principal foco dos litígios movidos por particulares contra o Estado nas ações de desapropriação, uma vez que o mérito da utilidade pública é de difícil contestação?",
+"options": [
+{
+"id": "A",
+"text": "A escolha do engenheiro da obra."
+},
+{
+"id": "B",
+"text": "A discussão sobre o valor da indenização considerada justa."
+},
+{
+"id": "C",
+"text": "A cor da pintura do imóvel."
+},
+{
+"id": "D",
+"text": "O direito de continuar morando no imóvel permanentemente."
+},
+{
+"id": "E",
+"text": "A anulação da Constituição Estadual."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Nas vias judiciais de desapropriação (não amigáveis), o litígio possessório corre e concentra-se prioritariamente diante da discordância quanto ao valor e preço da indenização oferecida ou referentes a dúvidas sobre o domínio do imóvel."
+},
+{
+"id": 15,
+"title": "15. Desapropriação Judicial",
+"text": "Por que é obrigatório e fundamental que o ente público averbe ou registre o mandado de imissão de posse (e futuramente a sentença) na matrícula do imóvel no Cartório de Registro de Imóveis (CRI)?",
+"options": [
+{
+"id": "A",
+"text": "Para evitar que o antigo proprietário venda o imóvel a terceiros de boa-fé ou sofra penhoras por dívidas."
+},
+{
+"id": "B",
+"text": "Apenas para gerar recolhimento de taxas cartorárias ao município."
+},
+{
+"id": "C",
+"text": "Para que o juiz possa iniciar o processo de licitação da obra."
+},
+{
+"id": "D",
+"text": "Para isentar a construtora de impostos federais."
+},
+{
+"id": "E",
+"text": "O registro em cartório é opcional nas desapropriações estaduais."
+}
+],
+"answer": "A",
+"explanation": "Gabarito: A. É obrigatório registrar os mandados no Cartório de Registro de Imóveis (RGI) porque tais registros e averbações garantem a publicidade dos atos e conferem a eficácia da segurança jurídica à propriedade imobiliária, prevenindo conflitos com registros passados ou futuros."
+},
+{
+"id": 16,
+"title": "16. Desapropriação Judicial",
+"text": "Após o encerramento do processo judicial de desapropriação, com o pagamento da indenização justa e o trânsito em julgado da sentença, ocorre a fase de:",
+"options": [
+{
+"id": "A",
+"text": "Imissão provisória na posse."
+},
+{
+"id": "B",
+"text": "Retroatividade dominical."
+},
+{
+"id": "C",
+"text": "Imissão definitiva na posse e consolidação da propriedade em nome do ente público."
+},
+{
+"id": "D",
+"text": "Desafetação automática do bem desapropriado."
+},
+{
+"id": "E",
+"text": "Devolução do bem ao particular."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. Ao final do rito judicial e após o pagamento integral, o processo de desapropriação finaliza com a consolidação da transferência originária dos direitos reais (propriedade) em nome do Estado e a imissão definitiva na posse."
+},
+{
+"id": 17,
+"title": "17. Desapropriação Judicial",
+"text": "Se o Estado construir um hospital em uma área desapropriada, mas a Procuradoria não registrar a sentença no Cartório de Imóveis, qual a situação desse bem perante a gestão patrimonial pública?",
+"options": [
+{
+"id": "A",
+"text": "Estará perfeitamente regularizado, pois a construção da obra valida a propriedade."
+},
+{
+"id": "B",
+"text": "Estará em situação irregular (pendência de averbação), o que inviabiliza a segurança jurídica e a exatidão do inventário contábil."
+},
+{
+"id": "C",
+"text": "O imóvel passará automaticamente a ser bem de uso comum do povo."
+},
+{
+"id": "D",
+"text": "O Estado perde imediatamente a posse do hospital construído."
+},
+{
+"id": "E",
+"text": "O bem será considerado ocioso pelo sistema."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Todo imóvel utilizado pelo poder público sem o devido registro de matrícula está enquadrado em situação documental irregular, configurando fragilidade jurídica que compromete inventários contábeis e vulnerabiliza a prestação de contas perante convênios e órgãos de controle."
+},
+{
+"id": 18,
+"title": "18. Desapropriação Judicial",
+"text": "Na sistemática da desapropriação, a consolidação da propriedade do Estado (imissão definitiva) encerra o litígio possessório. Nesse momento, para fechar a cadeia dominial e formalizar a propriedade pública, a sentença judicial serve como:",
+"options": [
+{
+"id": "A",
+"text": "Ato de infração de trânsito."
+},
+{
+"id": "B",
+"text": "Título hábil para registro no Cartório de Imóveis, substituindo a escritura pública de compra e venda."
+},
+{
+"id": "C",
+"text": "Alvará de funcionamento da secretaria."
+},
+{
+"id": "D",
+"text": "Autorização para leilão imediato do bem."
+},
+{
+"id": "E",
+"text": "Termo de Sindicância Patrimonial."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Enquanto nas vias amigáveis firma-se um Contrato Administrativo com força de escritura, nas ações judiciais a sentença definitiva torna-se o título hábil capaz de autorizar a transferência formal e o registro imobiliário de aquisição no Cartório de Imóveis competente."
+},
+{
+"id": 19,
+"title": "19. Responsabilidade do Servidor",
+"text": "Quando um servidor público recebe um notebook ou veículo oficial para o exercício de suas funções, ele deve assinar um Termo de Guarda e Responsabilidade. O que esse termo implica juridicamente?",
+"options": [
+{
+"id": "A",
+"text": "Que o bem passa a ser propriedade particular do servidor."
+},
+{
+"id": "B",
+"text": "Que o servidor é pessoalmente responsável por zelar, conservar e responder por perdas ou danos causados ao bem sob sua custódia."
+},
+{
+"id": "C",
+"text": "Que o servidor pode alienar o bem quando achar que ele ficou obsoleto."
+},
+{
+"id": "D",
+"text": "Que o servidor só responde pelo bem durante o horário de expediente, estando isento de furto fora da repartição."
+},
+{
+"id": "E",
+"text": "Que o Estado isenta o servidor de qualquer dano, independentemente de negligência."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. A assinatura do Termo de Responsabilidade formaliza a carga patrimonial e implica juridicamente que o servidor detentor passa a responder nos âmbitos civil, administrativo e penal pela guarda, conservação, e eventuais danos ou extravios ocasionados por negligência ao bem público custodiado."
+},
+{
+"id": 20,
+"title": "20. Sindicância e Dano ao Erário",
+"text": "Se um servidor acidentalmente derruba e quebra um equipamento de alto valor, qual é o procedimento administrativo OBRIGATÓRIO antes de se imputar qualquer dever de ressarcimento ao erário?",
+"options": [
+{
+"id": "A",
+"text": "Desconto automático no próximo contracheque do servidor."
+},
+{
+"id": "B",
+"text": "Exoneração sumária do servidor."
+},
+{
+"id": "C",
+"text": "Instauração de Sindicância Patrimonial para apurar os fatos e o nexo de causalidade."
+},
+{
+"id": "D",
+"text": "Baixa imediata do bem como sucata, sem apuração."
+},
+{
+"id": "E",
+"text": "Cobrança via cartão de crédito do funcionário."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. Antes de qualquer responsabilização ou fixação do dever de ressarcimento, é obrigatório proceder com a instauração prévia de uma apuração formal mediante Sindicância Patrimonial, averiguando devidamente os fatos e o nexo de causalidade."
+},
+{
+"id": 21,
+"title": "21. Sindicância e Dano ao Erário",
+"text": "Durante o rito de uma Sindicância Patrimonial, a Constituição Federal garante ao servidor investigado um direito inafastável, sob pena de nulidade do processo. Que direito é esse?",
+"options": [
+{
+"id": "A",
+"text": "O direito ao anonimato permanente."
+},
+{
+"id": "B",
+"text": "A garantia do contraditório e da ampla defesa, podendo apresentar sua versão e produzir provas."
+},
+{
+"id": "C",
+"text": "O direito de substituir o bem quebrado por qualquer outro objeto."
+},
+{
+"id": "D",
+"text": "A garantia de impunidade caso o bem tenha mais de 5 anos de uso."
+},
+{
+"id": "E",
+"text": "O direito de não assinar o termo de guarda."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. De forma inafastável e sob pena de nulidade perante o artigo 5º da Constituição Federal, o processo garante ao servidor os plenos direitos ao contraditório e à ampla defesa, consistindo na oportunidade de defesa prévia, oitiva e produção de provas."
+},
+{
+"id": 22,
+"title": "22. Sindicância e Dano ao Erário",
+"text": "É correto afirmar sobre o desconto financeiro direto na folha de pagamento do servidor em caso de sumiço ou quebra de um bem permanente:",
+"options": [
+{
+"id": "A",
+"text": "É perfeitamente legal fazê-lo de ofício, sem nenhum processo prévio, para garantir o ressarcimento rápido do erário."
+},
+{
+"id": "B",
+"text": "É ilegal e nulo caso seja efetuado sem a instauração prévia do rito formal de apuração (Sindicância) e sem garantir a ampla defesa."
+},
+{
+"id": "C",
+"text": "Deve ser aplicado apenas a bens de baixo valor (até R$ 100)."
+},
+{
+"id": "D",
+"text": "Pode ser feito pelo chefe imediato por meio de comunicação verbal à folha de pagamento."
+},
+{
+"id": "E",
+"text": "Nunca é permitido em nenhuma hipótese, devendo o Estado assumir todo e qualquer prejuízo."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. A aplicação de qualquer forma de desconto automático ou financeiro de maneira direta na folha do servidor, caso efetuada sem a devida instauração prévia de um rito formal de apuração (sindicância patrimonial), é expressamente qualificada como ilegal e nula."
+},
+{
+"id": 23,
+"title": "23. Sindicância e Dano ao Erário",
+"text": "Na responsabilização patrimonial, o nexo de causalidade para imputar o ressarcimento ao servidor depende da comprovação de que o dano ocorreu em decorrência de:",
+"options": [
+{
+"id": "A",
+"text": "Força maior ou caso fortuito exclusivamente."
+},
+{
+"id": "B",
+"text": "Dolo (intenção) ou culpa (negligência, imprudência ou imperícia) por parte do agente público."
+},
+{
+"id": "C",
+"text": "Ação de terceiros sem qualquer facilitação do servidor."
+},
+{
+"id": "D",
+"text": "Desgaste natural e obsolescência tecnológica do equipamento."
+},
+{
+"id": "E",
+"text": "Falta de manutenção preventiva por parte da empresa contratada."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. A atribuição de ressarcimento depende intrinsecamente da comprovação atestada de um nexo de causalidade, exigindo provas de que as perdas ou inutilizações provieram de dolo intencional ou conduta culposa fundamentada na negligência, imperícia ou imprudência do servidor."
+},
+{
+"id": 24,
+"title": "24. Sindicância e Dano ao Erário",
+"text": "Confirmada a culpa do servidor na sindicância, ele ressarce o erário. Após essa etapa (ou em caso de força maior sem culpados), o que a comissão patrimonial deve fazer com o registro do equipamento totalmente destruído?",
+"options": [
+{
+"id": "A",
+"text": "Mantê-lo no balanço contábil indefinidamente como 'bem ativo'."
+},
+{
+"id": "B",
+"text": "Formalizar a baixa contábil definitiva do ativo permanente com base no relatório final da sindicância."
+},
+{
+"id": "C",
+"text": "Transferir a carga patrimonial para o CPF do servidor punido."
+},
+{
+"id": "D",
+"text": "Doar os destroços simbolicamente a uma ONG."
+},
+{
+"id": "E",
+"text": "Leiloar o registro fantasma do equipamento."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Transcorrida a apuração, configurada a culpa e assentado o ressarcimento nos autos da sindicância, a conduta correta remanescente para a comissão consiste em formalizar a baixa contábil definitiva do ativo estragado respaldando-se no relatório final."
+},
+{
+"id": 25,
+"title": "25. Desfazimento de Bens e Leilão",
+"text": "O processo de destinação final de bens inservíveis à Administração Pública (como mobiliário quebrado ou frota de veículos sucateados), dando a eles um encerramento legal (doação, venda ou descarte), é conhecido como processo de:",
+"options": [
+{
+"id": "A",
+"text": "Afetação patrimonial."
+},
+{
+"id": "B",
+"text": "Tombamento histórico."
+},
+{
+"id": "C",
+"text": "Desfazimento."
+},
+{
+"id": "D",
+"text": "Requisição administrativa."
+},
+{
+"id": "E",
+"text": "Sindicância de aquisição."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. O trâmite administrativo responsável por dar uma destinação e retirada formal ao patrimônio que não possui mais serventia, englobando saídas via leilão, doação, descarte ou permutas, atende pelo termo de processo de desfazimento."
+},
+{
+"id": 26,
+"title": "26. Desfazimento de Bens e Leilão",
+"text": "Conforme a nova Lei de Licitações (Lei nº 14.133/2021) e normativas aplicáveis, a alienação de bens móveis inservíveis e sucatas da administração pública deve utilizar, como regra geral, qual modalidade de licitação?",
+"options": [
+{
+"id": "A",
+"text": "Concurso."
+},
+{
+"id": "B",
+"text": "Convite."
+},
+{
+"id": "C",
+"text": "Leilão."
+},
+{
+"id": "D",
+"text": "Diálogo Competitivo."
+},
+{
+"id": "E",
+"text": "Tomada de Preços."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. Consoante às regras trazidas pela Lei nº 14.133/2021, o procedimento estabelecido e reconhecido como modalidade licitatória geral e obrigatória no âmbito da alienação e venda de bens móveis inservíveis é o leilão."
+},
+{
+"id": 27,
+"title": "27. Desfazimento de Bens e Leilão",
+"text": "Antes que uma frota de viaturas seja colocada no pátio para arremate em um Leilão Eletrônico, qual procedimento patrimonial prévio é exigido para assegurar que o lote pode ser vendido legalmente?",
+"options": [
+{
+"id": "A",
+"text": "A classificação documentada de inservibilidade e a avaliação prévia com valor de referência."
+},
+{
+"id": "B",
+"text": "A afetação dos veículos como bens de uso comum do povo."
+},
+{
+"id": "C",
+"text": "A lavratura de uma escritura em cartório para cada veículo."
+},
+{
+"id": "D",
+"text": "O perdão das dívidas do IPVA pelo Governo Federal."
+},
+{
+"id": "E",
+"text": "A pintura dos carros com as cores oficiais do Estado."
+}
+],
+"answer": "A",
+"explanation": "Gabarito: A. A concretização e a legalidade do leilão dependem sempre de requisitos prévios instaurados no processo interno de desfazimento, abarcando essencialmente a classificação documental atestando a inservibilidade dos referidos lotes combinada à avaliação que fixe o preço de referência da praça."
+},
+{
+"id": 28,
+"title": "28. Desfazimento de Bens e Leilão",
+"text": "A condução da sessão de lances do leilão de bens móveis inservíveis pode ser realizada por:",
+"options": [
+{
+"id": "A",
+"text": "Exclusivamente por um juiz de direito estadual."
+},
+{
+"id": "B",
+"text": "Somente pelo Secretário de Administração pessoalmente."
+},
+{
+"id": "C",
+"text": "Qualquer cidadão que tenha interesse em comprar um dos bens."
+},
+{
+"id": "D",
+"text": "Servidor público designado para essa função ou por leiloeiro oficial credenciado."
+},
+{
+"id": "E",
+"text": "Apenas pelo consórcio das empresas automobilísticas."
+}
+],
+"answer": "D",
+"explanation": "Gabarito: D. Nas operações de vendas patrimoniais, independentemente da configuração adotada no certame (presencial ou formato eletrônico), o pregão de lances do leilão será conduzido tanto por um leiloeiro oficial como por algum servidor devidamente designado pelo Estado."
+},
+{
+"id": 29,
+"title": "29. Desfazimento de Bens e Leilão",
+"text": "O que deve ser feito com bens que, após criteriosa avaliação patrimonial, são considerados totalmente sem valor econômico ou comercial (lixo inservível), tornando inviável o custo de realizar um leilão?",
+"options": [
+{
+"id": "A",
+"text": "Devem ser escondidos no almoxarifado indefinidamente."
+},
+{
+"id": "B",
+"text": "Podem passar por um descarte ambientalmente adequado, seguindo as normas de resíduos sólidos e eletrônicos."
+},
+{
+"id": "C",
+"text": "A Administração deve obrigar o servidor do setor a levá-los para casa."
+},
+{
+"id": "D",
+"text": "Devem ser vendidos em leilão obrigatoriamente, mesmo que o Estado tenha prejuízo na operação do evento."
+},
+{
+"id": "E",
+"text": "Voltam a figurar como bens antieconômicos e ganham nova carga no sistema."
+}
+],
+"answer": "B",
+"explanation": "Gabarito: B. Lotes inservíveis e materiais classificados como isentos de vantagens e sem nenhum viés de valor econômico devem ser orientados estritamente e documentados para descarte ambiental em submissão direta às normas próprias de manuseio de resíduos sólidos e eletrônicos."
+},
+{
+"id": 30,
+"title": "30. Desfazimento de Bens e Leilão",
+"text": "Após a realização bem-sucedida do Leilão, o arremate do lote e o devido pagamento efetuado pelo vencedor, qual é o ato final da comissão patrimonial para encerrar o ciclo de vida do bem?",
+"options": [
+{
+"id": "A",
+"text": "Emitir uma nova plaqueta de patrimônio com o nome do arrematante."
+},
+{
+"id": "B",
+"text": "Averbar a venda na Sindicância."
+},
+{
+"id": "C",
+"text": "Realizar a baixa contábil no sistema patrimonial e registrar a receita gerada pela venda."
+},
+{
+"id": "D",
+"text": "Devolver o dinheiro arrecadado ao setor que antes utilizava o bem."
+},
+{
+"id": "E",
+"text": "Aguardar 5 anos para formalizar o termo de desfazimento."
+}
+],
+"answer": "C",
+"explanation": "Gabarito: C. Superadas as etapas licitatórias do leilão e efetivada a retirada formal dos lotes físicos, os atos encerram-se fundamentalmente através da finalização da baixa contábil do sistema e no correspondente registro da quantia arrecadada como receita orçamentária do erário."
+}
 ];
 
 const qsMod3Aulas3_4 = [
