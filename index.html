@@ -526,38 +526,47 @@
     <!-- Script Confetti leve -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
-    <script id="quiz-questions-loader">
-        const quizMode = localStorage.getItem('quiz_mode') || 'normal';
-        const scriptSrc = quizMode === 'hard' ? 'questoes_hard.js' : 'questoes.js';
-        document.write('<script src="' + scriptSrc + '"><\/script>');
-    </script>
+    <script src="questoes.js"></script>
+    <script src="questoes_hard.js"></script>
     <script>
-        const currentQuizMode = localStorage.getItem('quiz_mode') || 'normal';
+        let currentQuizMode = 'normal';
 
-        function setMode(mode) {
-            if (localStorage.getItem('quiz_mode') !== mode) {
-                localStorage.setItem('quiz_mode', mode);
-                window.location.reload();
-            }
+        function buildModulesConfig() {
+            const isHard = currentQuizMode === 'hard';
+            return {
+                1: [],
+                2: [
+                    { id: '1-2', label: 'Aulas 1-2', data: isHard ? qsHardMod2Aulas1_2 : qsMod2Aulas1_2 },
+                    { id: '3-4', label: 'Aulas 3-4', data: isHard ? qsHardMod2Aulas3_4 : qsMod2Aulas3_4 }
+                ],
+                3: [
+                    { id: '1', label: 'Aulas 1', data: isHard ? qsHardMod3Aula1 : qsMod3Aula1 },
+                    { id: '2', label: 'Aulas 2', data: isHard ? qsHardMod3Aula2 : qsMod3Aula2 },
+                    { id: '3-4', label: 'Aulas 3-4', data: isHard ? qsHardMod3Aulas3_4 : qsMod3Aulas3_4 }
+                ],
+                4: [
+                    { id: '1', label: 'Aulas 1', data: isHard ? qsHardMod4Aula1 : qsMod4Aula1 },
+                    { id: '2', label: 'Aulas 2', data: isHard ? qsHardMod4Aula2 : qsMod4Aula2 },
+                    { id: '3-4', label: 'Aulas 3-4', data: isHard ? qsHardMod4Aulas3_4 : qsMod4Aulas3_4 }
+                ]
+            };
         }
 
-        const modulesConfig = {
-            1: [],
-            2: [
-                { id: '1-2', label: 'Aulas 1-2', data: qsMod2Aulas1_2 },
-                { id: '3-4', label: 'Aulas 3-4', data: qsMod2Aulas3_4 }
-            ],
-            3: [
-                { id: '1', label: 'Aulas 1', data: qsMod3Aula1 },
-                { id: '2', label: 'Aulas 2', data: qsMod3Aula2 },
-                { id: '3-4', label: 'Aulas 3-4', data: qsMod3Aulas3_4 }
-            ],
-            4: [
-                { id: '1', label: 'Aulas 1', data: qsMod4Aula1 },
-                { id: '2', label: 'Aulas 2', data: qsMod4Aula2 },
-                { id: '3-4', label: 'Aulas 3-4', data: qsMod4Aulas3_4 }
-            ]
-        };
+        let modulesConfig = buildModulesConfig();
+
+        function setMode(mode) {
+            if (currentQuizMode === mode) return;
+            currentQuizMode = mode;
+
+            // Update mode buttons
+            document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.getElementById(mode === 'hard' ? 'btn-mode-hard' : 'btn-mode-normal');
+            if (activeBtn) activeBtn.classList.add('active');
+
+            // Rebuild config with new data source and re-render current module
+            modulesConfig = buildModulesConfig();
+            selectModule(currentModule);
+        }
 
         let currentQuestions = [];
         let currentQuestionIndex = 0;
@@ -811,18 +820,8 @@
             }());
         }
 
-        // Update mode buttons state
-        document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
-        if (currentQuizMode === 'hard') {
-            const btnHard = document.getElementById('btn-mode-hard');
-            if (btnHard) btnHard.classList.add('active');
-        } else {
-            const btnNormal = document.getElementById('btn-mode-normal');
-            if (btnNormal) btnNormal.classList.add('active');
-        }
-
-        // Inicia no Módulo 3 por padrão, nas Aulas 1
-        selectModule(3);
+        // Inicia no Módulo 2 por padrão, nas Aulas 1-2
+        selectModule(2);
 </script>
 </body>
 
