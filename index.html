@@ -385,6 +385,53 @@
             z-index: 10;
         }
 
+        /* Seletor de Modo (Normal / Hard) */
+        .mode-container {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 8px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .mode-btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid transparent;
+            background: transparent;
+            color: var(--tab-inactive);
+            font-weight: 700;
+            font-size: 1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .mode-btn:hover {
+            background: var(--background);
+            color: var(--text-main);
+        }
+
+        .mode-btn.active.normal {
+            background: #EEF2FF;
+            color: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.15);
+        }
+
+        .mode-btn.active.hard {
+            background: #FEF2F2;
+            color: var(--danger);
+            border-color: var(--danger);
+            box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.15);
+        }
+
         @media (max-width: 600px) {
             body {
                 padding: 16px;
@@ -412,6 +459,15 @@
 <body>
 
     <div class="header-container">
+        <div class="mode-container" id="mode-container">
+            <button class="mode-btn normal active" id="btn-mode-normal" onclick="setMode('normal')">
+                <span class="mode-icon">🎯</span> Modo Normal
+            </button>
+            <button class="mode-btn hard" id="btn-mode-hard" onclick="setMode('hard')">
+                <span class="mode-icon">🔥</span> Modo Hard
+            </button>
+        </div>
+
         <div class="tabs-container" id="tabs-container">
             <!-- <button class="tab-btn" id="tab-mod1" onclick="selectModule(1)">Módulo 1</button> -->
             <button class="tab-btn active" id="tab-mod2" onclick="selectModule(2)">Módulo 2</button>
@@ -470,10 +526,21 @@
     <!-- Script Confetti leve -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
-    <script src="questoes.js"></script>
-    <script src="questoes.js"></script>
-    <script src="questoes.js"></script>
+    <script id="quiz-questions-loader">
+        const quizMode = localStorage.getItem('quiz_mode') || 'normal';
+        const scriptSrc = quizMode === 'hard' ? 'questoes_hard.js' : 'questoes.js';
+        document.write('<script src="' + scriptSrc + '"><\/script>');
+    </script>
     <script>
+        const currentQuizMode = localStorage.getItem('quiz_mode') || 'normal';
+
+        function setMode(mode) {
+            if (localStorage.getItem('quiz_mode') !== mode) {
+                localStorage.setItem('quiz_mode', mode);
+                window.location.reload();
+            }
+        }
+
         const modulesConfig = {
             1: [],
             2: [
@@ -744,7 +811,17 @@
             }());
         }
 
-        // Inicia no Módulo 3 por padrão, nas Aula 1
+        // Update mode buttons state
+        document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+        if (currentQuizMode === 'hard') {
+            const btnHard = document.getElementById('btn-mode-hard');
+            if (btnHard) btnHard.classList.add('active');
+        } else {
+            const btnNormal = document.getElementById('btn-mode-normal');
+            if (btnNormal) btnNormal.classList.add('active');
+        }
+
+        // Inicia no Módulo 3 por padrão, nas Aulas 1
         selectModule(3);
 </script>
 </body>
