@@ -3671,6 +3671,877 @@ const qsMod3Aulas3_4 = [
 ];
 
 // Módulo 4
-const qsMod4Aulas1_2 = [];
+const qsMod4Aulas1_2 = [
+{
+"id": 1,
+"title": "Teoria do Conflito - Schattschneider",
+"text": "Segundo E. E. Schattschneider (1960), a expansão dos conflitos nas questões políticas se desenvolve por meio de qual mecanismo, quando um grupo mobiliza uma audiência maior para levar adiante sua visão sobre um problema?",
+"options": [
+{
+"id": "A",
+"text": "Janela de Oportunidades."
+},
+{
+"id": "B",
+"text": "Racionalidade Limitada."
+},
+{
+"id": "C",
+"text": "Mobilização de viés (mobilization of bias)."
+},
+{
+"id": "D",
+"text": "Déficit de implementação."
+},
+{
+"id": "E",
+"text": "Escolha ad hoc."
+}
+],
+"answer": "C",
+"explanation": "De acordo com o material, 'A expansão dos conflitos se desenvolve por meio daquilo que o autor denominou como mobilização de viés (mobilization of bias)'."
+},
+{
+"id": 2,
+"title": "Níveis da Agenda - Dinâmica de Grupos",
+"text": "De acordo com a teoria dos níveis de agenda apresentada por Birkland (2005), os grupos que buscam ativamente mudanças em políticas públicas procuram mover as questões para qual nível específico de agenda?",
+"options": [
+{
+"id": "A",
+"text": "Universo da agenda."
+},
+{
+"id": "B",
+"text": "Agenda Sistêmica."
+},
+{
+"id": "C",
+"text": "Agenda Governamental."
+},
+{
+"id": "D",
+"text": "Agenda Decisória."
+},
+{
+"id": "E",
+"text": "Agenda da Mídia."
+}
+],
+"answer": "D",
+"explanation": "Conforme o esquema de Birkland (2005), 'Grupos que buscam mudanças em políticas públicas procuram mover questões para a agenda decisória'."
+},
+{
+"id": 3,
+"title": "Níveis da Agenda - Grupos de Bloqueio",
+"text": "Em relação à dinâmica de formação da agenda, como atuam os grupos contrários à mudança em determinadas políticas públicas?",
+"options": [
+{
+"id": "A",
+"text": "Movem as questões rapidamente para a agenda decisória."
+},
+{
+"id": "B",
+"text": "Procuram bloquear o avanço de questões na agenda."
+},
+{
+"id": "C",
+"text": "Transferem o problema para a agenda sistêmica global."
+},
+{
+"id": "D",
+"text": "Ignoram o problema até que atinja a fase de avaliação ex post."
+},
+{
+"id": "E",
+"text": "Ampliam o conflito passivamente por meio da mobilização de viés."
+}
+],
+"answer": "B",
+"explanation": "No esquema dos níveis de agenda, fica claro que os 'Grupos contrários à mudança em políticas públicas procuram bloquear o avanço de questões na agenda'."
+},
+{
+"id": 4,
+"title": "Formação da Agenda - Cobb e Elder",
+"text": "Cobb e Elder (1983) estabelecem condições primordiais para que um problema entre na agenda (agenda setting). Quais são os três critérios apontados por eles?",
+"options": [
+{
+"id": "A",
+"text": "Atenção, Resolutividade e Competência."
+},
+{
+"id": "B",
+"text": "Poder, Percepção e Proximidade."
+},
+{
+"id": "C",
+"text": "Causalidade, Incidência e Novidade."
+},
+{
+"id": "D",
+"text": "Racionalidade, Implementação e Extinção."
+},
+{
+"id": "E",
+"text": "Certeza, Incerteza e Ambiguidade."
+}
+],
+"answer": "A",
+"explanation": "Segundo Cobb e Elder (1983), as condições para um problema entrar na agenda são: '1. Atenção... 2. Resolutividade... 3. Competência'."
+},
+{
+"id": 5,
+"title": "Formação da Agenda - Zahariadis",
+"text": "Diferentemente de Cobb e Elder, Zahariadis (2016) destaca outros elementos que integram a situação de definição da agenda. Quais são eles?",
+"options": [
+{
+"id": "A",
+"text": "Atenção, resolutividade e competência."
+},
+{
+"id": "B",
+"text": "Causalidade, gravidade, incidência e novidade."
+},
+{
+"id": "C",
+"text": "Poder, percepção, potência e proximidade."
+},
+{
+"id": "D",
+"text": "Crise, público-alvo e meios versus fins."
+},
+{
+"id": "E",
+"text": "Mobilização, coerção e conscientização."
+}
+],
+"answer": "C",
+"explanation": "De acordo com o material, para Zahariadis (2016), os 'Elementos que integram a situação definição da agenda: poder, percepção, potência e proximidade'."
+},
+{
+"id": 6,
+"title": "Definição de Agenda Governamental",
+"text": "Na fase de formação da agenda, como a 'agenda' é conceitualmente definida no estudo das políticas públicas (segundo Sechi, 2022)?",
+"options": [
+{
+"id": "A",
+"text": "Uma diretriz elaborada exclusivamente por atores estatais."
+},
+{
+"id": "B",
+"text": "Um conjunto de problemas ou temas entendidos como relevantes."
+},
+{
+"id": "C",
+"text": "A discrepância estrutural entre o status quo e a situação ideal."
+},
+{
+"id": "D",
+"text": "O momento de avaliação ex post das ações governamentais."
+},
+{
+"id": "E",
+"text": "A extinção formal de uma política considerada ineficaz."
+}
+],
+"answer": "B",
+"explanation": "Conceitua-se, com base em Secchi (2022), que 'A agenda é um conjunto de problemas ou temas entendidos como relevantes'."
+},
+{
+"id": 7,
+"title": "Ciclo de Políticas Públicas - Fases Iniciais",
+"text": "De acordo com Secchi (2016), o ciclo de políticas públicas é composto por sete fases principais. Qual das alternativas apresenta a sequência correta das quatro primeiras fases desse ciclo?",
+"options": [
+{
+"id": "A",
+"text": "Formação da agenda, Identificação do problema, Tomada de decisão, Implementação."
+},
+{
+"id": "B",
+"text": "Identificação do problema, Formulação de alternativas, Avaliação, Extinção."
+},
+{
+"id": "C",
+"text": "Identificação do problema, Formação da agenda, Formulação de alternativas, Tomada de decisão."
+},
+{
+"id": "D",
+"text": "Identificação do problema, Tomada de decisão, Formulação de alternativas, Formação da agenda."
+},
+{
+"id": "E",
+"text": "Formação da agenda, Tomada de decisão, Implementação, Avaliação."
+}
+],
+"answer": "C",
+"explanation": "O ciclo restrito apresentado enumera a sequência: '1) identificação do problema, 2) formação da agenda, 3) formulação de alternativas, 4) tomada de decisão'."
+},
+{
+"id": 8,
+"title": "Elementos do Problema Público - Causalidade e Incidência",
+"text": "Segundo Rochefort e Cobb (1984), a definição de problemas públicos possui nove elementos. Identifique, respectivamente, o elemento que 'permite atribuir responsabilidades' e o elemento que se apoia em 'dados estatísticos' para delinear os padrões de um evento:",
+"options": [
+{
+"id": "A",
+"text": "Gravidade e Crise."
+},
+{
+"id": "B",
+"text": "Causalidade e Incidência."
+},
+{
+"id": "C",
+"text": "Proximidade e Novidade."
+},
+{
+"id": "D",
+"text": "Soluções e Meios versus fins."
+},
+{
+"id": "E",
+"text": "Causalidade e Público-alvo."
+}
+],
+"answer": "B",
+"explanation": "A Causalidade 'permite atribuir responsabilidades', enquanto a Incidência indica que 'Os dados estatísticos são frequentemente selecionados para representar o problema'."
+},
+{
+"id": 9,
+"title": "Elementos do Problema Público - Novidade e Proximidade",
+"text": "Determinados problemas ganham atenção quando envolvem 'situações não usuais ou sem precedentes', enquanto outros são percebidos por estarem 'diretamente relacionados à realidade vivenciada pelas pessoas'. A quais elementos do problema público (Rochefort; Cobb, 1984) essas descrições se referem, respectivamente?",
+"options": [
+{
+"id": "A",
+"text": "Gravidade e Público-alvo."
+},
+{
+"id": "B",
+"text": "Crise e Incidência."
+},
+{
+"id": "C",
+"text": "Novidade e Proximidade."
+},
+{
+"id": "D",
+"text": "Causalidade e Soluções."
+},
+{
+"id": "E",
+"text": "Meios versus fins e Novidade."
+}
+],
+"answer": "C",
+"explanation": "O texto descreve que a Novidade foca em 'situações não usuais, ou sem precedentes', e a Proximidade trata de 'situações vivenciadas pelas pessoas diretamente relacionadas a sua realidade'."
+},
+{
+"id": 10,
+"title": "Elementos do Problema Público - Crise e Público-alvo",
+"text": "A linguagem política frequentemente descreve uma situação como 'especialmente grave e que demanda atenção corretiva'. Além disso, o debate baseia-se em valores culturais e históricos para definir as formas como os afetados são percebidos. Tais características correspondem a quais elementos do problema público?",
+"options": [
+{
+"id": "A",
+"text": "Causalidade e Incidência."
+},
+{
+"id": "B",
+"text": "Gravidade e Novidade."
+},
+{
+"id": "C",
+"text": "Crise e Público-alvo."
+},
+{
+"id": "D",
+"text": "Proximidade e Soluções."
+},
+{
+"id": "E",
+"text": "Meios versus fins e Causalidade."
+}
+],
+"answer": "C",
+"explanation": "A Crise é usada 'como forma de descrever uma situação como especialmente grave', e o Público-alvo apoia-se na 'percepção social sobre esses grupos [...] baseada em valores culturais, históricos, sociais e econômicos'."
+},
+{
+"id": 11,
+"title": "Elementos do Problema Público - Meios versus Fins",
+"text": "Muitas vezes, a definição de um problema público ocorre privilegiando a perspectiva instrumental, o que pode gerar o fenômeno de 'soluções que surgem antes de problemas'. Segundo Rochefort e Cobb (1984), esse aspecto refere-se ao elemento de:",
+"options": [
+{
+"id": "A",
+"text": "Causalidade."
+},
+{
+"id": "B",
+"text": "Novidade."
+},
+{
+"id": "C",
+"text": "Gravidade."
+},
+{
+"id": "D",
+"text": "Meios versus fins."
+},
+{
+"id": "E",
+"text": "Soluções."
+}
+],
+"answer": "D",
+"explanation": "O material define o elemento 'Meios versus fins' explicando que as premissas podem ser estabelecidas em bases instrumentais, sendo 'o caso, muitas vezes, de soluções que surgem antes de problemas'."
+},
+{
+"id": 12,
+"title": "Elementos do Problema Público - Soluções",
+"text": "No entendimento político sobre as soluções possíveis em determinada questão, há ingredientes considerados essenciais para ação governamental (Rochefort e Cobb, 1984). Quais são os três ingredientes fundamentais para o elemento 'Soluções'?",
+"options": [
+{
+"id": "A",
+"text": "Atenção, resolutividade e competência."
+},
+{
+"id": "B",
+"text": "Poder, percepção e potência."
+},
+{
+"id": "C",
+"text": "Disponibilidade de recursos, aceitabilidade e capacidade."
+},
+{
+"id": "D",
+"text": "Legalidade, impessoalidade e moralidade."
+},
+{
+"id": "E",
+"text": "Racionalidade absoluta, limitada e incremental."
+}
+],
+"answer": "C",
+"explanation": "Segundo o elemento Soluções, 'três ingredientes são fundamentais: disponibilidade de recursos, aceitabilidade e capacidade'."
+},
+{
+"id": 13,
+"title": "Fases do Ciclo - Formulação de Alternativas",
+"text": "O estabelecimento de objetivos, estratégias e o estudo das potenciais consequências de cada caminho de resolução, buscando responder a um mesmo objetivo por várias formas, são características de qual fase do ciclo de políticas públicas?",
+"options": [
+{
+"id": "A",
+"text": "Identificação do problema."
+},
+{
+"id": "B",
+"text": "Tomada de decisão."
+},
+{
+"id": "C",
+"text": "Avaliação ex ante."
+},
+{
+"id": "D",
+"text": "Formulação de alternativas."
+},
+{
+"id": "E",
+"text": "Implementação."
+}
+],
+"answer": "D",
+"explanation": "A 'Formulação de alternativas' envolve o 'Estabelecimento de objetivos, estratégias e o estudo das potenciais consequências de cada alternativa de solução', bem como a busca de um mesmo objetivo 'por várias formas/caminhos'."
+},
+{
+"id": 14,
+"title": "Fases do Ciclo - Identificação do Problema",
+"text": "A fase do ciclo de políticas públicas que reflete 'a discrepância entre o status quo e uma situação ideal possível' é denominada:",
+"options": [
+{
+"id": "A",
+"text": "Formação da agenda."
+},
+{
+"id": "B",
+"text": "Tomada de decisão."
+},
+{
+"id": "C",
+"text": "Avaliação."
+},
+{
+"id": "D",
+"text": "Extinção."
+},
+{
+"id": "E",
+"text": "Identificação do Problema."
+}
+],
+"answer": "E",
+"explanation": "O material conceitua a 'Identificação do Problema' diretamente como: 'A discrepância entre o status quo e uma situação ideal possível'."
+},
+{
+"id": 15,
+"title": "Implementação - Déficit",
+"text": "A implementação é um momento crucial dentro da administração pública, e todos os esforços nessa fase devem ser focados em diminuir um problema específico verificado entre o planejado e o executado. Trata-se do(a):",
+"options": [
+{
+"id": "A",
+"text": "Mobilização de viés."
+},
+{
+"id": "B",
+"text": "Ambiguidade decisória."
+},
+{
+"id": "C",
+"text": "Déficit de Implementação."
+},
+{
+"id": "D",
+"text": "Inércia institucional."
+},
+{
+"id": "E",
+"text": "Fluxo de soluções."
+}
+],
+"answer": "C",
+"explanation": "O slide 20 define que a implementação é o momento onde 'todos os esforços devem ser focados na diminuição do chamado Déficit de Implementação'."
+},
+{
+"id": 16,
+"title": "Modelos de Implementação - Top-down vs Bottom-up",
+"text": "Em relação aos modelos de implementação, um caracteriza-se pela separação rígida entre políticos (decisores) e burocratas, permitindo a estratégia de 'lavar as mãos' (blame shifting). O outro pressupõe que o formato da política é modificável, atribuindo maior discricionariedade aos gestores da ponta. Quais são esses modelos, respectivamente?",
+"options": [
+{
+"id": "A",
+"text": "Racional e Incremental."
+},
+{
+"id": "B",
+"text": "Top-down e Bottom-up."
+},
+{
+"id": "C",
+"text": "Ex ante e Ex post."
+},
+{
+"id": "D",
+"text": "Regulatório e Distributivo."
+},
+{
+"id": "E",
+"text": "Sistêmico e Decisório."
+}
+],
+"answer": "B",
+"explanation": "O 'Modelo top-down' inclui a 'Estratégia de lavar as mãos ou blame shifting', enquanto o 'Modelo bottom-up' pressupõe 'Maior discricionariedade por parte de gestores e burocratas' para alterar o formato."
+},
+{
+"id": 17,
+"title": "Instrumentos - Regulamentação vs Desregulamentação",
+"text": "Entre as categorias de instrumentos de políticas públicas, há aqueles que 'criam regras ou restrições à liberdade econômica', e outros que 'extinguem regras ou criam regras que descriminalizem alguns tipos de atividades'. Esses instrumentos são denominados, respectivamente:",
+"options": [
+{
+"id": "A",
+"text": "Impostos e Subsídios."
+},
+{
+"id": "B",
+"text": "Prêmios e Certificados."
+},
+{
+"id": "C",
+"text": "Regulamentação e Desregulamentação e legalização."
+},
+{
+"id": "D",
+"text": "Prestação direta e Terceirização."
+},
+{
+"id": "E",
+"text": "Informação ao público e Seguros governamentais."
+}
+],
+"answer": "C",
+"explanation": "Isso se alinha perfeitamente com os itens '1. Regulamentação' (cria regras ou restrições) e '2. Desregulamentação e legalização' (extingue regras ou descriminaliza)."
+},
+{
+"id": 18,
+"title": "Instrumentos - Impostos vs Subsídios",
+"text": "Considerando os instrumentos de natureza fiscal listados no material, o mecanismo que 'onera e desincentiva algumas atividades', em oposição ao que 'incentiva ou premia algumas atividades', são descritos, respectivamente, como:",
+"options": [
+{
+"id": "A",
+"text": "Aplicação da lei e Informação."
+},
+{
+"id": "B",
+"text": "Seguros governamentais e Transferência de renda."
+},
+{
+"id": "C",
+"text": "Regulamentação e Desregulamentação."
+},
+{
+"id": "D",
+"text": "Impostos e taxas, e Subsídio e incentivo fiscal."
+},
+{
+"id": "E",
+"text": "Certificados e selos, e Prêmios e concursos."
+}
+],
+"answer": "D",
+"explanation": "O material define '4. Impostos e taxas' como o 'instrumento fiscal que onera e desincentiva' e '5. Subsídio e incentivo fiscal' como o 'instrumento fiscal que incentiva ou premia'."
+},
+{
+"id": 19,
+"title": "Instrumentos - Prestação de Serviço Coletiva",
+"text": "Ao analisar como os serviços financiados coletivamente são entregues, a política pública pode valer-se de sua prestação por uma 'organização pública' ou por uma 'organização privada'. Estas escolhas caracterizam, respectivamente, quais instrumentos?",
+"options": [
+{
+"id": "A",
+"text": "Prestação pública de serviço de mercado e Prestação privada de serviço de mercado."
+},
+{
+"id": "B",
+"text": "Prestação direta de serviços públicos e Terceirização de serviços públicos."
+},
+{
+"id": "C",
+"text": "Seguros governamentais e Transferência de renda."
+},
+{
+"id": "D",
+"text": "Campanhas de mobilização e Informação ao público."
+},
+{
+"id": "E",
+"text": "Subsídios e Impostos."
+}
+],
+"answer": "B",
+"explanation": "A prestação por 'organização pública financiado coletivamente' corresponde à '6. Prestação direta de serviços públicos'; já por 'organização privada financiado coletivamente' é a '7. Terceirização de serviços públicos'."
+},
+{
+"id": 20,
+"title": "Instrumentos - Prestação de Serviço de Mercado",
+"text": "Quando um serviço é 'financiado individualmente', ele pode ser prestado tanto por uma organização pública quanto por uma privada, configurando intervenções específicas no mercado. Quais instrumentos referem-se, respectivamente, a essas duas atuações?",
+"options": [
+{
+"id": "A",
+"text": "Transferência de renda e Seguros governamentais."
+},
+{
+"id": "B",
+"text": "Prestação direta de serviços públicos e Terceirização de serviços públicos."
+},
+{
+"id": "C",
+"text": "Prestação pública de serviço de mercado e Prestação privada de serviço de mercado."
+},
+{
+"id": "D",
+"text": "Discriminação seletiva positiva e Prêmios."
+},
+{
+"id": "E",
+"text": "Regulamentação e Desregulamentação."
+}
+],
+"answer": "C",
+"explanation": "Os instrumentos 8 e 9 tratam explicitamente das prestações 'pública' e 'privada' de 'serviço de mercado', ambas 'financiadas individualmente'."
+},
+{
+"id": 21,
+"title": "Instrumentos - Informação, Campanhas e Seguros",
+"text": "Identifique, respectivamente, os instrumentos que envolvem: I. Disseminação de informações importantes para indivíduos; II. Ativação de atores para a melhora do bem-estar social; III. Garantia de compensação por alguma fatalidade ou infortúnio.",
+"options": [
+{
+"id": "A",
+"text": "Campanhas de mobilização, Informação ao público, Seguros governamentais."
+},
+{
+"id": "B",
+"text": "Informação ao público, Campanhas de mobilização, Seguros governamentais."
+},
+{
+"id": "C",
+"text": "Informação ao público, Seguros governamentais, Transferência de renda."
+},
+{
+"id": "D",
+"text": "Certificados, Prêmios e Seguros."
+},
+{
+"id": "E",
+"text": "Terceirização, Regulamentação e Subsídio."
+}
+],
+"answer": "B",
+"explanation": "Isso aborda sequencialmente o item '10. Informação ao público', o item '11. Campanhas de mobilização', e o item '12. Seguros governamentais' apresentados nos slides de instrumentos."
+},
+{
+"id": 22,
+"title": "Instrumentos - Transferência, Prêmios e Certificados",
+"text": "Existem instrumentos variados: um compensa situações de carência por mecanismo financeiro; outro estimula a difusão de boas práticas, e um terceiro atua como regulatório baseado no princípio da adesão. Eles correspondem, respectivamente, a:",
+"options": [
+{
+"id": "A",
+"text": "Subsídio, Impostos e Prêmios."
+},
+{
+"id": "B",
+"text": "Terceirização, Campanhas e Informação."
+},
+{
+"id": "C",
+"text": "Seguros governamentais, Regulamentação e Desregulamentação."
+},
+{
+"id": "D",
+"text": "Transferência de renda, Prêmios e concursos, e Certificados e selos."
+},
+{
+"id": "E",
+"text": "Discriminação seletiva positiva, Transferência de renda e Seguros governamentais."
+}
+],
+"answer": "D",
+"explanation": "A descrição abrange: '13. Transferência de renda' (compensação por mecanismo financeiro), '15. Prêmios e concursos' (estímulo a boas práticas) e '16. Certificados e selos' (regulatório baseado na adesão)."
+},
+{
+"id": 23,
+"title": "Extinção da Política Pública - Tipologias Redistributiva e Distributiva",
+"text": "As políticas públicas enfrentam diferentes barreiras no momento da sua extinção. Quais tipos de políticas são difíceis de extinguir em função do grau de conflito gerado, e quais resistem primariamente devido ao forte poder de articulação de seus beneficiários, respectivamente?",
+"options": [
+{
+"id": "A",
+"text": "Políticas Regulatórias e Políticas Constitutivas."
+},
+{
+"id": "B",
+"text": "Políticas Redistributivas e Políticas Distributivas."
+},
+{
+"id": "C",
+"text": "Políticas Constitutivas e Políticas Regulatórias."
+},
+{
+"id": "D",
+"text": "Políticas Distributivas e Políticas Redistributivas."
+},
+{
+"id": "E",
+"text": "Políticas de Segurança e Políticas de Educação."
+}
+],
+"answer": "B",
+"explanation": "A extinção de 'Políticas redistributivas' esbarra no 'grau de conflito' com beneficiários. A de 'Políticas distributivas' é difícil 'em função do poder de articulação dos beneficiários'."
+},
+{
+"id": 24,
+"title": "Extinção da Política Pública - Tipologia Regulatória",
+"text": "A literatura aponta que há um tipo de política pública que, embora seja teoricamente mais fácil de extinguir do que outras, frequentemente sobrevive em razão da 'inércia institucional e da falta de atores políticos interessados em fazer uma faxina'. A qual tipo de política o trecho se refere?",
+"options": [
+{
+"id": "A",
+"text": "Políticas Distributivas."
+},
+{
+"id": "B",
+"text": "Políticas Redistributivas."
+},
+{
+"id": "C",
+"text": "Políticas Regulatórias."
+},
+{
+"id": "D",
+"text": "Políticas Constitutivas."
+},
+{
+"id": "E",
+"text": "Políticas Incrementais."
+}
+],
+"answer": "C",
+"explanation": "O material define expressamente que as 'Políticas regulatórias [...] Embora teoricamente mais fáceis de serem extintas, esbarram na inércia institucional e na falta de atores políticos interessados em fazer uma faxina'."
+},
+{
+"id": 25,
+"title": "Extinção da Política Pública - Tipologia Constitutiva",
+"text": "As políticas que promovem mudanças na própria estrutura e nas regras do Estado possuem um alto custo transacional para o seu fim. Que tipo de esforço principal é exigido para a extinção das chamadas políticas constitutivas?",
+"options": [
+{
+"id": "A",
+"text": "Decisões puramente orçamentárias restritivas."
+},
+{
+"id": "B",
+"text": "Forte articulação política."
+},
+{
+"id": "C",
+"text": "Aceitação unânime da burocracia de nível de rua."
+},
+{
+"id": "D",
+"text": "Mobilização de viés na mídia comercial."
+},
+{
+"id": "E",
+"text": "Resolução espontânea e esvaziamento total do problema."
+}
+],
+"answer": "B",
+"explanation": "O slide sobre políticas públicas constitutivas afirma taxativamente: 'Requer forte articulação política para a extinção de tais políticas'."
+},
+{
+"id": 26,
+"title": "Razões para a Extinção - Problema Público",
+"text": "A extinção de uma política pública pode ocorrer baseada em causas relativas ao problema público original. Qual das alternativas apresenta exemplos corretos dessas razões (ligadas ao problema), conforme o material?",
+"options": [
+{
+"id": "A",
+"text": "Política considerada ineficaz ou prazo de validade expirado na lei."
+},
+{
+"id": "B",
+"text": "Entrada de um novo governo ou forte mudança de ideologia."
+},
+{
+"id": "C",
+"text": "Restrições orçamentárias abruptas e pressão direta da mídia."
+},
+{
+"id": "D",
+"text": "Resolução do problema, agravamento ou perda da importância do problema."
+},
+{
+"id": "E",
+"text": "Redundância administrativa provocando efeitos negativos superiores aos benefícios."
+}
+],
+"answer": "D",
+"explanation": "De acordo com o texto: '1. Razões relativas ao problema público: resolução do problema; agravamento do problema; perda da importância do problema; mudança no entendimento...'."
+},
+{
+"id": 27,
+"title": "Razões para a Extinção - Solução",
+"text": "Muitas políticas encerram-se devido a falhas ou esgotamento na sua própria arquitetura técnica. Quando uma política é considerada ineficaz, tem seu prazo de validade legal expirado ou é substituída por outra mais atualizada, a razão da extinção classifica-se como relativa:",
+"options": [
+{
+"id": "A",
+"text": "À solução."
+},
+{
+"id": "B",
+"text": "Ao problema público."
+},
+{
+"id": "C",
+"text": "Ao ambiente político."
+},
+{
+"id": "D",
+"text": "À mobilização de viés."
+},
+{
+"id": "E",
+"text": "À agenda sistêmica."
+}
+],
+"answer": "A",
+"explanation": "Esses fatores descrevem o item '2. Razões relativas à solução: quando é considerada ineficaz, redundante [...] expirou o prazo de validade [...] é substituída por outra'."
+},
+{
+"id": 28,
+"title": "Razões para a Extinção - Ambiente Político",
+"text": "A pressão da mídia, a entrada de um novo governo, mudanças em valores da população e restrições orçamentárias são vetores clássicos que interrompem o andamento de uma política pública. Essas razões são agrupadas na categoria relativa:",
+"options": [
+{
+"id": "A",
+"text": "Ao problema público."
+},
+{
+"id": "B",
+"text": "À inércia da solução."
+},
+{
+"id": "C",
+"text": "Aos instrumentos de implementação fiscal."
+},
+{
+"id": "D",
+"text": "Ao ambiente político."
+},
+{
+"id": "E",
+"text": "Ao modelo top-down de execução."
+}
+],
+"answer": "D",
+"explanation": "A categoria '3. Razões relativos ao ambiente político' engloba exatamente: 'pressão da mídia ou opinião pública; entrada de novo governo [...] restrições orçamentárias'."
+},
+{
+"id": 29,
+"title": "Razões para a Extinção - Correlação Categórica",
+"text": "Identifique, respectivamente, a quais categorias pertencem as seguintes razões de extinção de políticas: I. Perda de importância da questão perante a sociedade; II. Política que gera efeitos negativos superiores aos benefícios; III. Mudanças nas expectativas em decorrência da entrada de um novo governo.",
+"options": [
+{
+"id": "A",
+"text": "Problema Público, Solução, Ambiente Político."
+},
+{
+"id": "B",
+"text": "Ambiente Político, Problema Público, Solução."
+},
+{
+"id": "C",
+"text": "Solução, Ambiente Político, Problema Público."
+},
+{
+"id": "D",
+"text": "Problema Público, Ambiente Político, Solução."
+},
+{
+"id": "E",
+"text": "Solução, Problema Público, Ambiente Político."
+}
+],
+"answer": "A",
+"explanation": "O item I é relativo ao problema público (perda de importância). O item II é relativo à solução (efeitos negativos > benefícios). O item III é relativo ao ambiente político (novo governo)."
+},
+{
+"id": 30,
+"title": "Conclusão da Avaliação - A Decisão pela Extinção",
+"text": "A extinção da política pública consolida-se como a fase final do ciclo. Observando os resultados da fase de avaliação, em quais situações amplas a extinção da política se torna a decisão recomendada ou inevitável?",
+"options": [
+{
+"id": "A",
+"text": "Quando há necessidade apenas de uma pequena reestruturação marginal de seus aspectos práticos."
+},
+{
+"id": "B",
+"text": "Sempre que a avaliação in itinere identificar gargalos de produtividade."
+},
+{
+"id": "C",
+"text": "Quando a demanda alcança a agenda sistêmica, mesmo mantendo bons resultados operacionais."
+},
+{
+"id": "D",
+"text": "Quando os problemas foram resolvidos ou esvaziados, ou quando os aspectos negativos da implementação são insuperáveis."
+},
+{
+"id": "E",
+"text": "Apenas quando o modelo inicial de tomada de decisão utilizado foi de caráter estritamente irracional."
+}
+],
+"answer": "D",
+"explanation": "Conforme as diretrizes da fase de avaliação, determina-se a '3. Extinção da política pública quando os problema foram resolvidos ou esvaziados ou quando os aspectos negativos da implementação são insuperáveis'."
+}
+];
 const qsMod4Aula3 = [];
 const qsMod4Aula4 = [];
