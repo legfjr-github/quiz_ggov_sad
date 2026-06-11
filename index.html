@@ -517,7 +517,8 @@
                 <div class="trophy-icon">🏆</div>
                 <div class="score-text" id="score-text">18/20</div>
                 <div class="score-percentage" id="score-percentage">90%</div>
-                <img id="celebration-img" src="babyggov.jpeg" alt="BabyGGov" style="display: none; max-width: 250px; border-radius: 16px; margin: 0 auto 20px auto; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+                <img id="celebration-img" src="babyggov.jpeg" alt="BabyGGov"
+                    style="display: none; max-width: 250px; border-radius: 16px; margin: 0 auto 20px auto; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
                 <div class="score-message" id="score-message">Excelente trabalho!</div>
                 <button class="restart-btn" onclick="startQuizSet(currentSet)">Tentar Novamente</button>
             </div>
@@ -814,15 +815,24 @@
                 messageEl.textContent = 'Você não respondeu nenhuma questão. Tente responder a algumas questões para testar seu conhecimento!';
             } else if (percentage >= 90) {
                 messageEl.innerHTML = 'Excelente! Você domina muito bem o assunto.<br><br><strong>BabyGGov, em busca do 9</strong>';
-                if (celebrationImg) celebrationImg.style.display = 'block';
+                if (celebrationImg) {
+                    celebrationImg.src = 'babyggov.jpeg';
+                    celebrationImg.style.display = 'block';
+                }
                 triggerConfetti();
             } else if (percentage >= 70) {
-                messageEl.textContent = 'Muito bom! Seu desempenho foi sólido.';
+                messageEl.innerHTML = 'Parabéns! Seu desempenho foi sólido.<br><br><strong>Mas lembre-se: seu salário depende disso.</strong>';
+                if (celebrationImg) {
+                    celebrationImg.src = 'babyggov 2.jpeg';
+                    celebrationImg.style.display = 'block';
+                }
                 triggerConfetti();
-            } else if (percentage >= 50) {
-                messageEl.textContent = 'Bom trabalho! Mas ainda há espaço para revisar alguns conceitos.';
             } else {
-                messageEl.textContent = 'Parece que você precisa revisar o material. Continue estudando!';
+                messageEl.textContent = 'Precisa revisar, só falta 1 módulo pra acabar.';
+                if (celebrationImg) {
+                    celebrationImg.src = 'babyggov 3.jpeg';
+                    celebrationImg.style.display = 'block';
+                }
             }
         }
 
