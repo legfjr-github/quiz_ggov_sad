@@ -4800,7 +4800,7 @@ const qsMod4Aula3 = [
   {
     "id": 19,
     "title": "Lei Geral de Proteção de Dados (LGPD) - V/F",
-    "text": "Analise as assertivas sobre a Lei Geral de Proteção de Dados Pessoais (LGPD) e marque V para verdadeiro e F para falso.\n( ) A LGPD busca proteger os dados pessoais dos cidadãos.\n( ) O tratamento de dados pessoais pela Administração Pública deve observar finalidades específicas e o interesse público.\n( ) A segurança das informações deve ser observada pelos órgãos públicos.\n( ) A LGPD aplica-se também aos órgãos e entidades públicas.\nA sequência correta é:[span_0](start_span)[span_0](end_span)",
+    "text": "Analise as assertivas sobre a Lei Geral de Proteção de Dados Pessoais (LGPD) e marque V para verdadeiro e F para falso.\n( ) A LGPD busca proteger os dados pessoais dos cidadãos.\n( ) O tratamento de dados pessoais pela Administração Pública deve observar finalidades específicas e o interesse público.\n( ) A segurança das informações deve ser observada pelos órgãos públicos.\n( ) A LGPD aplica-se também aos órgãos e entidades públicas.\nA sequência correta é:",
     "options": [
       {
         "id": "A",
@@ -4824,12 +4824,12 @@ const qsMod4Aula3 = [
       }
     ],
     "answer": "A",
-    "explanation": "Conforme gabarito oficial da prova (Questão 19), todas as alternativas são verdadeiras, alinhando-se aos princípios do Guia de Sobrevivência de que a LGPD se aplica ao setor público e que o tratamento de dados deve possuir finalidade legítima[span_1](start_span)[span_1](end_span)[span_2](start_span)[span_2](end_span)."
+    "explanation": "Conforme gabarito oficial da prova (Questão 19), todas as alternativas são verdadeiras, alinhando-se aos princípios do Guia de Sobrevivência de que a LGPD se aplica ao setor público e que o tratamento de dados deve possuir finalidade legítima."
   },
   {
     "id": 20,
     "title": "Ética na Administração Pública",
-    "text": "Sobre o Código de Ética dos agentes públicos estaduais de Pernambuco (Decreto nº 46.852/2018), assinale a alternativa correta.[span_3](start_span)[span_3](end_span)",
+    "text": "Sobre o Código de Ética dos agentes públicos estaduais de Pernambuco (Decreto nº 46.852/2018), assinale a alternativa correta.",
     "options": [
       {
         "id": "A",
@@ -4853,12 +4853,12 @@ const qsMod4Aula3 = [
       }
     ],
     "answer": "C",
-    "explanation": "Segundo o gabarito da questão 20 da prova, a alternativa C é a correta, refletindo o ensinamento do Guia de Sobrevivência de que a ética serve para blindar as instituições e prevenir a corrupção, gerando confiança pública[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span)."
+    "explanation": "Segundo o gabarito da questão 20 da prova, a alternativa C é a correta, refletindo o ensinamento do Guia de Sobrevivência de que a ética serve para blindar as instituições e prevenir a corrupção, gerando confiança pública."
   },
   {
     "id": 21,
     "title": "Governança vs. Gestão - Associação",
-    "text": "Sobre as diferenças conceituais apresentadas no Guia de Sobrevivência, associe as colunas:\n\nColuna I\nI. Governança Pública\nII. Gestão Pública\n\nColuna II\n( ) É o nível macro, estratégico.\n( ) É quem coloca a mão na massa para executar as políticas, programas e atividades do dia a dia.\n( ) É a mente que direciona, monitora e avalia as organizações.\nA sequência correta é:[span_6](start_span)[span_6](end_span)",
+    "text": "Sobre as diferenças conceituais apresentadas no Guia de Sobrevivência, associe as colunas:\n\nColuna I\nI. Governança Pública\nII. Gestão Pública\n\nColuna II\n( ) É o nível macro, estratégico.\n( ) É quem coloca a mão na massa para executar as políticas, programas e atividades do dia a dia.\n( ) É a mente que direciona, monitora e avalia as organizações.\nA sequência correta é:",
     "options": [
       {
         "id": "A",
@@ -4882,12 +4882,12 @@ const qsMod4Aula3 = [
       }
     ],
     "answer": "A",
-    "explanation": "O Guia de Sobrevivência ensina que a Governança é o nível macro, estratégico (mente que direciona, monitora e avalia), enquanto a Gestão é o nível micro, operacional (quem coloca a mão na massa para executar)[span_7](start_span)[span_7](end_span). Logo, a sequência é I, II, I."
+    "explanation": "O Guia de Sobrevivência ensina que a Governança é o nível macro, estratégico (mente que direciona, monitora e avalia), enquanto a Gestão é o nível micro, operacional (quem coloca a mão na massa para executar). Logo, a sequência é I, II, I."
   },
   {
     "id": 22,
     "title": "Transparência e Controle Social - V/F",
-    "text": "Analise as assertivas sobre o Controle Social e a Transparência com base no Guia de Sobrevivência e marque V para verdadeiro e F para falso.\n( ) O controle social é o papel exclusivo dos Tribunais de Contas na fiscalização do governo.\n( ) O controle social ocorre quando a própria sociedade participa do acompanhamento das ações do governo.\n( ) A transparência é uma ferramenta opcional que o gestor utiliza conforme sua conveniência.\n( ) A transparência atua como o combustível que permite o controle social.\nA sequência correta é:[span_8](start_span)[span_8](end_span)",
+    "text": "Analise as assertivas sobre o Controle Social e a Transparência com base no Guia de Sobrevivência e marque V para verdadeiro e F para falso.\n( ) O controle social é o papel exclusivo dos Tribunais de Contas na fiscalização do governo.\n( ) O controle social ocorre quando a própria sociedade participa do acompanhamento das ações do governo.\n( ) A transparência é uma ferramenta opcional que o gestor utiliza conforme sua conveniência.\n( ) A transparência atua como o combustível que permite o controle social.\nA sequência correta é:",
     "options": [
       {
         "id": "A",
@@ -4911,12 +4911,12 @@ const qsMod4Aula3 = [
       }
     ],
     "answer": "A",
-    "explanation": "Falso: Controle social é exercido pela sociedade (não apenas pelos Tribunais). Verdadeiro: É a sociedade participando da fiscalização. Falso: A transparência não é opcional (é dever legal). Verdadeiro: Ela é a ferramenta e o combustível para o controle social[span_9](start_span)[span_9](end_span)."
+    "explanation": "Falso: Controle social é exercido pela sociedade (não apenas pelos Tribunais). Verdadeiro: É a sociedade participando da fiscalização. Falso: A transparência não é opcional (é dever legal). Verdadeiro: Ela é a ferramenta e o combustível para o controle social."
   },
   {
     "id": 23,
     "title": "Papéis na LGPD - Análise de Afirmativas",
-    "text": "Sobre a Lei Geral de Proteção de Dados (LGPD) e as definições do Guia de Sobrevivência, analise as afirmativas:\nI. O 'titular' é a pessoa física a quem os dados pertencem.\nII. O 'DPO' ou Encarregado de Dados tem como função intermediar a comunicação entre os titulares, a organização e a ANPD.\nIII. A LGPD não se aplica à Administração Pública, sendo restrita a big techs.\nEstá correto o que se afirma em:[span_10](start_span)[span_10](end_span)",
+    "text": "Sobre a Lei Geral de Proteção de Dados (LGPD) e as definições do Guia de Sobrevivência, analise as afirmativas:\nI. O 'titular' é a pessoa física a quem os dados pertencem.\nII. O 'DPO' ou Encarregado de Dados tem como função intermediar a comunicação entre os titulares, a organização e a ANPD.\nIII. A LGPD não se aplica à Administração Pública, sendo restrita a big techs.\nEstá correto o que se afirma em:",
     "options": [
       {
         "id": "A",
@@ -4940,7 +4940,7 @@ const qsMod4Aula3 = [
       }
     ],
     "answer": "B",
-    "explanation": "As afirmativas I e II estão perfeitamente corretas de acordo com os conceitos do Guia de Sobrevivência. A afirmativa III é falsa porque a LGPD se aplica à Administração Pública de maneira estrita, não se limitando apenas a empresas privadas[span_11](start_span)[span_11](end_span)."
+    "explanation": "As afirmativas I e II estão perfeitamente corretas de acordo com os conceitos do Guia de Sobrevivência. A afirmativa III é falsa porque a LGPD se aplica à Administração Pública de maneira estrita, não se limitando apenas a empresas privadas."
   }
 ];
 
