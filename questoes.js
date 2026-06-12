@@ -4543,5 +4543,260 @@ const qsMod4Aulas1_2 = [
 "explanation": "Conforme as diretrizes da fase de avaliação, determina-se a '3. Extinção da política pública quando os problema foram resolvidos ou esvaziados ou quando os aspectos negativos da implementação são insuperáveis'."
 }
 ];
-const qsMod4Aula3 = [];
+
+const qsMod4Aula3 = [
+  {
+    "id": 1,
+    "title": "Estrutura Organizacional e Decisória",
+    "text": "Na estruturação da administração pública, as bancas frequentemente confundem dois níveis essenciais de atuação. Segundo o Guia de Sobrevivência, qual é a principal distinção prática e conceitual entre esses níveis?",
+    "options": [
+      { "id": "A", "text": "O nível de governança atua estritamente na execução diária das políticas, enquanto a gestão formula leis." },
+      { "id": "B", "text": "A governança é o nível macro e estratégico que direciona e avalia; a gestão é o nível micro e operacional que executa." },
+      { "id": "C", "text": "Ambos os níveis atuam apenas na operação de campo, não havendo divisão estratégica formal no setor público." },
+      { "id": "D", "text": "A gestão pública foca exclusivamente no controle social, cabendo à governança a aplicação da LGPD." },
+      { "id": "E", "text": "A governança aplica-se exclusivamente a entidades de economia mista, enquanto a gestão refere-se à administração direta." }
+    ],
+    "answer": "B",
+    "explanation": "O Guia de Sobrevivência afirma: 'Governança Pública: É o nível macro, estratégico. Pense nela como a mente que direciona, monitora e avalia as organizações... Gestão Pública: É o nível micro, operacional. É quem coloca a mão na massa para executar as políticas[span_0](start_span)'[span_0](end_span)."
+  },
+  {
+    "id": 2,
+    "title": "Terminologia na Administração Pública",
+    "text": "Para evitar armadilhas em questões de prova sobre as funções organizacionais, o Guia de Sobrevivência sugere observar certas palavras-chave. Se o enunciado focar em 'diretriz', 'estratégia' ou 'avaliação', ele está se referindo a qual conceito?",
+    "options": [
+      { "id": "A", "text": "Auditoria Contábil." },
+      { "id": "B", "text": "Gestão Pública." },
+      { "id": "C", "text": "Governança Pública." },
+      { "id": "D", "text": "Fiscalização Direta." },
+      { "id": "E", "text": "Burocracia Operacional." }
+    ],
+    "answer": "C",
+    "explanation": "Segundo a dica do guia: 'Se a palavra chave for diretriz, estratégia ou avaliação, é Governança. Se for execução ou operação, é Gestão[span_1](start_span)'[span_1](end_span)."
+  },
+  {
+    "id": 3,
+    "title": "Responsabilidade e Prestação de Contas",
+    "text": "Em relação à accountability (prestação de contas) no setor público, como a responsabilidade é distribuída entre os níveis de planejamento e operação, de acordo com o Guia de Sobrevivência?",
+    "options": [
+      { "id": "A", "text": "Apenas o nível macro (Governança) deve prestar contas." },
+      { "id": "B", "text": "Apenas o nível operacional (Gestão) possui essa obrigação." },
+      { "id": "C", "text": "A accountability não se aplica ao setor público, apenas a empresas privadas de capital aberto." },
+      { "id": "D", "text": "Tanto o nível de Governança quanto o de Gestão possuem o dever de prestar contas (accountability)." },
+      { "id": "E", "text": "A obrigação restringe-se aos chefes do Poder Executivo em final de mandato." }
+    ],
+    "answer": "D",
+    "explanation": "O material é claro ao afirmar no item sobre Governança x Gestão que: 'Ambos os níveis devem prestar contas (accountability)[span_2](start_span)'[span_2](end_span)."
+  },
+  {
+    "id": 4,
+    "title": "Atores da Fiscalização Pública",
+    "text": "Muitas pessoas acreditam que a fiscalização das ações governamentais é papel exclusivo de órgãos como os Tribunais de Contas. No entanto, o Guia de Sobrevivência destaca um mecanismo específico pelo qual o próprio cidadão fiscaliza o Estado. Que mecanismo é esse?",
+    "options": [
+      { "id": "A", "text": "Ação Direta de Inconstitucionalidade." },
+      { "id": "B", "text": "Auditoria de Certificação ISO." },
+      { "id": "C", "text": "Controle Social." },
+      { "id": "D", "text": "Ouvidoria de Dados." },
+      { "id": "E", "text": "Controle Jurisdicional." }
+    ],
+    "answer": "C",
+    "explanation": "O Guia define Controle Social como: 'É a própria sociedade (o cidadão) participando da fiscalização e do acompanhamento das ações do governo[span_3](start_span)'[span_3](end_span)."
+  },
+  {
+    "id": 5,
+    "title": "Princípios de Atuação Estatal",
+    "text": "A publicidade dos atos do governo é fundamental para a democracia. Segundo o Guia de Sobrevivência, qual é a principal relação prática entre a transparência governamental e o controle exercido pela sociedade?",
+    "options": [
+      { "id": "A", "text": "A transparência é uma concessão voluntária que pode ser suspensa caso o controle social exija muitas informações." },
+      { "id": "B", "text": "A transparência foca apenas em dados financeiros e não auxilia na avaliação das políticas públicas." },
+      { "id": "C", "text": "A transparência atua como um sigilo seletivo para evitar pânico social." },
+      { "id": "D", "text": "A transparência não é opcional (é dever legal) e atua como a ferramenta/combustível que permite o controle social." },
+      { "id": "E", "text": "O controle social pode ser plenamente exercido mesmo em regimes de sigilo absoluto." }
+    ],
+    "answer": "D",
+    "explanation": "O guia orienta: 'A transparência não é opcional (é um dever legal)... é a ferramenta que permite o controle social. Sem informação pública, o cidadão não tem como fiscalizar[span_4](start_span)'[span_4](end_span)."
+  },
+  {
+    "id": 6,
+    "title": "Abrangência Normativa de Dados",
+    "text": "Existe um equívoco comum de que as normas rigorosas de tratamento de dados se aplicam apenas ao setor privado. O que o Guia de Sobrevivência afirma sobre a incidência da Lei nº 13.709/2018 perante o Estado?",
+    "options": [
+      { "id": "A", "text": "A Administração Pública está estritamente sujeita à lei e não pode tratar dados sem finalidade e rumo." },
+      { "id": "B", "text": "Os órgãos públicos gozam de imunidade total, podendo coletar e compartilhar dados livremente." },
+      { "id": "C", "text": "Aplica-se ao setor público apenas na esfera federal, isentando estados e municípios." },
+      { "id": "D", "text": "O setor público só deve observar a legislação em relação aos dados bancários dos cidadãos." },
+      { "id": "E", "text": "A lei afeta o Estado apenas nas contratações de servidores estatutários." }
+    ],
+    "answer": "A",
+    "explanation": "O guia alerta: 'Não caia na armadilha de achar que a LGPD só se aplica a empresas privadas... A Administração Pública também está estritamente sujeita à LGPD... deve sempre ter uma finalidade legítima[span_5](start_span)'[span_5](end_span)."
+  },
+  {
+    "id": 7,
+    "title": "Tratamento de Informações pelo Estado",
+    "text": "O setor público lida constantemente com informações da população. Em relação à exigência de autorização judicial para processar e utilizar esses dados no cotidiano governamental, o Guia de Sobrevivência esclarece que:",
+    "options": [
+      { "id": "A", "text": "É obrigatória a autorização de um juiz para qualquer tipo de coleta de informações." },
+      { "id": "B", "text": "O consentimento expresso e presencial do cidadão é sempre a única base válida para o Estado." },
+      { "id": "C", "text": "O tratamento não exige autorização judicial o tempo todo, pois há bases legais próprias, como a execução de políticas públicas." },
+      { "id": "D", "text": "A autorização judicial é dispensada apenas em casos de segurança nacional." },
+      { "id": "E", "text": "Apenas o Ministério Público pode autorizar o tratamento de informações pelo Estado." }
+    ],
+    "answer": "C",
+    "explanation": "O texto ressalta: 'O tratamento de dados não exige autorização judicial o tempo todo; a própria LGPD traz várias bases legais para isso (como a execução de políticas públicas)[span_6](start_span)'[span_6](end_span)."
+  },
+  {
+    "id": 8,
+    "title": "Garantias na Era Digital",
+    "text": "A legislação visa devolver ao cidadão o controle sobre suas próprias informações. Quais são os direitos básicos garantidos à pessoa física sobre seus dados, de acordo com o Guia de Sobrevivência?",
+    "options": [
+      { "id": "A", "text": "Direito de acesso vitalício exclusivo aos registros criminais e financeiros." },
+      { "id": "B", "text": "Acesso aos dados coletados, bem como a correção de dados incompletos/errados e a atualização de suas informações." },
+      { "id": "C", "text": "Direito de exigir a monetização de suas informações caso o governo as utilize em relatórios." },
+      { "id": "D", "text": "Direito de alterar o próprio CPF sempre que sofrer vazamentos de segurança." },
+      { "id": "E", "text": "Isenção na prestação de informações obrigatórias para o Estado, como o imposto de renda." }
+    ],
+    "answer": "B",
+    "explanation": "Segundo o guia, o titular tem direito garantido a: 'Acesso aos dados coletados. Correção de dados incompletos ou errados. Atualização de suas informações[span_7](start_span)'[span_7](end_span)."
+  },
+  {
+    "id": 9,
+    "title": "Conceito de Titularidade",
+    "text": "A Lei de Proteção de Dados confere proteções e prerrogativas específicas a uma figura central. O Guia de Sobrevivência define o 'titular' dos dados exclusivamente como sendo:",
+    "options": [
+      { "id": "A", "text": "A pessoa física a quem os dados pertencem." },
+      { "id": "B", "text": "Qualquer empresa privada devidamente registrada na junta comercial." },
+      { "id": "C", "text": "O órgão do governo que coleta as informações." },
+      { "id": "D", "text": "O servidor encarregado de guardar as informações sigilosas." },
+      { "id": "E", "text": "O software de inteligência artificial que organiza o banco de dados." }
+    ],
+    "answer": "A",
+    "explanation": "O item 4 do guia explica de forma direta: 'O titular é a pessoa física a quem os dados pertencem[span_8](start_span)'[span_8](end_span)."
+  },
+  {
+    "id": 10,
+    "title": "Comunicação e Proteção de Informações",
+    "text": "O Guia de Sobrevivência destaca o papel de uma figura institucional para intermediar conflitos e solicitações na área de informações sensíveis. Que figura é identificada pelas palavras-chave 'Ponte' ou 'Canal'?",
+    "options": [
+      { "id": "A", "text": "Auditor Interno." },
+      { "id": "B", "text": "Encarregado de Dados (DPO)." },
+      { "id": "C", "text": "Pregoeiro Eletrônico." },
+      { "id": "D", "text": "Ministro do Tribunal de Contas." },
+      { "id": "E", "text": "Corregedor Geral." }
+    ],
+    "answer": "B",
+    "explanation": "O guia orienta: 'Se aparecer o termo DPO ou Encarregado de Dados, foque na palavra Ponte ou Canal[span_9](start_span)'[span_9](end_span)."
+  },
+  {
+    "id": 11,
+    "title": "Atribuições da Intermediação Institucional",
+    "text": "O DPO exerce uma função estratégica nas organizações públicas e privadas modernas. Conforme o material de estudo, sua principal atribuição consiste em intermediar a comunicação entre quais três partes?",
+    "options": [
+      { "id": "A", "text": "Tribunal de Contas, Ministério Público e Polícia Federal." },
+      { "id": "B", "text": "Governador do Estado, Secretários e a Sociedade Civil." },
+      { "id": "C", "text": "Os titulares dos dados, a própria organização pública/privada e a Autoridade Nacional de Proteção de Dados (ANPD)." },
+      { "id": "D", "text": "Empresas de tecnologia, investidores e órgãos de controle social." },
+      { "id": "E", "text": "Ouvidoria, Corregedoria e Auditoria Interna do próprio órgão." }
+    ],
+    "answer": "C",
+    "explanation": "A função principal do DPO é detalhada no guia: 'intermediar a comunicação entre três lados: os titulares dos dados, a própria organização pública/privada e a Autoridade Nacional de Proteção de Dados (ANPD)[span_10](start_span)'[span_10](end_span)."
+  },
+  {
+    "id": 12,
+    "title": "O Papel da Conduta Institucional",
+    "text": "No 'Resumo da Ópera' do Guia de Sobrevivência, o documento aponta a finalidade primária da ética na estruturação das organizações. A ética serve diretamente para qual propósito?",
+    "options": [
+      { "id": "A", "text": "Aumentar a burocracia documental para dificultar ações irregulares." },
+      { "id": "B", "text": "Substituir a legislação penal nas punições a servidores." },
+      { "id": "C", "text": "Gerar punições administrativas a fim de reduzir a folha de pagamento." },
+      { "id": "D", "text": "Prevenir a corrupção e blindar as instituições." },
+      { "id": "E", "text": "Autorizar o compartilhamento irrestrito de dados dos cidadãos." }
+    ],
+    "answer": "D",
+    "explanation": "O último ponto do 'Resumo da Ópera' crava: 'Ética serve diretamente para prevenir a corrupção e blindar as instituições[span_11](start_span)'[span_11](end_span)."
+  },
+  {
+    "id": 13,
+    "title": "Síntese Prática: Governança e Gestão",
+    "text": "No 'Resumo da Ópera' do Guia de Sobrevivência, as atribuições de Governança e Gestão são sintetizadas de forma bastante direta para facilitar a memorização. Assinale a alternativa que reproduz essa síntese.",
+    "options": [
+      { "id": "A", "text": "Governança oculta informações; Gestão revela aos cidadãos." },
+      { "id": "B", "text": "Governança pensa e direciona; Gestão executa." },
+      { "id": "C", "text": "Governança trata de dados pessoais; Gestão fiscaliza a ética." },
+      { "id": "D", "text": "Governança é o nível operacional; Gestão é o nível avaliativo." },
+      { "id": "E", "text": "Governança é exercida pelo cidadão; Gestão é o papel do DPO." }
+    ],
+    "answer": "B",
+    "explanation": "O item 1 do 'Resumo da Ópera' define exatamente: 'Governança pensa e direciona; Gestão executa[span_12](start_span)'[span_12](end_span)."
+  },
+  {
+    "id": 14,
+    "title": "Transparência como Ferramenta",
+    "text": "Conforme o resumo final do Guia de Sobrevivência, o Controle Social é caracterizado pelo 'Cidadão fiscalizando'. Nesse contexto, qual é o papel figurativo atribuído especificamente à Transparência?",
+    "options": [
+      { "id": "A", "text": "Um obstáculo que a gestão deve superar para ter velocidade." },
+      { "id": "B", "text": "Uma punição para os maus gestores." },
+      { "id": "C", "text": "Um combustível para essa fiscalização." },
+      { "id": "D", "text": "O sigilo institucional garantido." },
+      { "id": "E", "text": "A base exclusiva da proteção de dados pessoais." }
+    ],
+    "answer": "C",
+    "explanation": "O item 2 do 'Resumo da Ópera' afirma: 'Controle Social = Cidadão fiscalizando. Transparência = Combustível para essa fiscalização[span_13](start_span)'[span_13](end_span)."
+  },
+  {
+    "id": 15,
+    "title": "Finalidade no Tratamento de Dados",
+    "text": "A Administração Pública não pode tratar dados dos cidadãos de 'qualquer jeito ou sem rumo'. Segundo o Guia de Sobrevivência, o tratamento de dados pessoais no setor público deve obrigatoriamente possuir uma finalidade que seja:",
+    "options": [
+      { "id": "A", "text": "Aprovada por todos os membros do tribunal de contas em sessão pública." },
+      { "id": "B", "text": "Restrita a fins de arrecadação e marketing governamental." },
+      { "id": "C", "text": "Autorizada judicialmente pelo Supremo Tribunal Federal em todos os casos." },
+      { "id": "D", "text": "Legítima, específica e compatível com a lei." },
+      { "id": "E", "text": "Ampla, genérica e voltada a suprir o banco de dados das big techs." }
+    ],
+    "answer": "D",
+    "explanation": "O guia de LGPD afirma expressamente que 'o tratamento deve sempre ter uma finalidade legítima, específica e compatível com a lei[span_14](start_span)'[span_14](end_span)."
+  },
+  {
+    "id": 16,
+    "title": "Aplicação Prática dos Direitos do Titular",
+    "text": "Dentre os direitos do titular listados pelo Guia de Sobrevivência, a prerrogativa de solicitar a 'correção de dados' aplica-se a quais tipos de informações retidas pela Administração Pública?",
+    "options": [
+      { "id": "A", "text": "Dados verdadeiros que o cidadão simplesmente deseja esconder." },
+      { "id": "B", "text": "Informações fiscais da receita federal que resultem em multas justas." },
+      { "id": "C", "text": "Registros estatísticos anônimos coletados pelo IBGE." },
+      { "id": "D", "text": "Dados incompletos ou errados." },
+      { "id": "E", "text": "Documentos oficiais sigilosos que envolvam segurança do Estado." }
+    ],
+    "answer": "D",
+    "explanation": "Os direitos do titular no item 4 do guia garantem a 'Correção de dados incompletos ou errados[span_15](start_span)'[span_15](end_span)."
+  },
+  {
+    "id": 17,
+    "title": "Órgão Regulador de Proteção de Dados",
+    "text": "O Encarregado de Dados (DPO) atua como um canal de comunicação. Uma das partes envolvidas nessa intermediação, de acordo com o Guia de Sobrevivência, é a autoridade máxima do setor. Qual é a sigla dessa autoridade?",
+    "options": [
+      { "id": "A", "text": "STF (Supremo Tribunal Federal)." },
+      { "id": "B", "text": "TCE (Tribunal de Contas do Estado)." },
+      { "id": "C", "text": "ANPD (Autoridade Nacional de Proteção de Dados)." },
+      { "id": "D", "text": "CGU (Controladoria-Geral da União)." },
+      { "id": "E", "text": "CADE (Conselho Administrativo de Defesa Econômica)." }
+    ],
+    "answer": "C",
+    "explanation": "O guia especifica que o DPO é encarregado de intermediar a comunicação entre os titulares, a organização e a 'Autoridade Nacional de Proteção de Dados (ANPD)[span_16](start_span)'[span_16](end_span)."
+  },
+  {
+    "id": 18,
+    "title": "A Função da Transparência",
+    "text": "O Guia de Sobrevivência alerta que a Transparência vai muito além de uma simples prática de publicação financeira. Qual é a sua utilidade primária em relação ao cidadão comum?",
+    "options": [
+      { "id": "A", "text": "Limitar as informações sensíveis de saúde." },
+      { "id": "B", "text": "Servir de prova apenas para auditores contratados pelo Estado." },
+      { "id": "C", "text": "Permitir a criação de novas empresas de tecnologia de dados." },
+      { "id": "D", "text": "Permitir o controle social, pois sem informação pública o cidadão não tem como fiscalizar." },
+      { "id": "E", "text": "Eximir o servidor público do seu dever de ética." }
+    ],
+    "answer": "D",
+    "explanation": "No item sobre Controle Social e Transparência, o guia frisa: 'A transparência é a ferramenta que permite o controle social. Sem informação pública, o cidadão não tem como fiscalizar[span_17](start_span)'[span_17](end_span)."
+  }
+];
+
 const qsMod4Aula4 = [];
