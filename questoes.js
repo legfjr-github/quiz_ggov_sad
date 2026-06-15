@@ -4944,4 +4944,682 @@ const qsMod4Aula3 = [
   }
 ];
 
-const qsMod4Aula4 = [];
+const qsMod4Aula4 = [
+  {
+    "id": 1,
+    "title": "Limites de Despesa com Pessoal - Excesso e Prazos",
+    "text": "No Estado Alfa, a Receita Corrente Líquida (RCL) dos últimos 12 meses foi de R$ 50 bilhões. Ao final do quadrimestre, a despesa total com pessoal do Poder Executivo atingiu R$ 24 bilhões. Com base na LRF, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Estado ultrapassou o limite prudencial, mas não o limite máximo[span_0](start_span)[span_0](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "O limite máximo foi ultrapassado, pois a despesa corresponde a 50% da RCL[span_1](start_span)[span_1](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "O Poder Executivo estadual encontra-se abaixo do limite máximo e do limite prudencial[span_2](start_span)[span_2](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O limite máximo foi ultrapassado, pois a despesa corresponde a 49% da RCL[span_3](start_span)[span_3](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "O Estado ultrapassou apenas o limite de alerta[span_4](start_span)[span_4](end_span)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "A despesa de R$ 24 bilhões representa 48% da RCL de R$ 50 bilhões. Para o Poder Executivo Estadual, o limite máximo é de 49% (Art. 20, II, c da LRF)[span_5](start_span)[span_5](end_span). O limite prudencial é 95% do limite máximo (95% de 49% = 46,55%) e o de alerta é 90% (90% de 49% = 44,1%)[span_6](start_span)[span_6](end_span). Logo, com 48%, o Estado ultrapassou os limites de alerta e prudencial, estando apenas abaixo do limite máximo[span_7](start_span)[span_7](end_span)."
+  },
+  {
+    "id": 2,
+    "title": "Consequências do Limite Prudencial",
+    "text": "Durante o exercício financeiro de 2026, o governo do Estado de Pernambuco divulgou o Relatório de Gestão Fiscal demonstrando que a despesa total com pessoal do Poder Executivo atingiu 97% do respectivo limite legal previsto na Lei de Responsabilidade Fiscal (LRF). Em razão desse cenário, a Secretaria de Administração apresentou propostas para criação de novos cargos efetivos, concessão de reajuste salarial a servidores e reestruturação de carreiras com impacto financeiro. Considerando a situação apresentada e as disposições da Lei Complementar nº 101/2000, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como o limite máximo ainda não foi ultrapassado, o Estado pode criar cargos, conceder reajustes e alterar carreiras livremente[span_8](start_span)[span_8](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "Atingido o limite prudencial, passam a existir algumas restrições. Ficam vedadas, em regra, a criação de cargos, a alteração de estrutura de carreira que implique aumento de despesa e a concessão de vantagens, aumentos ou reajustes, ressalvadas as exceções previstas na LRF[span_9](start_span)[span_9](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "As restrições da LRF somente são aplicáveis quando a despesa com pessoal ultrapassa o limite máximo de 100%[span_10](start_span)[span_10](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O limite prudencial corresponde a 90% do limite máximo e serve apenas para fins de alerta do Tribunal de Contas, sem gerar vedações legais[span_11](start_span)[span_11](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "Uma vez atingido o limite prudencial, o Poder Executivo deve exonerar imediatamente todos os servidores não estáveis[span_12](start_span)[span_12](end_span)."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Se a despesa total com pessoal exceder a 95% do limite (limite prudencial), são aplicadas vedações como a concessão de vantagens, criação de cargos e alteração de estrutura de carreira que implique aumento de despesa[span_13](start_span)[span_13](end_span)."
+  },
+  {
+    "id": 3,
+    "title": "Despesas Obrigatórias e Planejamento",
+    "text": "Durante a elaboração da proposta orçamentária para 2027, o governo do Estado Alfa decidiu criar um novo programa permanente de transferência de renda para famílias em situação de vulnerabilidade social. A medida implicaria aumento significativo das despesas obrigatórias nos exercícios seguintes. Antes de encaminhar o projeto ao Poder Legislativo, a equipe técnica alertou para a necessidade de observância das regras de responsabilidade fiscal previstas na legislação vigente. Com base na Lei de Responsabilidade Fiscal (LRF) e nos princípios da gestão fiscal responsável, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A criação de despesa obrigatória de caráter continuado dispensa estimativa do impacto orçamentário-financeiro quando a finalidade da medida for social[span_14](start_span)[span_14](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "O princípio da responsabilidade fiscal proíbe qualquer ampliação de despesa pública pelos entes federativos[span_15](start_span)[span_15](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "O aumento de despesa obrigatória somente depende da existência de autorização do chefe do Poder Executivo[span_16](start_span)[span_16](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "A gestão fiscal responsável pressupõe ação planejada e transparente, com prevenção de riscos capazes de afetar o equilíbrio das contas públicas[span_17](start_span)[span_17](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "A sustentabilidade fiscal refere-se exclusivamente ao cumprimento da meta de resultado nominal[span_18](start_span)[span_18](end_span)."
+      }
+    ],
+    "answer": "D",
+    "explanation": "A responsabilidade fiscal visa evitar que os entes da Federação gastem mais do que arrecadam, pressupondo ação planejada e transparente, em que se previnem riscos e corrigem desvios capazes de afetar o equilíbrio das contas públicas[span_19](start_span)[span_19](end_span)."
+  },
+  {
+    "id": 4,
+    "title": "Sustentabilidade Fiscal a Longo Prazo",
+    "text": "Em razão da desaceleração econômica, o Estado Beta registrou sucessivos déficits orçamentários e aumento expressivo do endividamento público. Apesar desse cenário, o governo anunciou a expansão de investimentos e a concessão de novos incentivos tributários sem a adoção de medidas compensatórias ou estudos sobre seus impactos futuros. Durante audiência pública, especialistas alertaram para possíveis riscos à sustentabilidade fiscal do ente federativo. Com base nos conceitos de sustentabilidade fiscal e gestão fiscal responsável, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A concessão de benefícios tributários independe da avaliação de seus impactos sobre as finanças públicas[span_20](start_span)[span_20](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "A sustentabilidade fiscal impede a realização de investimentos públicos financiados por receitas de capital[span_21](start_span)[span_21](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "A sustentabilidade fiscal exige que o ente público mantenha capacidade de financiar suas políticas públicas sem comprometer sua solvência no médio e longo prazo[span_22](start_span)[span_22](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O equilíbrio fiscal é incompatível com a implementação de políticas públicas de desenvolvimento econômico e social[span_23](start_span)[span_23](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "O controle do endividamento é matéria exclusivamente política, sem relação com a responsabilidade fiscal[span_24](start_span)[span_24](end_span)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Sustentabilidade fiscal é a capacidade do governo de manter suas contas equilibradas ao longo do tempo, sem gerar endividamento excessivo ou comprometer a prestação de serviços públicos às futuras gerações[span_25](start_span)[span_25](end_span)."
+  },
+  {
+    "id": 5,
+    "title": "Receitas Correntes x Receitas de Capital",
+    "text": "Durante uma capacitação sobre orçamento público, um servidor afirmou que as receitas correntes e as receitas de capital se diferenciam principalmente pelos efeitos que produzem sobre o patrimônio público. Considerando os conceitos de receita corrente e receita de capital, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As receitas de capital são aquelas destinadas exclusivamente ao financiamento de investimentos públicos[span_26](start_span)[span_26](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "Toda receita de capital representa aumento patrimonial efetivo para o ente público[span_27](start_span)[span_27](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "As receitas correntes não provocam efeito sobre o patrimônio líquido e compreendem operações de crédito, amortização de empréstimos e alienação de bens[span_28](start_span)[span_28](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "As receitas de capital, em regra, não provocam efeito sobre o patrimônio líquido, pois estão geralmente associadas à constituição de dívidas ou à conversão de bens e direitos em recursos financeiros[span_29](start_span)[span_29](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "A classificação entre receita corrente e receita de capital depende exclusivamente da destinação que será dada ao recurso arrecadado[span_30](start_span)[span_30](end_span)."
+      }
+    ],
+    "answer": "D",
+    "explanation": "As receitas de capital, em regra, não provocam efeito sobre o Patrimônio Líquido, sendo representadas por mutações patrimoniais que nada acrescentam ao patrimônio público, só ocorrendo uma troca de elementos patrimoniais[span_31](start_span)[span_31](end_span)."
+  },
+  {
+    "id": 6,
+    "title": "Classificação da Receita 1",
+    "text": "Analise a situação e identifique a classificação da receita: O Estado de Pernambuco arrecada ICMS incidente sobre a circulação de mercadorias e prestação de serviços (receita com arrecadação tributária)[span_32](start_span)[span_32](end_span).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Receita Corrente[span_33](start_span)[span_33](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "Receita de Capital[span_34](start_span)[span_34](end_span)."
+      }
+    ],
+    "answer": "A",
+    "explanation": "A arrecadação tributária, como impostos (ICMS), é uma fonte clássica de receita corrente[span_35](start_span)[span_35](end_span)."
+  },
+  {
+    "id": 7,
+    "title": "Classificação da Receita 2",
+    "text": "Analise a situação e identifique a classificação da receita: O Estado vende um terreno pertencente ao seu patrimônio (receita com alienação de bens)[span_36](start_span)[span_36](end_span).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Receita Corrente[span_37](start_span)[span_37](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "Receita de Capital[span_38](start_span)[span_38](end_span)."
+      }
+    ],
+    "answer": "B",
+    "explanation": "A alienação de bens, como a venda de um terreno, é classificada como receita de capital[span_39](start_span)[span_39](end_span)."
+  },
+  {
+    "id": 8,
+    "title": "Classificação da Despesa 1",
+    "text": "Analise a situação e identifique a classificação da despesa: Construção de uma nova escola estadual no município de Caruaru[span_40](start_span)[span_40](end_span).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Despesa Corrente[span_41](start_span)[span_41](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "Despesa de Capital[span_42](start_span)[span_42](end_span)."
+      }
+    ],
+    "answer": "B",
+    "explanation": "A construção de uma escola é um investimento, o que caracteriza uma despesa de capital[span_43](start_span)[span_43](end_span)."
+  },
+  {
+    "id": 9,
+    "title": "Classificação da Despesa 2",
+    "text": "Analise a situação e identifique a classificação da despesa: Pagamento da conta de energia elétrica das escolas estaduais[span_44](start_span)[span_44](end_span).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Despesa Corrente[span_45](start_span)[span_45](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "Despesa de Capital[span_46](start_span)[span_46](end_span)."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Despesas com manutenção e custeio, como contas de energia, são despesas correntes[span_47](start_span)[span_47](end_span)."
+  },
+  {
+    "id": 10,
+    "title": "Estágios da Receita Pública",
+    "text": "Durante o exercício financeiro de 2026, o Estado do Ceará previu arrecadar R$ 2 bilhões em ICMS. Ao longo do ano, os contribuintes realizaram o pagamento do imposto por meio da rede bancária credenciada, e os valores posteriormente foram transferidos para a Conta Única do Tesouro Estadual. Com base nos estágios da receita pública, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O estágio de previsão da receita é o ato da repartição competente, que verifica a procedência do crédito fiscal e a pessoa que lhe é devedora e inscreve o débito desta[span_48](start_span)[span_48](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "A arrecadação da receita corresponde ao ato de previsão dos valores que ingressarão nos cofres públicos[span_49](start_span)[span_49](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "A previsão da receita ocorre após a arrecadação, com o objetivo de comparar os valores estimados e realizados[span_50](start_span)[span_50](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O recolhimento da receita ocorre quando os valores arrecadados são transferidos pelos agentes arrecadadores para a Conta Única do Tesouro[span_51](start_span)[span_51](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "O lançamento da receita corresponde à entrega dos recursos devidos ao Tesouro pelos contribuintes ou devedores, por meio dos agentes arrecadadores ou instituições financeiras autorizadas pelo ente[span_52](start_span)[span_52](end_span)."
+      }
+    ],
+    "answer": "D",
+    "explanation": "O recolhimento é a transferência dos valores arrecadados à conta específica do Tesouro, responsável pela administração e controle da arrecadação e programação financeira[span_53](start_span)[span_53](end_span)."
+  },
+  {
+    "id": 11,
+    "title": "Estágios da Despesa Pública",
+    "text": "Durante o exercício financeiro de 2026, a Secretaria Estadual de Educação promoveu licitação para aquisição de mobiliário escolar. Após a assinatura do contrato, foi realizada a reserva da dotação orçamentária correspondente. Com a entrega dos bens, a Administração verificou a conformidade do material recebido com as especificações contratuais antes de autorizar o pagamento ao fornecedor. Com base nos estágios da despesa pública, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A fixação da despesa consiste no ato emanado de autoridade competente que cria para o Estado obrigação de pagamento pendente ou não de implemento de condição. Ou seja, consiste na reserva de dotação orçamentária para um fim específico[span_54](start_span)[span_54](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "O pagamento da despesa ocorre antes da liquidação, para garantir a continuidade dos serviços públicos. De toda forma, a liquidação é obrigatória para verificar os documentos comprobatórios da despesa[span_55](start_span)[span_55](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "A liquidação consiste na verificação do direito adquirido pelo credor tendo por base os títulos e documentos comprobatórios do respectivo crédito e tem por objetivo apurar a origem e o objeto do que se deve pagar, a importância exata a pagar e a quem se deve pagar a importância, para extinguir a obrigação[span_56](start_span)[span_56](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O empenho é o estágio da despesa realizado antes do início do exercício financeiro, em que é estabelecido um limite de gastos a ser efetuado pelas entidades públicas e incluído nas leis orçamentárias com base nas receitas previstas[span_57](start_span)[span_57](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "A liquidação e o pagamento são estágios facultativos da execução da despesa. O empenho, por outro lado, consiste em uma etapa obrigatória[span_58](start_span)[span_58](end_span)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "A liquidação consiste na verificação do direito adquirido pelo credor tendo por base os títulos e documentos comprobatórios do respectivo crédito, apurando a origem, o objeto, a importância a pagar e a quem se deve pagar[span_59](start_span)[span_59](end_span)."
+  },
+  {
+    "id": 12,
+    "title": "Integração entre PPA, LDO e LOA",
+    "text": "Durante a elaboração do Projeto de Lei Orçamentária Anual (LOA) de 2027, o governo de Pernambuco incluiu dotação orçamentária para a construção de cinco hospitais regionais e para a implementação de um programa estadual de transporte gratuito para estudantes universitários. Contudo, ao analisar a proposta, a Assembleia Legislativa verificou que tais iniciativas não constavam dos programas e objetivos previstos no Plano Plurianual (PPA) vigente, embora estivessem mencionadas genericamente na Lei de Diretrizes Orçamentárias (LDO) como áreas prioritárias para o exercício. Com base nos princípios que regem o sistema de planejamento e orçamento público, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A inclusão das despesas na LOA é válida, pois a LDO possui hierarquia superior ao PPA e pode autorizar a execução de ações não previstas no plano plurianual[span_60](start_span)[span_60](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "A compatibilidade da LOA com a LDO é suficiente para legitimar a inclusão das despesas, ainda que elas não estejam contempladas no PPA[span_61](start_span)[span_61](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "O PPA tem função meramente indicativa e não vincula a elaboração da LOA, que pode criar livremente novos programas governamentais a cada exercício financeiro[span_62](start_span)[span_62](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "A LOA deve ser compatível tanto com a LDO quanto com o PPA, de modo que a execução de programas e ações governamentais deve observar as diretrizes, objetivos e metas estabelecidos no plano plurianual[span_63](start_span)[span_63](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "A compatibilidade entre PPA, LDO e LOA é exigida apenas para despesas de capital, não se aplicando a programas e ações de natureza corrente[span_64](start_span)[span_64](end_span)."
+      }
+    ],
+    "answer": "D",
+    "explanation": "Os instrumentos de planejamento são interligados. A LOA deve observar a compatibilidade com o PPA e ser elaborada em harmonia com a LDO, garantindo a integração entre o plano de médio prazo e o orçamento anual[span_65](start_span)[span_65](end_span)."
+  },
+  {
+    "id": 13,
+    "title": "Vigência dos Instrumentos de Planejamento",
+    "text": "Em janeiro de 2026, um servidor recém-ingresso na Secretaria de Planejamento de determinado estado brasileiro recebeu a incumbência de analisar os principais instrumentos do sistema de planejamento e orçamento governamental. Durante seus estudos, verificou que o Plano Plurianual (PPA), a Lei de Diretrizes Orçamentárias (LDO) e a Lei Orçamentária Anual (LOA) possuem períodos de vigência distintos, mas complementares, destinados a assegurar a continuidade do planejamento e da execução das políticas públicas. Considerando as características gerais desses instrumentos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O servidor se equivocou, pois o PPA, a LDO e a LOA possuem vigência de um ano, variando apenas o conteúdo de cada um[span_66](start_span)[span_66](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "A LDO possui vigência plurianual, abrangendo todo o período de execução do PPA[span_67](start_span)[span_67](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "A LOA possui vigência correspondente ao exercício financeiro, enquanto a LDO orienta a elaboração da LOA para esse mesmo exercício e o PPA possui vigência de médio prazo (quatro anos)[span_68](start_span)[span_68](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O PPA possui vigência anual, sendo renovado a cada exercício financeiro por meio da LDO[span_69](start_span)[span_69](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "A LOA possui vigência indeterminada, permanecendo válida até a aprovação de uma nova lei orçamentária[span_70](start_span)[span_70](end_span)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "O PPA é um planejamento de médio prazo (4 anos). A LDO orienta a elaboração da LOA para o exercício seguinte, e a LOA fixa a despesa e estima a receita para o período de um ano (exercício financeiro)[span_71](start_span)[span_71](end_span)."
+  },
+  {
+    "id": 14,
+    "title": "Funções do PPA, LDO e LOA",
+    "text": "O Governo do Estado Beta iniciou o processo de planejamento para os próximos exercícios financeiros. Os técnicos elaboraram inicialmente um plano de médio prazo, posteriormente uma lei anual voltada às metas e prioridades do exercício seguinte e, por último, a peça orçamentária propriamente dita. À luz da Constituição Federal, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A LDO se torna um instrumento não obrigatório caso a LOA seja compatível com o PPA[span_72](start_span)[span_72](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "A LOA tem a função de orientar a elaboração da LDO[span_73](start_span)[span_73](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "A LDO é responsável por fixar a despesa e estimar a receita do exercício[span_74](start_span)[span_74](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O PPA compreenderá as metas e prioridades da administração pública federal, estabelecerá as diretrizes de política fiscal e respectivas metas, em consonância com trajetória sustentável da dívida pública[span_75](start_span)[span_75](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "O PPA estabelece, de forma regionalizada, as diretrizes, objetivos e metas da administração pública federal para as despesas de capital e outras delas decorrentes e para as relativas aos programas de duração continuada[span_76](start_span)[span_76](end_span)."
+      }
+    ],
+    "answer": "E",
+    "explanation": "Conforme o art. 165, § 1º da CF/88, o PPA estabelecerá, de forma regionalizada, as diretrizes, objetivos e metas da administração pública federal para as despesas de capital e outras delas decorrentes e para as relativas aos programas de duração continuada[span_77](start_span)[span_77](end_span)."
+  },
+  {
+    "id": 15,
+    "title": "Fases do Ciclo Orçamentário",
+    "text": "Durante o exercício financeiro de 2026, o governo de determinado estado brasileiro desenvolvia simultaneamente diversas atividades relacionadas ao orçamento público. Enquanto a Secretaria de Planejamento consolidava informações para subsidiar a elaboração de futuras propostas orçamentárias, a Assembleia Legislativa analisava projetos de leis orçamentárias encaminhados pelo Poder Executivo. Paralelamente, os órgãos estaduais executavam despesas autorizadas na Lei Orçamentária Anual (LOA). Em uma capacitação promovida para servidores recém-ingressos na administração estadual, o instrutor destacou a importância de compreender as etapas que compõem o ciclo orçamentário e a atuação dos diferentes Poderes e órgãos de controle em cada uma delas. Sobre o ciclo orçamentário, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A fase de discussão e aprovação do orçamento vem após a fase de execução orçamentária e financeira[span_78](start_span)[span_78](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "Se o orçamento for aprovado na fase de apreciação legislativa ele já pode entrar em vigor, ou seja, inicia-se a execução orçamentária[span_79](start_span)[span_79](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "A fase de controle e avaliação é exercida exclusivamente pelo Poder Executivo, sem participação do Poder Legislativo ou dos Tribunais de Contas[span_80](start_span)[span_80](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O orçamento começa a ser elaborado no legislativo e segue para a aprovação do executivo[span_81](start_span)[span_81](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "O ciclo orçamentário é composto pelas seguintes fases: elaboração, discussão e aprovação legislativa, execução e controle/avaliação[span_82](start_span)[span_82](end_span)."
+      }
+    ],
+    "answer": "E",
+    "explanation": "O ciclo orçamentário simplificado é composto por: planejamento e elaboração; apreciação legislativa; execução; controle e avaliação[span_83](start_span)[span_83](end_span)."
+  },
+  {
+    "id": 16,
+    "title": "Natureza Contínua do Ciclo Orçamentário",
+    "text": "Em um seminário sobre finanças públicas, um auditor afirmou que o orçamento estadual aprovado para determinado exercício financeiro representa apenas um momento de um processo muito mais amplo, que envolve planejamento de médio prazo, definição de prioridades anuais, execução, monitoramento e avaliação de resultados. À luz da teoria do ciclo orçamentário, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A aprovação da LOA representa o encerramento do processo orçamentário[span_84](start_span)[span_84](end_span)."
+      },
+      {
+        "id": "B",
+        "text": "O ciclo orçamentário é composto por fases estanques, sem retroalimentação entre elas[span_85](start_span)[span_85](end_span)."
+      },
+      {
+        "id": "C",
+        "text": "A execução orçamentária é a única fase dotada de relevância jurídica[span_86](start_span)[span_86](end_span)."
+      },
+      {
+        "id": "D",
+        "text": "O ciclo orçamentário possui natureza contínua, de modo que os resultados da execução e do controle influenciam os orçamentos futuros[span_87](start_span)[span_87](end_span)."
+      },
+      {
+        "id": "E",
+        "text": "O ciclo orçamentário ampliado coincide com o exercício financeiro[span_88](start_span)[span_88](end_span)."
+      }
+    ],
+    "answer": "D",
+    "explanation": "O ciclo orçamentário é um processo contínuo, dinâmico e flexível. A fase de avaliação orçamentária, por exemplo, proporciona elementos para a consecução de objetivos, realimentando o processo de Administração Orçamentária e contribuindo para a elaboração de uma nova proposta[span_89](start_span)[span_89](end_span)."
+  },
+  {
+    "id": 17,
+    "title": "Tipos de Empenho",
+    "text": "A administração estadual necessita empenhar despesas cujos montantes não se pode determinar previamente, pois os valores variam a cada mês, como contas de água, energia elétrica e aquisição de combustíveis. De acordo com os estágios da despesa, qual o tipo de empenho adequado para essa situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Empenho Ordinário."
+      },
+      {
+        "id": "B",
+        "text": "Empenho Estimativo."
+      },
+      {
+        "id": "C",
+        "text": "Empenho Global."
+      },
+      {
+        "id": "D",
+        "text": "Empenho Fracionado."
+      },
+      {
+        "id": "E",
+        "text": "Empenho Suplementar."
+      }
+    ],
+    "answer": "B",
+    "explanation": "O Empenho Estimativo é utilizado para as despesas cujo montante não se pode determinar previamente, pois o valor sempre varia (ex: contas de água e energia elétrica)[span_90](start_span)[span_90](end_span)."
+  },
+  {
+    "id": 18,
+    "title": "Tipos de Empenho",
+    "text": "Para o pagamento de despesas contratuais sujeitas a parcelamento, como aluguéis, salários e realização de obras, a Administração Pública deve utilizar qual modalidade de empenho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Empenho Ordinário."
+      },
+      {
+        "id": "B",
+        "text": "Empenho Estimativo."
+      },
+      {
+        "id": "C",
+        "text": "Empenho Contínuo."
+      },
+      {
+        "id": "D",
+        "text": "Empenho Global."
+      },
+      {
+        "id": "E",
+        "text": "Empenho de Capital."
+      }
+    ],
+    "answer": "D",
+    "explanation": "O Empenho Global é o tipo de empenho utilizado para despesas contratuais ou outras de valor determinado, sujeitas a parcelamento, como aluguéis e obras[span_91](start_span)[span_91](end_span)."
+  },
+  {
+    "id": 19,
+    "title": "LRF - Restos a Pagar",
+    "text": "No último ano de mandato, um governador deseja autorizar a contratação de obrigações de despesa, ciente de que não haverá disponibilidade de caixa suficiente para quitá-las até o final do exercício. À luz da Lei de Responsabilidade Fiscal (LRF), qual a regra aplicável à assunção dessas obrigações em fim de mandato?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É permitido, desde que o novo governador assuma a dívida integralmente."
+      },
+      {
+        "id": "B",
+        "text": "É vedado ao titular de Poder, nos últimos dois quadrimestres do seu mandato, contrair obrigação de despesa que não possa ser cumprida integralmente dentro dele, ou que tenha parcelas a serem pagas no exercício seguinte sem que haja suficiente disponibilidade de caixa."
+      },
+      {
+        "id": "C",
+        "text": "É facultativo, dependendo da aprovação prévia do Tribunal de Contas do Estado."
+      },
+      {
+        "id": "D",
+        "text": "A vedação aplica-se apenas no último mês de mandato, permitindo a contratação nos meses anteriores."
+      },
+      {
+        "id": "E",
+        "text": "A regra não se aplica a despesas de capital, apenas a despesas correntes."
+      }
+    ],
+    "answer": "B",
+    "explanation": "O art. 42 da LRF estabelece que é vedado ao titular de Poder ou órgão, nos últimos dois quadrimestres do seu mandato, contrair obrigação de despesa que não possa ser cumprida integralmente dentro dele, ou que tenha parcelas a serem pagas no exercício seguinte sem que haja suficiente disponibilidade de caixa para este efeito[span_92](start_span)[span_92](end_span)."
+  },
+  {
+    "id": 20,
+    "title": "PPA e Investimentos",
+    "text": "A Constituição Federal e a legislação orçamentária estabelecem regras estritas sobre a execução de investimentos. Em relação à obrigatoriedade de inclusão de investimentos no Plano Plurianual (PPA), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todo e qualquer investimento, independentemente de seu prazo de execução, deve obrigatoriamente constar no PPA."
+      },
+      {
+        "id": "B",
+        "text": "Apenas os investimentos financiados por operações de crédito externo precisam figurar no PPA."
+      },
+      {
+        "id": "C",
+        "text": "Nenhum investimento cuja execução ultrapasse um exercício financeiro poderá ser iniciado sem prévia inclusão no PPA, ou sem lei que autorize a sua inclusão."
+      },
+      {
+        "id": "D",
+        "text": "Investimentos de capital são regidos exclusivamente pela Lei de Diretrizes Orçamentárias, não precisando constar no PPA."
+      },
+      {
+        "id": "E",
+        "text": "As despesas correntes de duração continuada não estão sujeitas a nenhuma exigência de constar no PPA."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Segundo o art. 167, § 1º da CF/88, nenhum investimento cuja execução ultrapasse um exercício financeiro poderá ser iniciado sem prévia inclusão no plano plurianual, ou sem lei que autorize a sua inclusão, sob pena de crime de responsabilidade[span_93](start_span)[span_93](end_span)."
+  },
+  {
+    "id": 21,
+    "title": "Estágios da Receita Pública - Lançamento",
+    "text": "Analise o seguinte estágio da receita pública: \"A repartição pública competente averigua a procedência do crédito fiscal e a pessoa que lhe é devedora, inscrevendo o débito desta. Envolve o cálculo do valor devido pelos contribuintes.\" Trata-se do estágio de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Previsão."
+      },
+      {
+        "id": "B",
+        "text": "Fixação."
+      },
+      {
+        "id": "C",
+        "text": "Arrecadação."
+      },
+      {
+        "id": "D",
+        "text": "Lançamento."
+      },
+      {
+        "id": "E",
+        "text": "Recolhimento."
+      }
+    ],
+    "answer": "D",
+    "explanation": "O estágio de lançamento da receita é o ato da repartição competente, que verifica a procedência do crédito fiscal e a pessoa que lhe é devedora e inscreve o débito desta, envolvendo também o cálculo do valor devido pelos contribuintes[span_94](start_span)[span_94](end_span)[span_95](start_span)[span_95](end_span)."
+  },
+  {
+    "id": 22,
+    "title": "Conteúdo da LOA - Orçamentos",
+    "text": "A Lei Orçamentária Anual (LOA) compreende três orçamentos distintos. Qual orçamento abrange todas as entidades e órgãos a ela vinculados, da administração direta ou indireta, bem como os fundos e fundações destinados a assegurar os direitos relativos à saúde, à previdência e à assistência social?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orçamento de Investimento das Empresas."
+      },
+      {
+        "id": "B",
+        "text": "Orçamento da Seguridade Social."
+      },
+      {
+        "id": "C",
+        "text": "Orçamento Fiscal."
+      },
+      {
+        "id": "D",
+        "text": "Orçamento Monetário."
+      },
+      {
+        "id": "E",
+        "text": "Orçamento de Capital."
+      }
+    ],
+    "answer": "B",
+    "explanation": "O Orçamento da Seguridade Social abrange todas as entidades e órgãos a ela vinculados, da administração direta ou indireta, bem como os fundos e fundações destinados a assegurar os direitos relativos à saúde, à previdência e à assistência social[span_96](start_span)[span_96](end_span)."
+  },
+  {
+    "id": 23,
+    "title": "Regra de Ouro",
+    "text": "A chamada \"Regra de Ouro\" das finanças públicas brasileiras, prevista na Constituição Federal e reforçada pela LRF, tem como principal objetivo evitar que o ente público tome empréstimos para pagar despesas do dia a dia (custeio). Como essa regra se materializa juridicamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É vedada a realização de despesas de capital que excedam as receitas correntes."
+      },
+      {
+        "id": "B",
+        "text": "É obrigatório que todo empréstimo tomado seja utilizado exclusivamente no pagamento de despesas com pessoal."
+      },
+      {
+        "id": "C",
+        "text": "É vedada a realização de operações de créditos que excedam o montante das despesas de capital, ressalvadas as autorizadas mediante créditos suplementares ou especiais com finalidade precisa."
+      },
+      {
+        "id": "D",
+        "text": "É proibido tomar qualquer tipo de empréstimo nos últimos dois anos de mandato."
+      },
+      {
+        "id": "E",
+        "text": "É garantido que a dívida pública flutuante não ultrapasse 50% do orçamento fiscal."
+      }
+    ],
+    "answer": "C",
+    "explanation": "A regra de ouro (CF, Art. 167, III) veda a realização de operações de créditos que excedam o montante das despesas de capital, ressalvadas as autorizadas mediante créditos suplementares ou especiais com finalidade precisa, aprovados pelo Poder Legislativo por maioria absoluta[span_97](start_span)[span_97](end_span)."
+  },
+  {
+    "id": 24,
+    "title": "Relatórios de Transparência Fiscal",
+    "text": "A Lei de Responsabilidade Fiscal (LRF) exige a elaboração de relatórios periódicos para conferir transparência à gestão fiscal. Qual é o relatório, emitido com periodicidade quadrimestral, que tem como finalidade fornecer informações sobre o cumprimento das metas fiscais, contendo comparativos com os limites para a despesa total com pessoal e dívidas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Relatório Resumido da Execução Orçamentária (RREO)."
+      },
+      {
+        "id": "B",
+        "text": "Anexo de Metas Fiscais (AMF)."
+      },
+      {
+        "id": "C",
+        "text": "Relatório de Gestão Fiscal (RGF)."
+      },
+      {
+        "id": "D",
+        "text": "Plano de Metas de Arrecadação (PMA)."
+      },
+      {
+        "id": "E",
+        "text": "Balanço Patrimonial Estadual."
+      }
+    ],
+    "answer": "C",
+    "explanation": "O Relatório de Gestão Fiscal (RGF) é elaborado de forma periódica, quadrimestral, e conterá comparativo com os limites de que trata a LRF dos montantes de despesa total com pessoal, dívidas consolidada e mobiliária, e operações de crédito[span_98](start_span)[span_98](end_span)."
+  },
+  {
+    "id": 25,
+    "title": "Estágios da Despesa Pública - Pagamento",
+    "text": "O último estágio da execução da despesa pública orçamentária consiste na entrega de numerário ao credor por meio de cheque nominativo, ordens de pagamentos ou crédito em conta. Esse estágio, que só pode ocorrer após a verificação do direito adquirido pelo credor, é denominado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fixação."
+      },
+      {
+        "id": "B",
+        "text": "Empenho Ordinário."
+      },
+      {
+        "id": "C",
+        "text": "Liquidação."
+      },
+      {
+        "id": "D",
+        "text": "Descentralização de Crédito."
+      },
+      {
+        "id": "E",
+        "text": "Pagamento."
+      }
+    ],
+    "answer": "E",
+    "explanation": "O pagamento consiste na entrega de numerário ao credor por meio de cheque nominativo, ordens de pagamentos ou crédito em conta, e só pode ser efetuado após a regular liquidação da despesa[span_99](start_span)[span_99](end_span)."
+  }
+];
