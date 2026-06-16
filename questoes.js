@@ -4956,7 +4956,7 @@ const qsMod4Aula4 = [
       },
       {
         "id": "B",
-        "text": "O limite máximo foi ultrapassado, pois a despesa corresponds a 50% da RCL."
+        "text": "O limite máximo foi ultrapassado, pois a despesa corresponde a 50% da RCL."
       },
       {
         "id": "C",
@@ -4971,13 +4971,13 @@ const qsMod4Aula4 = [
         "text": "O Estado ultrapassou apenas o limite de alerta."
       }
     ],
-    "answer": "C",
-    "explanation": "A despesa de R$ 24 bilhões representa 48% da RCL de R$ 50 bilhões. Para o Poder Executivo Estadual, o limite máximo é de 49% (Art. 20, II, c da LRF). O limite prudencial é 95% do limite máximo (95% de 49% = 46,55%) e o de alerta é 90% (90% de 49% = 44,1%). Logo, com 48%, o Estado ultrapassou os limites de alerta e prudencial, estando apenas abaixo do limite máximo."
+    "answer": "A",
+    "explanation": "A despesa de R$ 24 bilhões representa 48% da RCL de R$ 50 bilhões. Para o Poder Executivo Estadual, o limite máximo é de 49% (Art. 20, II, c da LRF). O limite prudencial é 95% do limite máximo (95% de 49% = 46,55%) e o de alerta é 90% (90% de 49% = 44,1%). Logo, com 48%, o Estado ultrapassou os limites de alerta e prudencial, mas não o limite máximo."
   },
   {
     "id": 2,
     "title": "Consequências do Limite Prudencial",
-    "text": "Durante o exercício financeiro de 2026, o governo do Estado de Pernambuco divulgou o Relatório de Gestão Fiscal demonstrando que a despesa total com pessoal do Poder Executivo atingiu 97% do respectivo limite legal previsto na Lei de Responsabilidade Fiscal (LRF). Em razão desse cenário, a Secretaria de Administração apresentou propostas para criação de novos cargos efetivos, concessão de reajuste salarial a servidores e reestruturação de carreiras com impacto financeiro. Considerando a situação apresentada e as disposições da Lei Complementar nº 101/2000, assinale a alternativa correta.",
+    "text": "Durante o exercício financeiro de 2026, o governo do Estado de Pernambuco divulgou o Relatório de Gestão Fiscal demonstrando que a despesa total com pessoal do Poder Executivo atingiu 97% do respectivo limite legal previsto na Lei de Responsabilidade Fiscal (LRF). Em razão desse cenário, a Secretaria de Administração apresentou propostas para criação de novos cargos efetivos, concessão de reajuste salarial a servidores e reestruturação de carreiras com impact financeiro. Considerando a situação apresentada e as disposições da Lei Complementar nº 101/2000, assinale a alternativa correta.",
     "options": [
       {
         "id": "A",
@@ -4993,7 +4993,7 @@ const qsMod4Aula4 = [
       },
       {
         "id": "D",
-        "text": "O limite prudencial corresponde a 90% do limite máximo e serve apenas para fins de alerta do Tribunal de Contas, sem gerar vedações legais."
+        "text": "O limite prudencial corresponds a 90% do limite máximo e serve apenas para fins de alerta do Tribunal de Contas, sem gerar vedações legais."
       },
       {
         "id": "E",
@@ -5161,7 +5161,7 @@ const qsMod4Aula4 = [
   {
     "id": 10,
     "title": "Estágios da Receita Pública",
-    "text": "Permanecendo no exercício financeiro de 2026, o Estado do Ceará previu arrecadar R$ 2 bilhões em ICMS. Ao longo do ano, os contribuintes realizaram o pagamento do imposto por meio da rede bancária credenciada, e os valores posteriormente foram transferidos para a Conta Única do Tesouro Estadual. Com base nos estágios da receita pública, assinale a alternativa correta.",
+    "text": "Durante o exercício financeiro de 2026, o Estado do Ceará previu arrecadar R$ 2 bilhões em ICMS. Ao longo do ano, os contribuintes realizaram o pagamento do imposto por meio da rede bancária credenciada, e os valores posteriormente foram transferidos para a Conta Única do Tesouro Estadual. Com base nos estágios da receita pública, assinale a alternativa correta.",
     "options": [
       {
         "id": "A",
@@ -5194,7 +5194,7 @@ const qsMod4Aula4 = [
     "options": [
       {
         "id": "A",
-        "text": "A fixação da despesa consiste no ato emanado de autoridade competente que cria para o Estado obrigação de pagamento pendente ou não de implemento de condição. Ou seja, consiste na reserva de dotação orçamentária para um fim específico."
+        "text": "A fixação da despesa consiste no ato emanado de autoridade competente que cria para o State obrigação de pagamento pendente ou não de implemento de condição. Ou seja, consiste na reserva de dotação orçamentária para um fim específico."
       },
       {
         "id": "B",
@@ -5252,7 +5252,7 @@ const qsMod4Aula4 = [
     "options": [
       {
         "id": "A",
-        "text": "O servidor se equivocou, pois o PPA, a LDO e a LOA possuem vigência de um ano, variando apenas o conteúdo de cada um."
+        "text": "O servidor se equivocou, pois o PPA, a LDO e a LOA possuem vigência de um ano, variando apenas o conteúdo of cada um."
       },
       {
         "id": "B",
@@ -5335,7 +5335,7 @@ const qsMod4Aula4 = [
   {
     "id": 16,
     "title": "Natureza Contínua do Ciclo Orçamentário",
-    "text": "Em um seminário sobre finanças públicas, um auditor afirmou que o orçamento estadual aprovado para determinado exercício financeiro representa apenas um momento de um processo muito mais amplo, que envolve planejamento de médio prazo, definição de prioridades anuais, execução, monitoramento e avaliação de resultados. À luz da teoria do ciclo orçamentário, assinale a alternativa correta.",
+    "text": "Em um seminário sobre finanças públicas, um auditor afirmou que o orçamento estadual aprovado para determinado exercício financeiro representa apenas um momento de um processo muito mais amplo, que envolve planejamento de médio prazo, definition de prioridades anuais, execução, monitoramento e avaliação de resultados. À luz da teoria do ciclo orçamentário, assinale a alternativa correta.",
     "options": [
       {
         "id": "A",
